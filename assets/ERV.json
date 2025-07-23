@@ -1,0 +1,50 @@
+{
+  "id": "erv",
+  "title": {
+    "en": "English Receptive Vocabulary",
+    "zh": "英語接受性詞彙"
+  },
+  "questions": [
+    {
+      "id": "erv_q1",
+      "type": "image-choice",
+      "label": {
+        "en": "Which one is the 'ball'?",
+        "zh": "哪一個是「球」？"
+      },
+      "media": {
+        "audio": "audio/erv_q1.mp3"
+      },
+      "required": true,
+      "options": [
+        {
+          "value": "ball",
+          "media": {
+            "image": "images/ball.png"
+          }
+        },
+        {
+          "value": "doll",
+          "media": {
+            "image": "images/doll.png"
+          }
+        },
+        {
+          "value": "car",
+          "media": {
+            "image": "images/car.png"
+          }
+        },
+        {
+          "value": "book",
+          "media": {
+            "image": "images/book.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "ball"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "finemotor",
+  "title": {
+    "en": "Fine Motor Skills",
+    "zh": "精細動作技能"
+  },
+  "questions": [
+    {
+      "id": "fm_q1",
+      "type": "drawing-task",
+      "prompt": {
+        "en": "Draw a line from the start to the end following the path.",
+        "zh": "沿著路徑從起點畫一條線到終點。"
+      },
+      "template": "assets/images/fine_motor_maze_1.png",
+      "scoring": {
+        "accuracy": "path_deviation",
+        "time": "completion_time"
+      }
+    },
+    {
+      "id": "fm_q2",
+      "type": "tracing-task",
+      "prompt": {
+        "en": "Trace over the dotted lines to complete the shape.",
+        "zh": "沿著虛線描繪完成形狀。"
+      },
+      "template": "assets/images/fine_motor_trace_1.png",
+      "scoring": {
+        "accuracy": "line_precision",
+        "time": "completion_time"
+      }
+    }
+  ]
+}

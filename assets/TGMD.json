@@ -1,0 +1,61 @@
+{
+  "id": "tgmd",
+  "title": {
+    "en": "Test of Gross Motor Development",
+    "zh": "大肌肉動作發展測試"
+  },
+  "questions": [
+    {
+      "id": "tgmd_q1",
+      "type": "motor-assessment",
+      "prompt": {
+        "en": "Demonstrate running in place for 10 seconds.",
+        "zh": "示範原地跑步10秒。"
+      },
+      "task": "running",
+      "duration": 10,
+      "criteria": [
+        {
+          "id": "arms_swing",
+          "description": {
+            "en": "Arms swing in opposition to legs",
+            "zh": "手臂與腿部相對擺動"
+          }
+        },
+        {
+          "id": "foot_placement",
+          "description": {
+            "en": "Proper foot placement",
+            "zh": "正確的腳部位置"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tgmd_q2",
+      "type": "motor-assessment",
+      "prompt": {
+        "en": "Demonstrate jumping with both feet together.",
+        "zh": "示範雙腳併攏跳躍。"
+      },
+      "task": "jumping",
+      "repetitions": 3,
+      "criteria": [
+        {
+          "id": "takeoff",
+          "description": {
+            "en": "Takeoff with both feet simultaneously",
+            "zh": "雙腳同時起跳"
+          }
+        },
+        {
+          "id": "landing",
+          "description": {
+            "en": "Landing with both feet simultaneously",
+            "zh": "雙腳同時落地"
+          }
+        }
+      ]
+    }
+  ]
+}

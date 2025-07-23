@@ -1,0 +1,159 @@
+/* Entry Page, TOC, and Survey Page Styles */
+.entry-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.logo {
+    height: 80px;
+}
+
+#entry-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#toc-page {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.toc-container {
+    text-align: center;
+}
+
+#toc-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#toc-instructions {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#toc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.toc-item {
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.toc-item:hover {
+    background-color: #e9ecef;
+    border-color: #2b3990;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.toc-item.disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    color: #6c757d;
+}
+
+.toc-item.disabled .toc-item-arrow {
+    display: none;
+}
+
+.toc-item.highlight {
+    border-color: #f99d33; /* Orange from palette */
+    background-color: #fffbe6;
+}
+
+.toc-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.toc-item-arrow {
+    float: right;
+    color: #2b3990;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.toc-set-header {
+    margin: 20px 0 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #2b3990;
+}
+
+.toc-set-header h3 {
+    margin: 0;
+    color: #2b3990;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#survey-page {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.survey-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#current-section-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#page-info {
+    font-size: 16px;
+    color: #666;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b3990;
+    margin-top: 10px;
+}
+
+#question-container {
+    margin-bottom: 40px;
+}
+
+.survey-navigation {
+    display: flex;
+    justify-content: space-between;
+}

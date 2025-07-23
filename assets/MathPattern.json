@@ -1,0 +1,55 @@
+{
+  "id": "mathpattern",
+  "title": {
+    "en": "Math Pattern Recognition",
+    "zh": "數學模式識別"
+  },
+  "questions": [
+    {
+      "id": "math_q1",
+      "type": "image-choice",
+      "prompt": {
+        "en": "Complete the pattern by selecting the next item.",
+        "zh": "選擇下一個項目來完成模式。"
+      },
+      "image": "assets/images/math_pattern_1.png",
+      "options": [
+        {
+          "id": "math_q1_a",
+          "image": "assets/images/math_option_1a.png"
+        },
+        {
+          "id": "math_q1_b",
+          "image": "assets/images/math_option_1b.png"
+        },
+        {
+          "id": "math_q1_c",
+          "image": "assets/images/math_option_1c.png"
+        }
+      ]
+    },
+    {
+      "id": "math_q2",
+      "type": "image-choice",
+      "prompt": {
+        "en": "Which shape comes next in the sequence?",
+        "zh": "序列中下一個是什麼形狀？"
+      },
+      "image": "assets/images/math_pattern_2.png",
+      "options": [
+        {
+          "id": "math_q2_a",
+          "image": "assets/images/math_option_2a.png"
+        },
+        {
+          "id": "math_q2_b",
+          "image": "assets/images/math_option_2b.png"
+        },
+        {
+          "id": "math_q2_c",
+          "image": "assets/images/math_option_2c.png"
+        }
+      ]
+    }
+  ]
+}

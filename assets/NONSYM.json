@@ -1,0 +1,18 @@
+{
+  "id": "nonsym",
+  "title": {
+    "en": "Non-Symbolic Relations",
+    "zh": "非符號關係"
+  },
+  "questions": [
+    {
+      "id": "nonsym_q1",
+      "type": "text",
+      "label": {
+        "en": "This is a placeholder question for Non-Symbolic Relations.",
+        "zh": "這是一個非符號關係的佔位問題。"
+      },
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "headtoekneeshoulder",
+  "title": {
+    "en": "Head-Toe-Knee-Shoulder Task",
+    "zh": "頭腳膝肩任務"
+  },
+  "questions": [
+    {
+      "id": "htks_q1",
+      "type": "instruction-response",
+      "prompt": {
+        "en": "When I say 'head', touch your toes. When I say 'toes', touch your head.",
+        "zh": "當我說「頭」時，請觸摸你的腳趾。當我說「腳趾」時，請觸摸你的頭。"
+      },
+      "instruction": {
+        "en": "Head",
+        "zh": "頭"
+      },
+      "correctResponse": "toes",
+      "scoring": {
+        "correct": 1,
+        "incorrect": 0
+      }
+    },
+    {
+      "id": "htks_q2",
+      "type": "instruction-response",
+      "prompt": {
+        "en": "Remember: head means toes, toes means head.",
+        "zh": "記住：頭表示腳趾，腳趾表示頭。"
+      },
+      "instruction": {
+        "en": "Toes",
+        "zh": "腳趾"
+      },
+      "correctResponse": "head",
+      "scoring": {
+        "correct": 1,
+        "incorrect": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeySteps@JC Offline Survey</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="app-wrapper">
+        <div id="app" class="container">
+            <div id="debug-trigger"></div>
+            <nav id="top-nav">
+                <div class="nav-container">
+                    <a href="#" id="home-btn" class="nav-brand">
+                        <img src="assets/logos/KS.png" alt="KeySteps Logo">
+                        <span>KeySteps@JC</span>
+                    </a>
+                    <div class="nav-menu">
+                        <button class="nav-toggle" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul id="section-jumper" class="nav-links">
+                            <!-- Section links will be injected here -->
+                        </ul>
+                    </div>
+                    <div id="nav-info-display" class="nav-info">
+                        <span id="nav-student-info"></span>
+                        <span id="nav-datetime"></span>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <!-- Entry Page -->
+                <div id="entry-page" class="page active">
+                    <div class="entry-container">
+                        <div class="logo-container">
+                            <img src="assets/logos/KS.png" alt="KeySteps Logo" class="logo">
+                            <img src="assets/logos/EdUHK.png" alt="EdUHK Logo" class="logo">
+                        </div>
+                        <h2 id="entry-title">幼兒成長調查問卷</h2>
+                        <div id="entry-form-container"></div>
+                        <div class="language-toggle-container">
+                            <span class="lang-zh">中</span>
+                            <label class="language-toggle">
+                                <input type="checkbox" id="language-toggle-checkbox">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="lang-en">Eng</span>
+                        </div>
+                        <button id="start-survey-btn">開始問卷</button>
+                    </div>
+                </div>
+
+                <!-- TOC Page -->
+                <div id="toc-page" class="page">
+                    <div class="toc-container">
+                        <h2 id="toc-title" data-lang-zh="問卷部分" data-lang-en="Survey Sections">問卷部分</h2>
+                        <p id="toc-instructions" data-lang-zh="請選擇一個部分開始問卷。" data-lang-en="Please select a section to begin the survey.">請選擇一個部分開始問卷。</p>
+                        <div id="toc-list">
+                            <!-- Table of Contents sections will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Survey Page (now the main content area) -->
+                <div id="survey-page" class="page">
+                    <div class="survey-header">
+                        <h2 id="current-section-display"></h2>
+                        <p id="page-info"></p>
+                        <div id="timer"></div>
+                    </div>
+                    <div id="question-container"></div>
+                    <div class="survey-navigation">
+                        <button id="back-btn">Back</button>
+                        <button id="next-btn">Next</button>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <div id="required-section-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3 id="modal-title" data-lang-zh="必須完成的部分" data-lang-en="Required Section">Required Section</h3>
+            <p id="modal-text" data-lang-zh="請先完成背景問卷部分。" data-lang-en="Please complete the background section first.">Please complete the background section first.</p>
+            <button id="modal-close-btn" data-lang-zh="明白" data-lang-en="I Understand">I Understand</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/localforage@1.10.0/dist/localforage.min.js"></script>
+    <script src="js/sync-manager.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/js/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "id": "chinesewordreading",
+  "title": {
+    "en": "Chinese Word Reading",
+    "zh": "中文詞語閱讀"
+  },
+  "questions": [
+    {
+      "id": "cwr_q1",
+      "type": "word-reading",
+      "prompt": {
+        "en": "Read the following Chinese character aloud.",
+        "zh": "請大聲朗讀以下中文字。"
+      },
+      "character": "學",
+      "pinyin": "xué",
+      "meaning": {
+        "en": "to learn/study",
+        "zh": "學習"
+      },
+      "scoring": {
+        "pronunciation": "accuracy",
+        "recognition": "immediate/delayed"
+      }
+    },
+    {
+      "id": "cwr_q2",
+      "type": "word-reading",
+      "prompt": {
+        "en": "Read the following Chinese word aloud.",
+        "zh": "請大聲朗讀以下中文詞語。"
+      },
+      "word": "學校",
+      "pinyin": "xué xiào",
+      "meaning": {
+        "en": "school",
+        "zh": "學校"
+      },
+      "scoring": {
+        "pronunciation": "accuracy",
+        "recognition": "immediate/delayed"
+      }
+    }
+  ]
+}

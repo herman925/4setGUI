@@ -1,0 +1,94 @@
+{
+  "sets": [
+    {
+      "id": "required",
+      "name": {
+        "en": "Required",
+        "zh": "必填部分"
+      },
+      "order": 1,
+      "sections": [
+        {
+          "file": "background.json",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "set1",
+      "name": {
+        "en": "Set 1",
+        "zh": "第一組"
+      },
+      "order": 2,
+      "sections": [
+        {
+          "file": "ERV.json", 
+          "order": 1
+        },
+        {
+          "file": "SYM.json",
+          "order": 2
+        },
+        {
+          "file": "NONSYM.json",
+          "order": 3
+        },
+        {
+          "file": "TheoryofMind.json",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "set2", 
+      "name": {
+        "en": "Set 2",
+        "zh": "第二組"
+      },
+      "order": 3,
+      "sections": [
+        {
+          "file": "MathPattern.json",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "set3",
+      "name": {
+        "en": "Set 3", 
+        "zh": "第三組"
+      },
+      "order": 4,
+      "sections": [
+        {
+          "file": "HeadToeKneeShoulder.json",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "set4",
+      "name": {
+        "en": "Set 4",
+        "zh": "第四組"
+      },
+      "order": 5,
+      "sections": [
+        {
+          "file": "FineMotor.json",
+          "order": 1
+        },
+        {
+          "file": "TGMD.json",
+          "order": 2
+        },
+        {
+          "file": "ChineseWordReading.json",
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

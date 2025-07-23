@@ -1,0 +1,31 @@
+/* Base styles for body, container, etc. */
+body {
+    font-family: "Noto Sans TC", Roboto, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add top margin when nav is visible */
+body.nav-visible {
+    padding-top: 70px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

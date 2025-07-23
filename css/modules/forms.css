@@ -1,0 +1,133 @@
+/* Form and button styles */
+#entry-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#entry-form-container input[type="text"],
+#entry-form-container select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* To include padding in the width */
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#entry-form-container input[type="text"]:focus,
+#entry-form-container select:focus {
+    outline: none;
+    border-color: #2b3990; /* Primary blue */
+    box-shadow: 0 0 0 3px rgba(43, 57, 144, 0.2); /* A subtle glow */
+}
+
+#entry-form-container div {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+.error-message {
+    color: #f04e69; /* Use pink/red from palette for errors */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.required-asterisk {
+    color: #f04e69;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.language-toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.language-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 15px;
+}
+
+.language-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f99d33;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2b3990;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#start-survey-btn, #back-btn, #next-btn, #home-btn {
+    background-color: #2b3990;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-survey-btn:hover, #back-btn:hover, #next-btn:hover, #home-btn:hover {
+    background-color: #1e2a70;
+}
+
+#start-survey-btn {
+    width: 100%;
+}
+
+#autosave-status {
+    display: flex;
+    align-items: center;
+}
+
+#autosave-light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc; /* Default to grey */
+    margin-right: 8px;
+}
+
+#autosave-text {
+    font-size: 14px;
+}

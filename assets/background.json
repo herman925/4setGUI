@@ -1,0 +1,91 @@
+{
+  "id": "background",
+  "title": {
+    "en": "Background Information",
+    "zh": "背景資料"
+  },
+  "entryForm": [
+    {
+      "id": "student-id",
+      "type": "text",
+      "label": {
+        "en": "Student ID",
+        "zh": "學生編號"
+      },
+      "placeholder": {
+        "en": "Enter Student ID",
+        "zh": "輸入學生編號"
+      },
+      "validation": {
+        "regex": "^1[0-9]{4}$",
+        "errorMessage": {
+          "en": "Student ID must be 5 digits and start with 1.",
+          "zh": "學生編號必須是5位數字，並以1開頭。"
+        }
+      }
+    },
+    {
+      "id": "school-id",
+      "type": "text",
+      "label": {
+        "en": "School ID",
+        "zh": "學校編號"
+      },
+      "placeholder": {
+        "en": "Enter School ID",
+        "zh": "輸入學校編號"
+      },
+      "validation": {
+        "min": 1,
+        "max": 115,
+        "errorMessage": {
+          "en": "School ID must be a number between 1 and 115, with no leading zeros.",
+          "zh": "學校編號必須是1到115之間的數字。"
+        }
+      }
+    },
+    {
+      "id": "gender",
+      "type": "select",
+      "label": {
+        "en": "Gender",
+        "zh": "小朋友性別"
+      },
+      "options": [
+        {
+          "value": "male",
+          "label": { "en": "Male", "zh": "男" }
+        },
+        {
+          "value": "female",
+          "label": { "en": "Female", "zh": "女" }
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1_child_name",
+      "type": "text",
+      "label": {
+        "en": "Child's Name",
+        "zh": "小朋友姓名"
+      },
+      "required": true
+    },
+    {
+      "id": "q2_child_age",
+      "type": "text",
+      "inputType": "number",
+      "label": {
+        "en": "Child's Age",
+        "zh": "小朋友年齡"
+      },
+      "required": true,
+      "validation": {
+        "min": 3,
+        "max": 6
+      }
+    }
+  ]
+}
