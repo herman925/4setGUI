@@ -39,6 +39,7 @@ export function renderCurrentQuestion() {
     if (question.label) {
         const label = document.createElement('label');
         label.htmlFor = question.id;
+        label.classList.add('attention', 'question-label');
         const labelText = question.label[state.currentLanguage] || question.label.en;
         label.innerHTML = formatLabel(labelText);
         questionWrapper.appendChild(label);
@@ -51,6 +52,7 @@ export function renderCurrentQuestion() {
             input.type = question.inputType || 'text';
             input.id = question.id;
             input.name = question.id;
+            input.classList.add('answer');
             // Pre-fill with existing response if available
             if (state.userResponses[question.id]) {
                 input.value = state.userResponses[question.id];
@@ -61,6 +63,7 @@ export function renderCurrentQuestion() {
             const radioGroup = document.createElement('div');
             question.options.forEach(opt => {
                 const labelEl = document.createElement('label');
+                labelEl.classList.add('option-label', 'answer');
                 const radio = document.createElement('input');
                 radio.type = 'radio';
                 radio.name = question.id;
@@ -69,6 +72,7 @@ export function renderCurrentQuestion() {
                     radio.checked = true;
                 }
                 const optLabel = document.createElement('span');
+                optLabel.classList.add('answer');
                 optLabel.innerHTML = formatLabel(opt.label[state.currentLanguage] || opt.label.en);
                 labelEl.appendChild(radio);
                 labelEl.appendChild(optLabel);
@@ -80,6 +84,7 @@ export function renderCurrentQuestion() {
             const imgGroup = document.createElement('div');
             question.options.forEach(opt => {
                 const labelImg = document.createElement('label');
+                labelImg.classList.add('option-label', 'answer');
                 const radioImg = document.createElement('input');
                 radioImg.type = 'radio';
                 radioImg.name = question.id;
