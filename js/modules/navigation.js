@@ -1,5 +1,6 @@
 import { state, logDebug } from './state.js';
 import { renderCurrentQuestion } from './question.js';
+import { loadSectionData } from './data.js';
 import { showPage, renderToc, updateInfoDisplay, renderEntryForm, renderSectionJumper, clearErrors, displayError, showRequiredModal } from './ui.js';
 
 const entryPage = document.getElementById('entry-page');
@@ -10,15 +11,19 @@ export function navigateToSection(sectionId) {
     logDebug('Navigating to section:', sectionId);
     state.currentSectionId = sectionId;
     state.currentPage = 0;
-    document.getElementById('top-nav').classList.remove('hidden');
-    document.body.classList.add('nav-visible');
-    showPage(surveyPage);
-    renderCurrentQuestion();
+    loadSectionData(sectionId).then(() => {
+        const navBar = document.getElementById('top-nav');
+        navBar.classList.remove('hidden');
+        navBar.classList.add('visible');
+        document.body.classList.add('nav-visible');
+        showPage(surveyPage);
+        renderCurrentQuestion();
 
-    if (!state.infoDisplayInterval) {
-        updateInfoDisplay(); // Initial call
-        state.infoDisplayInterval = setInterval(updateInfoDisplay, 60000); // Update every minute
-    }
+        if (!state.infoDisplayInterval) {
+            updateInfoDisplay();
+            state.infoDisplayInterval = setInterval(updateInfoDisplay, 60000);
+        }
+    });
 }
 
 export function navigatePage(direction) {
@@ -30,11 +35,17 @@ export function navigatePage(direction) {
 
     // Save response before navigating
     const question = section.questions[state.currentPage];
-    const inputElement = document.getElementById(question.id);
-    if (inputElement) {
-        state.userResponses[question.id] = inputElement.value;
-        logDebug('Saved response:', question.id, '=', inputElement.value);
-        // Also update the info display immediately if a relevant field changes
+    let value;
+    if (question.type === 'radio' || question.type === 'image-choice') {
+        const selected = document.querySelector(`input[name="${question.id}"]:checked`);
+        if (selected) value = selected.value;
+    } else {
+        const inputElement = document.getElementById(question.id);
+        if (inputElement) value = inputElement.value;
+    }
+    if (value !== undefined) {
+        state.userResponses[question.id] = value;
+        logDebug('Saved response:', question.id, '=', value);
         if (question.id === 'q1_child_name' || question.id === 'q2_child_age') {
             updateInfoDisplay();
         }
@@ -55,6 +66,14 @@ export function navigatePage(direction) {
 
 export function showToc() {
     renderToc();
+    const navBar = document.getElementById('top-nav');
+    navBar.classList.remove('visible');
+    navBar.classList.add('hidden');
+    document.body.classList.remove('nav-visible');
+    if (state.infoDisplayInterval) {
+        clearInterval(state.infoDisplayInterval);
+        state.infoDisplayInterval = null;
+    }
     showPage(tocPage);
 }
 

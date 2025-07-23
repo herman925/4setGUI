@@ -31,3 +31,22 @@ export function fetchSurveyData() {
             return Promise.all(loadPromises);
         });
 }
+
+export function loadSectionData(sectionId) {
+    if (state.surveySections[sectionId]) {
+        return Promise.resolve(state.surveySections[sectionId]);
+    }
+    const file = `${sectionId}.json`;
+    return fetch(`assets/${file}`)
+        .then(response => response.json())
+        .then(data => {
+            state.surveySections[sectionId] = data;
+            return data;
+        })
+        .catch(error => {
+            console.error(`Error loading section data for ${file}:`, error);
+            const fallback = { id: sectionId, title: { en: 'Error', zh: '錯誤' }, questions: [] };
+            state.surveySections[sectionId] = fallback;
+            return fallback;
+        });
+}

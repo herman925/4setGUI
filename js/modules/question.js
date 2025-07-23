@@ -47,6 +47,44 @@ export function renderCurrentQuestion() {
             }
             questionWrapper.appendChild(input);
             break;
+        case 'radio':
+            const radioGroup = document.createElement('div');
+            question.options.forEach(opt => {
+                const labelEl = document.createElement('label');
+                const radio = document.createElement('input');
+                radio.type = 'radio';
+                radio.name = question.id;
+                radio.value = opt.value;
+                if (state.userResponses[question.id] === opt.value) {
+                    radio.checked = true;
+                }
+                labelEl.appendChild(radio);
+                labelEl.appendChild(document.createTextNode(opt.label[state.currentLanguage] || opt.label.en));
+                radioGroup.appendChild(labelEl);
+            });
+            questionWrapper.appendChild(radioGroup);
+            break;
+        case 'image-choice':
+            const imgGroup = document.createElement('div');
+            question.options.forEach(opt => {
+                const labelImg = document.createElement('label');
+                const radioImg = document.createElement('input');
+                radioImg.type = 'radio';
+                radioImg.name = question.id;
+                radioImg.value = opt.value;
+                if (state.userResponses[question.id] === opt.value) {
+                    radioImg.checked = true;
+                }
+                const img = document.createElement('img');
+                if (opt.media && opt.media.image) {
+                    img.src = `assets/${opt.media.image}`;
+                }
+                labelImg.appendChild(radioImg);
+                labelImg.appendChild(img);
+                imgGroup.appendChild(labelImg);
+            });
+            questionWrapper.appendChild(imgGroup);
+            break;
         // Add more cases for 'select', 'radio', 'checkbox', etc. here
         default:
             const notImplemented = document.createElement('p');
