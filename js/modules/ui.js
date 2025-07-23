@@ -57,6 +57,7 @@ export function renderEntryForm() {
         formGroup.appendChild(errorDiv);
         entryFormContainer.appendChild(formGroup);
     });
+    import('./events.js').then(m => m.attachEntryFormListeners());
 }
 
 export function renderToc() {
@@ -120,14 +121,12 @@ export function renderToc() {
 
         set.sections.forEach(sectionInfo => {
             const sectionId = sectionInfo.file.replace('.json', '');
+            if (sectionId === 'background') return; // skip background section in TOC
             const section = state.surveySections[sectionId];
             if (section) {
                 const isEnabled = set.order === 1 || state.backgroundCompleted;
                 logDebug(`renderToc:   - Section: ${sectionId}, Enabled: ${isEnabled}`);
                 const tocItem = createTocItem(section, isEnabled);
-                if (sectionId === 'background' && !state.backgroundCompleted) {
-                    tocItem.classList.add('highlight');
-                }
                 setContainer.appendChild(tocItem);
             } else {
                 logDebug(`renderToc:   - Section data for ${sectionId} not found in state.surveySections.`);
@@ -230,10 +229,8 @@ export function updateInfoDisplay() {
     const studentInfoEl = document.getElementById('nav-student-info');
     const datetimeEl = document.getElementById('nav-datetime');
     
-    const studentName = state.userResponses['q1_child_name'] || 'N/A';
-    const studentAge = state.userResponses['q2_child_age'] || 'N/A';
-
-    const studentInfo = `Name: ${studentName} | Age: ${studentAge}`;
+    const studentName = state.userResponses['child-name'] || 'N/A';
+    const studentInfo = `Name: ${studentName}`;
     studentInfoEl.textContent = studentInfo;
     studentInfoEl.title = studentInfo;
     

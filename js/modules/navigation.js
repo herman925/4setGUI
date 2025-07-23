@@ -46,12 +46,14 @@ export function navigatePage(direction) {
         state.userResponses[question.id] = value;
         logDebug('Saved response:', question.id, '=', value);
         saveToLocal();
-        if (question.id === 'q1_child_name' || question.id === 'q2_child_age') {
+        if (question.id === 'child-name') {
             updateInfoDisplay();
         }
     }
 
-    if (newPage >= 0 && newPage < section.questions.length) {
+    if (newPage < 0) {
+        showToc();
+    } else if (newPage >= 0 && newPage < section.questions.length) {
         state.currentPage = newPage;
         renderCurrentQuestion();
     } else if (newPage >= section.questions.length) {
@@ -113,12 +115,19 @@ export function startSurvey() {
     });
 
     if (isValid) {
+        const summary = `Student ID: ${state.userResponses['student-id']}\n` +
+                        `School ID: ${state.userResponses['school-id']}\n` +
+                        `Name: ${state.userResponses['child-name']}\n` +
+                        `Gender: ${state.userResponses['gender']}`;
+        if (!confirm(summary)) return;
+
         loadAutosave(state.userResponses['student-id']).then(saved => {
             if (saved) {
                 Object.assign(state.userResponses, saved.responses || {});
                 Object.assign(state.completionTimes, saved.completionTimes || {});
             }
             startAutosave();
+            state.backgroundCompleted = true;
             showToc();
         });
     }

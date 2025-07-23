@@ -45,6 +45,19 @@
       }
     },
     {
+      "id": "child-name",
+      "type": "text",
+      "label": {
+        "en": "Child's Name",
+        "zh": "小朋友姓名"
+      },
+      "placeholder": {
+        "en": "Auto-filled",
+        "zh": "自動填寫"
+      },
+      "required": true
+    },
+    {
       "id": "gender",
       "type": "select",
       "label": {
@@ -63,29 +76,5 @@
       ]
     }
   ],
-  "questions": [
-    {
-      "id": "q1_child_name",
-      "type": "text",
-      "label": {
-        "en": "Child's Name",
-        "zh": "小朋友姓名"
-      },
-      "required": true
-    },
-    {
-      "id": "q2_child_age",
-      "type": "text",
-      "inputType": "number",
-      "label": {
-        "en": "Child's Age",
-        "zh": "小朋友年齡"
-      },
-      "required": true,
-      "validation": {
-        "min": 3,
-        "max": 6
-      }
-    }
-  ]
+  "questions": []
 }
