@@ -7,15 +7,16 @@ import { showPage, renderToc, updateInfoDisplay, renderEntryForm, clearErrors, d
 const entryPage = document.getElementById('entry-page');
 const tocPage = document.getElementById('toc-page');
 const surveyPage = document.getElementById('survey-page');
+const topNav = document.getElementById('top-nav');
 
 export function navigateToSection(sectionId) {
     logDebug('Navigating to section:', sectionId);
     state.currentSectionId = sectionId;
     state.currentPage = 0;
     loadSectionData(sectionId).then(() => {
-        document.getElementById('top-nav').classList.add('hidden');
-        document.body.classList.remove('nav-visible');
-        nav.classList.add('visible');
+        topNav.classList.remove('hidden');
+        topNav.classList.add('visible');
+        document.body.classList.add('nav-visible');
         showPage(surveyPage);
         renderCurrentQuestion();
 
