@@ -21,6 +21,11 @@ export function fetchSurveyData() {
                         const sectionId = file.replace('.json', '');
                         state.surveySections[sectionId] = data;
                     })
+                    .catch(error => {
+                        console.error(`Error loading section data for ${file}:`, error);
+                        const sectionId = file.replace('.json', '');
+                        state.surveySections[sectionId] = { id: sectionId, title: { en: 'Error', zh: '錯誤' }, questions: [] };
+                    })
             );
 
             return Promise.all(loadPromises);
