@@ -1,319 +1,199 @@
 {
   "id": "finemotor",
-  "title": {
-    "en": "Fine Motor Skills",
-    "zh": "精細動作技能"
-  },
+  "title": "精細動作技能",
   "questions": [
     {
       "id": "FM_Cover",
       "type": "text",
-      "label": {
-        "en": "剪紙 確認進入測試請按右下方箭頭（➜）。",
-        "zh": "剪紙 確認進入測試請按右下方箭頭（➜）。"
-      }
+      "label": "剪紙 確認進入測試請按右下方箭頭（➜）。"
     },
     {
       "id": "FMsquare_ins1",
       "type": "text",
-      "label": {
-        "en": "「小朋友而家請你用鉸剪沿住黑色邊，將紙上面嘅正方形剪出嚟。」\nPlease follow the line and cut the square.\n展示印有正方形圖案的紙張，請小朋友剪下正方形。\n評分方法：於每一列評分標準的下方選取 0 或 1 以表示小朋友的剪裁有否到相應的正確百分比：\n1 代表有；0 代表沒有\n小朋友必須使用鉸剪完成此assessment.\n注意：若小朋友在剪正方形時取得 0 分，則無需剪裁樹形圖案。",
-        "zh": "「小朋友而家請你用鉸剪沿住黑色邊，將紙上面嘅正方形剪出嚟。」\nPlease follow the line and cut the square.\n展示印有正方形圖案的紙張，請小朋友剪下正方形。\n評分方法：於每一列評分標準的下方選取 0 或 1 以表示小朋友的剪裁有否到相應的正確百分比：\n1 代表有；0 代表沒有\n小朋友必須使用鉸剪完成此assessment.\n注意：若小朋友在剪正方形時取得 0 分，則無需剪裁樹形圖案。"
-      }
+      "label": "「小朋友而家請你用鉸剪沿住黑色邊，將紙上面嘅正方形剪出嚟。」\nPlease follow the line and cut the square.\n展示印有正方形圖案的紙張，請小朋友剪下正方形。\n評分方法：於每一列評分標準的下方選取 0 或 1 以表示小朋友的剪裁有否到相應的正確百分比：\n1 代表有；0 代表沒有\n小朋友必須使用鉸剪完成此assessment.\n注意：若小朋友在剪正方形時取得 0 分，則無需剪裁樹形圖案。"
     },
     {
       "id": "Hand",
       "type": "radio",
-      "label": {
-        "en": "慣用手",
-        "zh": "慣用手"
-      },
+      "label": "慣用手",
       "options": [
         {
           "value": "left",
-          "label": {
-            "en": "左手",
-            "zh": "左手"
-          }
+          "label": "左手"
         },
         {
           "value": "right",
-          "label": {
-            "en": "右手",
-            "zh": "右手"
-          }
+          "label": "右手"
         },
         {
           "value": "undetermined",
-          "label": {
-            "en": "未形成",
-            "zh": "未形成"
-          }
+          "label": "未形成"
         }
       ]
     },
     {
       "id": "FMside_1",
       "type": "radio",
-      "label": {
-        "en": "評分標准\nA）就幼兒裁剪正方形的第一條邊對以下部分進行評分(**請測試員在幼兒剪的第一條邊旁邊寫上 1)\n10-49% 情況下沿著直線剪繞開少於 1cm",
-        "zh": "評分標准\nA）就幼兒裁剪正方形的第一條邊對以下部分進行評分(**請測試員在幼兒剪的第一條邊旁邊寫上 1)\n10-49% 情況下沿著直線剪繞開少於 1cm"
-      },
+      "label": "評分標准\nA）就幼兒裁剪正方形的第一條邊對以下部分進行評分(**請測試員在幼兒剪的第一條邊旁邊寫上 1)\n10-49% 情況下沿著直線剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FMside_2",
       "type": "radio",
-      "label": {
-        "en": "50-89% 情況下沿著直線剪繞開少於 1cm",
-        "zh": "50-89% 情況下沿著直線剪繞開少於 1cm"
-      },
+      "label": "50-89% 情況下沿著直線剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FMside_3",
       "type": "radio",
-      "label": {
-        "en": "90-100% 情況下沿著直線剪繞開少於 1cm",
-        "zh": "90-100% 情況下沿著直線剪繞開少於 1cm"
-      },
+      "label": "90-100% 情況下沿著直線剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FMsqu_1",
       "type": "radio",
-      "label": {
-        "en": "B）就幼兒裁剪整個正方形對以下部分進行評分\n10-49% 情況下沿著正方形剪繞開少於 1cm",
-        "zh": "B）就幼兒裁剪整個正方形對以下部分進行評分\n10-49% 情況下沿著正方形剪繞開少於 1cm"
-      },
+      "label": "B）就幼兒裁剪整個正方形對以下部分進行評分\n10-49% 情況下沿著正方形剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FMsqu_2",
       "type": "radio",
-      "label": {
-        "en": "50-89% 情況下沿著正方形剪繞開少於 1cm",
-        "zh": "50-89% 情況下沿著正方形剪繞開少於 1cm"
-      },
+      "label": "50-89% 情況下沿著正方形剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FMsqu_3",
       "type": "radio",
-      "label": {
-        "en": "90-100% 情況下沿著正方形剪繞開少於 1cm",
-        "zh": "90-100% 情況下沿著正方形剪繞開少於 1cm"
-      },
+      "label": "90-100% 情況下沿著正方形剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FM_Ter",
       "type": "text",
-      "label": {
-        "en": "正方形剪紙得分大於0分，可以繼續剪樹測試",
-        "zh": "正方形剪紙得分大於0分，可以繼續剪樹測試"
-      }
+      "label": "正方形剪紙得分大於0分，可以繼續剪樹測試"
     },
     {
       "id": "FMtree_ins1",
       "type": "text",
-      "label": {
-        "en": "「小朋友而家請你用鉸剪將紙上面棵 樹 剪出嚟。」\nPlease follow the line and cut the tree.\n展示印有一棵樹圖案的紙張，請小朋友沿著圖形剪裁。\n評分標準：就幼兒裁剪整個樹形圖案形對以下部分進行評分",
-        "zh": "「小朋友而家請你用鉸剪將紙上面棵 樹 剪出嚟。」\nPlease follow the line and cut the tree.\n展示印有一棵樹圖案的紙張，請小朋友沿著圖形剪裁。\n評分標準：就幼兒裁剪整個樹形圖案形對以下部分進行評分"
-      }
+      "label": "「小朋友而家請你用鉸剪將紙上面棵 樹 剪出嚟。」\nPlease follow the line and cut the tree.\n展示印有一棵樹圖案的紙張，請小朋友沿著圖形剪裁。\n評分標準：就幼兒裁剪整個樹形圖案形對以下部分進行評分"
     },
     {
       "id": "FMtree_1",
       "type": "radio",
-      "label": {
-        "en": "10-49% 情況下沿著樹形剪繞開少於 1cm",
-        "zh": "10-49% 情況下沿著樹形剪繞開少於 1cm"
-      },
+      "label": "10-49% 情況下沿著樹形剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FMtree_2",
       "type": "radio",
-      "label": {
-        "en": "50-89% 情況下沿著樹形剪繞開少於 1cm",
-        "zh": "50-89% 情況下沿著樹形剪繞開少於 1cm"
-      },
+      "label": "50-89% 情況下沿著樹形剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FMtree_3",
       "type": "radio",
-      "label": {
-        "en": "90-100% 情況下沿著樹形剪繞開少於 1cm",
-        "zh": "90-100% 情況下沿著樹形剪繞開少於 1cm"
-      },
+      "label": "90-100% 情況下沿著樹形剪繞開少於 1cm",
       "options": [
         {
           "value": "0",
-          "label": {
-            "en": "0",
-            "zh": "0"
-          }
+          "label": "0"
         },
         {
           "value": "1",
-          "label": {
-            "en": "1",
-            "zh": "1"
-          }
+          "label": "1"
         }
       ]
     },
     {
       "id": "FMtree_ins2",
       "type": "text",
-      "label": {
-        "en": "等幼兒剪完，請測試員將 Student No. 寫在正方形 / 樹的空白處。",
-        "zh": "等幼兒剪完，請測試員將 Student No. 寫在正方形 / 樹的空白處。"
-      }
+      "label": "等幼兒剪完，請測試員將 Student No. 寫在正方形 / 樹的空白處。"
     },
     {
       "id": "FM_Date",
       "type": "text",
-      "label": {
-        "en": "完成日期：",
-        "zh": "完成日期："
-      }
+      "label": "完成日期："
     },
     {
       "id": "FM_Com",
       "type": "radio",
-      "label": {
-        "en": "Fine Motor 測試已完成。請按右下方箭頭（➜）按鈕，並填寫checklist。",
-        "zh": "Fine Motor 測試已完成。請按右下方箭頭（➜）按鈕，並填寫checklist。"
-      },
+      "label": "Fine Motor 測試已完成。請按右下方箭頭（➜）按鈕，並填寫checklist。",
       "options": [
         {
           "value": "done",
-          "label": {
-            "en": "已完成",
-            "zh": "已完成"
-          }
+          "label": "已完成"
         }
       ]
     }

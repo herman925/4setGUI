@@ -29,7 +29,7 @@ export function renderEntryForm() {
         const formGroup = document.createElement('div');
         const label = document.createElement('label');
         label.htmlFor = field.id;
-        label.textContent = field.label[state.currentLanguage];
+        label.textContent = field.label;
         if (field.required) {
             const asterisk = document.createElement('span');
             asterisk.className = 'required-asterisk';
@@ -42,7 +42,7 @@ export function renderEntryForm() {
             const input = document.createElement('input');
             input.type = 'text';
             input.id = field.id;
-            input.placeholder = field.placeholder[state.currentLanguage];
+            input.placeholder = field.placeholder;
             if (state.userResponses[field.id]) {
                 input.value = state.userResponses[field.id];
             }
@@ -51,7 +51,7 @@ export function renderEntryForm() {
                 const loadBtn = document.createElement('button');
                 loadBtn.type = 'button';
                 loadBtn.id = 'load-session-btn';
-                loadBtn.textContent = state.currentLanguage === 'en' ? 'Load Previous Session' : '載入上次資料';
+                loadBtn.textContent = '載入上次資料';
                 formGroup.appendChild(loadBtn);
             }
         } else if (field.type === 'select') {
@@ -60,7 +60,7 @@ export function renderEntryForm() {
             field.options.forEach(option => {
                 const opt = document.createElement('option');
                 opt.value = option.value;
-                opt.textContent = option.label[state.currentLanguage];
+                opt.textContent = option.label;
                 select.appendChild(opt);
             });
             if (state.userResponses[field.id]) {
@@ -106,13 +106,13 @@ export function renderToc() {
 
         const title = document.createElement('div');
         title.className = 'toc-item-title';
-        title.textContent = section.title[state.currentLanguage] || section.title.en || section.id;
+        title.textContent = section.title || section.id;
         info.appendChild(title);
 
         const times = document.createElement('div');
         times.className = 'toc-item-times';
-        const startedLabel = labelTranslations.started[state.currentLanguage];
-        const lastLabel = labelTranslations.lastUsed[state.currentLanguage];
+        const startedLabel = labelTranslations.started;
+        const lastLabel = labelTranslations.lastUsed;
         const startSpan = document.createElement('span');
         startSpan.textContent = `${startedLabel}: ${timestamps.start || '-'}`;
         const lastSpan = document.createElement('span');
@@ -145,12 +145,7 @@ export function renderToc() {
 
         const setTitle = document.createElement('h3');
         setTitle.className = 'toc-set-title';
-        if (set.name && typeof set.name === 'object') {
-            setTitle.textContent = set.name[state.currentLanguage] || set.name.en;
-        } else {
-            setTitle.textContent = set.id || 'Unnamed Set';
-            console.warn("A set in survey-structure.json is missing a 'name' object:", set);
-        }
+        setTitle.textContent = set.name || set.id;
         setContainer.appendChild(setTitle);
 
         set.sections.forEach(sectionInfo => {
@@ -183,7 +178,7 @@ export function renderSectionJumper() {
         li.className = 'nav-item';
         const setLink = document.createElement('a');
         setLink.href = '#';
-        setLink.textContent = set.name[state.currentLanguage] || set.name.en;
+        setLink.textContent = set.name;
         setLink.addEventListener('click', (e) => e.preventDefault());
         const dropdown = document.createElement('div');
         dropdown.className = 'dropdown-menu';
@@ -196,7 +191,7 @@ export function renderSectionJumper() {
                 const dropdownItem = document.createElement('a');
                 dropdownItem.href = '#';
                 dropdownItem.className = 'dropdown-item';
-                dropdownItem.textContent = section.title[state.currentLanguage] || section.title.en;
+                dropdownItem.textContent = section.title;
                 dropdownItem.addEventListener('click', (e) => {
                     e.preventDefault();
                     navigateToSection(section.id);
@@ -240,8 +235,8 @@ export function updateInfoDisplay() {
     const studentInfoEl = document.getElementById('nav-student-info');
     const datetimeEl = document.getElementById('nav-datetime');
     
-    const studentName = state.userResponses['child-name'] || 'N/A';
-    const studentInfo = `Name: ${studentName}`;
+    const studentName = state.userResponses['child-name'] || '-';
+    const studentInfo = `姓名: ${studentName}`;
     studentInfoEl.textContent = studentInfo;
     studentInfoEl.title = studentInfo;
     
@@ -257,11 +252,11 @@ export function updateSurveyTimestamps() {
     const startEl = document.getElementById('toc-start-date');
     const endEl = document.getElementById('toc-end-date');
     if (startEl) {
-        const startedLabel = labelTranslations.started[state.currentLanguage];
+        const startedLabel = labelTranslations.started;
         startEl.textContent = `${startedLabel}: ${state.startDate || '-'}`;
     }
     if (endEl) {
-        const lastLabel = labelTranslations.lastUsed[state.currentLanguage];
+        const lastLabel = labelTranslations.lastUsed;
         endEl.textContent = `${lastLabel}: ${state.endDate || '-'}`;
     }
 }

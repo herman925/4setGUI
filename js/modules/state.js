@@ -1,5 +1,4 @@
 export const state = {
-    currentLanguage: 'zh', // 'zh' or 'en'
     surveyStructure: null,
     surveySections: {},
     currentPage: 0,
@@ -34,6 +33,6 @@ export function logDebug(...args) {
 }
 
 export const labelTranslations = {
-    started: { en: 'Started', zh: '開始' },
-    lastUsed: { en: 'Last Used', zh: '最後使用' }
+    started: '開始',
+    lastUsed: '最後使用'
 };

@@ -1,1368 +1,855 @@
 {
   "id": "chinesewordreading",
-  "title": {
-    "en": "Chinese Word Reading",
-    "zh": "中文詞語閱讀"
-  },
+  "title": "中文詞語閱讀",
   "questions": [
     {
       "id": "CWR_Cover",
       "type": "text",
-      "label": {
-        "en": "Chinese Word Reading 確認進入測試請按右下方箭頭(➜)。",
-        "zh": "Chinese Word Reading 確認進入測試請按右下方箭頭（➜）。"
-      }
+      "label": "Chinese Word Reading 確認進入測試請按右下方箭頭（➜）。"
     },
     {
       "id": "CWR_ins1",
       "type": "text",
-      "label": {
-        "en": "「小朋友，跟住落嚟有啲中文字，有啲深有啲淺。如果你識嘅就讀出嚟，如果唔識唔緊要，你話唔識就得喇。」 Here are some chinese words, please read the word you know.    記錄規則：  單字題目，正確讀出單字=Y，錯誤或不知道=N；  詞語題目，正確讀出整個詞語=Y，錯誤或不會讀其中一個字=N。    如在作答過程中出現POP UP 提示(已連續錯10題)，請評估員和小朋友停止作答，及按\"Return to Task List\"離開此Task。    小朋友自我改正算正確，若小朋友連續錯10題即可停止。",
-        "zh": "「小朋友，跟住落嚟有啲中文字，有啲深有啲淺。如果你識嘅就讀出嚟，如果唔識唔緊要，你話唔識就得喇。」 Here are some chinese words, please read the word you know.    記錄規則：  單字題目，正確讀出單字=Y，錯誤或不知道=N；  詞語題目，正確讀出整個詞語=Y，錯誤或不會讀其中一個字=N。    如在作答過程中出現POP UP 提示(已連續錯10題)，請評估員和小朋友停止作答，及按\"Return to Task List\"離開此Task。    小朋友自我改正算正確，若小朋友連續錯10題即可停止。"
-      }
+      "label": "「小朋友，跟住落嚟有啲中文字，有啲深有啲淺。如果你識嘅就讀出嚟，如果唔識唔緊要，你話唔識就得喇。」 Here are some chinese words, please read the word you know.    記錄規則：  單字題目，正確讀出單字=Y，錯誤或不知道=N；  詞語題目，正確讀出整個詞語=Y，錯誤或不會讀其中一個字=N。    如在作答過程中出現POP UP 提示(已連續錯10題)，請評估員和小朋友停止作答，及按\"Return to Task List\"離開此Task。    小朋友自我改正算正確，若小朋友連續錯10題即可停止。"
     },
     {
       "id": "CWR_1",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 山",
-        "zh": "「呢個係咩字？」\n山"
-      },
+      "label": "「呢個係咩字？」\n山",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_2",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 牛",
-        "zh": "「呢個係咩字？」\n牛"
-      },
+      "label": "「呢個係咩字？」\n牛",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_3",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 花",
-        "zh": "「呢個係咩字？」\n花"
-      },
+      "label": "「呢個係咩字？」\n花",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_4",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 車",
-        "zh": "「呢個係咩字？」\n車"
-      },
+      "label": "「呢個係咩字？」\n車",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_5",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 水",
-        "zh": "「呢個係咩字？」\n水"
-      },
+      "label": "「呢個係咩字？」\n水",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_6",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 爸",
-        "zh": "「呢個係咩字？」\n爸"
-      },
+      "label": "「呢個係咩字？」\n爸",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_7",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 哥",
-        "zh": "「呢個係咩字？」\n哥"
-      },
+      "label": "「呢個係咩字？」\n哥",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_8",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 色",
-        "zh": "「呢個係咩字？」\n色"
-      },
+      "label": "「呢個係咩字？」\n色",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_9",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 風",
-        "zh": "「呢個係咩字？」\n風"
-      },
+      "label": "「呢個係咩字？」\n風",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_10",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 早",
-        "zh": "「呢個係咩字？」\n早"
-      },
+      "label": "「呢個係咩字？」\n早",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_11",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 生",
-        "zh": "「呢個係咩字？」\n生"
-      },
+      "label": "「呢個係咩字？」\n生",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_12",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 狗",
-        "zh": "「呢個係咩字？」\n狗"
-      },
+      "label": "「呢個係咩字？」\n狗",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_13",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 媽",
-        "zh": "「呢個係咩字？」\n媽"
-      },
+      "label": "「呢個係咩字？」\n媽",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_14",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 手",
-        "zh": "「呢個係咩字？」\n手"
-      },
+      "label": "「呢個係咩字？」\n手",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_15",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 秋",
-        "zh": "「呢個係咩字？」\n秋"
-      },
+      "label": "「呢個係咩字？」\n秋",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_16",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 我",
-        "zh": "「呢個係咩字？」\n我"
-      },
+      "label": "「呢個係咩字？」\n我",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_17",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 樹",
-        "zh": "「呢個係咩字？」\n樹"
-      },
+      "label": "「呢個係咩字？」\n樹",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_18",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 球",
-        "zh": "「呢個係咩字？」\n球"
-      },
+      "label": "「呢個係咩字？」\n球",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_19",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 藍",
-        "zh": "「呢個係咩字？」\n藍"
-      },
+      "label": "「呢個係咩字？」\n藍",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_20",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 好",
-        "zh": "「呢個係咩字？」\n好"
-      },
+      "label": "「呢個係咩字？」\n好",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_21",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 兒",
-        "zh": "「呢個係咩字？」\n兒"
-      },
+      "label": "「呢個係咩字？」\n兒",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_22",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 飛",
-        "zh": "「呢個係咩字？」\n飛"
-      },
+      "label": "「呢個係咩字？」\n飛",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_23",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 多",
-        "zh": "「呢個係咩字？」\n多"
-      },
+      "label": "「呢個係咩字？」\n多",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_24",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 快",
-        "zh": "「呢個係咩字？」\n快"
-      },
+      "label": "「呢個係咩字？」\n快",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_25",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 個",
-        "zh": "「呢個係咩字？」\n個"
-      },
+      "label": "「呢個係咩字？」\n個",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_26",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 的",
-        "zh": "「呢個係咩字？」\n的"
-      },
+      "label": "「呢個係咩字？」\n的",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_27",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 蕉",
-        "zh": "「呢個係咩字？」\n蕉"
-      },
+      "label": "「呢個係咩字？」\n蕉",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_28",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 去",
-        "zh": "「呢個係咩字？」\n去"
-      },
+      "label": "「呢個係咩字？」\n去",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_29",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 在",
-        "zh": "「呢個係咩字？」\n在"
-      },
+      "label": "「呢個係咩字？」\n在",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_30",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 說",
-        "zh": "「呢個係咩字？」\n說"
-      },
+      "label": "「呢個係咩字？」\n說",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_31",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 香港",
-        "zh": "「呢個係咩字？」\n香港"
-      },
+      "label": "「呢個係咩字？」\n香港",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_32",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 市場",
-        "zh": "「呢個係咩字？」\n市場"
-      },
+      "label": "「呢個係咩字？」\n市場",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_33",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 新年",
-        "zh": "「呢個係咩字？」\n新年"
-      },
+      "label": "「呢個係咩字？」\n新年",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_34",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 星期",
-        "zh": "「呢個係咩字？」\n星期"
-      },
+      "label": "「呢個係咩字？」\n星期",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_35",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 耳朵",
-        "zh": "「呢個係咩字？」\n耳朵"
-      },
+      "label": "「呢個係咩字？」\n耳朵",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_36",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 中午",
-        "zh": "「呢個係咩字？」\n中午"
-      },
+      "label": "「呢個係咩字？」\n中午",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_37",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 眼睛",
-        "zh": "「呢個係咩字？」\n眼睛"
-      },
+      "label": "「呢個係咩字？」\n眼睛",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_38",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 晚上",
-        "zh": "「呢個係咩字？」\n晚上"
-      },
+      "label": "「呢個係咩字？」\n晚上",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_39",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 老師",
-        "zh": "「呢個係咩字？」\n老師"
-      },
+      "label": "「呢個係咩字？」\n老師",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_40",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 房屋",
-        "zh": "「呢個係咩字？」\n房屋"
-      },
+      "label": "「呢個係咩字？」\n房屋",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_41",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 美麗",
-        "zh": "「呢個係咩字？」\n美麗"
-      },
+      "label": "「呢個係咩字？」\n美麗",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_42",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 衣服",
-        "zh": "「呢個係咩字？」\n衣服"
-      },
+      "label": "「呢個係咩字？」\n衣服",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_43",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 鼻子",
-        "zh": "「呢個係咩字？」\n鼻子"
-      },
+      "label": "「呢個係咩字？」\n鼻子",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_44",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 再見",
-        "zh": "「呢個係咩字？」\n再見"
-      },
+      "label": "「呢個係咩字？」\n再見",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_45",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 禮物",
-        "zh": "「呢個係咩字？」\n禮物"
-      },
+      "label": "「呢個係咩字？」\n禮物",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_46",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 蜜蜂",
-        "zh": "「呢個係咩字？」\n蜜蜂"
-      },
+      "label": "「呢個係咩字？」\n蜜蜂",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_47",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 書包",
-        "zh": "「呢個係咩字？」\n書包"
-      },
+      "label": "「呢個係咩字？」\n書包",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_48",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 電腦",
-        "zh": "「呢個係咩字？」\n電腦"
-      },
+      "label": "「呢個係咩字？」\n電腦",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_49",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 馬路",
-        "zh": "「呢個係咩字？」\n馬路"
-      },
+      "label": "「呢個係咩字？」\n馬路",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_50",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 糖果",
-        "zh": "「呢個係咩字？」\n糖果"
-      },
+      "label": "「呢個係咩字？」\n糖果",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_51",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 你們",
-        "zh": "「呢個係咩字？」\n你們"
-      },
+      "label": "「呢個係咩字？」\n你們",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_52",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 家庭",
-        "zh": "「呢個係咩字？」\n家庭"
-      },
+      "label": "「呢個係咩字？」\n家庭",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_53",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 飲食",
-        "zh": "「呢個係咩字？」\n飲食"
-      },
+      "label": "「呢個係咩字？」\n飲食",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_54",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 牙刷",
-        "zh": "「呢個係咩字？」\n牙刷"
-      },
+      "label": "「呢個係咩字？」\n牙刷",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_55",
       "type": "radio",
-      "label": {
-        "en": "What is this word? 海灘",
-        "zh": "「呢個係咩字？」\n海灘"
-      },
+      "label": "「呢個係咩字？」\n海灘",
       "options": [
         {
           "value": "Y",
-          "label": {
-            "en": "Y",
-            "zh": "Y"
-          }
+          "label": "Y"
         },
         {
           "value": "N",
-          "label": {
-            "en": "N",
-            "zh": "N"
-          }
+          "label": "N"
         }
       ]
     },
     {
       "id": "CWR_Date",
       "type": "text",
-      "label": {
-        "en": "Completion Date:",
-        "zh": "完成日期："
-      }
+      "label": "完成日期："
     },
     {
       "id": "CWR_Com",
       "type": "radio",
-      "label": {
-        "en": "Chinese Word Reading 測試已完成。 請按右下方箭頭（➜）按鈕，並填寫checklist。",
-        "zh": "Chinese Word Reading 測試已完成。    請按右下方箭頭（➜）按鈕，並填寫checklist。"
-      },
+      "label": "Chinese Word Reading 測試已完成。    請按右下方箭頭（➜）按鈕，並填寫checklist。",
       "options": [
         {
           "value": "done",
-          "label": {
-            "en": "Done",
-            "zh": "已完成"
-          }
+          "label": "已完成"
         }
       ]
     }

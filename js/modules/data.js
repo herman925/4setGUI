@@ -24,7 +24,7 @@ export function fetchSurveyData() {
                     .catch(error => {
                         console.error(`Error loading section data for ${file}:`, error);
                         const sectionId = file.replace('.json', '');
-                        state.surveySections[sectionId] = { id: sectionId, title: { en: 'Error', zh: '錯誤' }, questions: [] };
+                        state.surveySections[sectionId] = { id: sectionId, title: '錯誤', questions: [] };
                     })
             );
 
@@ -45,7 +45,7 @@ export function loadSectionData(sectionId) {
         })
         .catch(error => {
             console.error(`Error loading section data for ${file}:`, error);
-            const fallback = { id: sectionId, title: { en: 'Error', zh: '錯誤' }, questions: [] };
+            const fallback = { id: sectionId, title: '錯誤', questions: [] };
             state.surveySections[sectionId] = fallback;
             return fallback;
         });

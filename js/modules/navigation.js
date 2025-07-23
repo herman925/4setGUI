@@ -116,14 +116,14 @@ export function startSurvey() {
             if (field.validation.regex) {
                 const regex = new RegExp(field.validation.regex);
                 if (!regex.test(value)) {
-                    displayError(`${field.id}-error`, field.validation.errorMessage[state.currentLanguage]);
+                    displayError(`${field.id}-error`, field.validation.errorMessage);
                     isValid = false;
                 }
             }
             if (field.validation.min && field.validation.max) {
                 const numValue = parseInt(value, 10);
                 if (isNaN(numValue) || numValue < field.validation.min || numValue > field.validation.max) {
-                    displayError(`${field.id}-error`, field.validation.errorMessage[state.currentLanguage]);
+                    displayError(`${field.id}-error`, field.validation.errorMessage);
                     isValid = false;
                 }
             }
@@ -131,11 +131,12 @@ export function startSurvey() {
     });
 
     if (isValid) {
-        const summary = `Student ID: ${state.userResponses['student-id']}\n` +
-                        `School ID: ${state.userResponses['school-id']}\n` +
-                        `School Name: ${state.userResponses['school-name']}\n` +
-                        `Name: ${state.userResponses['child-name']}\n` +
-                        `Gender: ${state.userResponses['gender']}`;
+        const genderText = state.userResponses['gender'] === 'male' ? '男' : state.userResponses['gender'] === 'female' ? '女' : state.userResponses['gender'];
+        const summary = `學生編號: ${state.userResponses['student-id']}\n` +
+                        `學校編號: ${state.userResponses['school-id']}\n` +
+                        `學校名稱: ${state.userResponses['school-name']}\n` +
+                        `姓名: ${state.userResponses['child-name']}\n` +
+                        `性別: ${genderText}`;
         if (!confirm(summary)) return;
 
         loadAutosave(state.userResponses['student-id']).then(saved => {
@@ -161,18 +162,6 @@ export function startSurvey() {
     }
 }
 
-export function toggleLanguage(event) {
-    state.currentLanguage = event.target.checked ? 'en' : 'zh';
-    const tocTitle = document.getElementById('toc-title');
-    if (tocTitle) {
-        tocTitle.textContent = tocTitle.dataset[`lang-${state.currentLanguage}`];
-    }
-    renderEntryForm();
-    renderToc();
-    if (state.currentSectionId) {
-        renderCurrentQuestion();
-    }
-}
 
 function checkSurveyCompletion() {
     const sectionIds = Object.keys(state.surveySections).filter(id => id !== 'background');

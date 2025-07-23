@@ -1,4 +1,4 @@
-import { startSurvey, showToc, toggleLanguage, navigatePage } from './navigation.js';
+import { startSurvey, showToc, navigatePage } from './navigation.js';
 import { exportResponsesToCsv } from './export.js';
 import { findStudent, findSchool } from './id-mapping.js';
 import { loadAutosave } from './autosave.js';
@@ -7,7 +7,6 @@ import { state } from './state.js';
 export function initializeEventListeners() {
     document.getElementById('start-survey-btn').addEventListener('click', startSurvey);
     document.getElementById('home-btn').addEventListener('click', showToc);
-    document.getElementById('language-toggle-checkbox').addEventListener('change', toggleLanguage);
     document.getElementById('next-btn').addEventListener('click', () => navigatePage(1));
     document.getElementById('back-btn').addEventListener('click', () => navigatePage(-1));
     const exportBtn = document.getElementById('export-btn');
@@ -54,7 +53,7 @@ export function attachEntryFormListeners() {
         loadBtn.addEventListener('click', () => {
             const studentId = sid.value.trim();
             if (!studentId) {
-                alert('Please enter Student ID first.');
+                alert('請先輸入學生編號。');
                 return;
             }
             loadAutosave(studentId).then(saved => {
@@ -75,9 +74,9 @@ export function attachEntryFormListeners() {
                             }
                         });
                     }
-                    alert('Previous session loaded.');
+                    alert('已載入上次的資料。');
                 } else {
-                    alert('No saved session found for this Student ID.');
+                    alert('未找到此學生編號的存檔。');
                 }
             }).catch(err => console.error('Error loading session:', err));
         });

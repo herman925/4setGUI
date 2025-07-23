@@ -29,8 +29,8 @@ export function renderCurrentQuestion() {
     questionContainer.innerHTML = ''; // Clear previous question
 
     // Update header
-    currentSectionDisplay.textContent = section.title[state.currentLanguage] || section.title.en;
-    pageInfo.textContent = `Page ${state.currentPage + 1} of ${section.questions.length}`;
+    currentSectionDisplay.textContent = section.title;
+    pageInfo.textContent = `第 ${state.currentPage + 1} 頁，共 ${section.questions.length} 頁`;
 
     // Render the question itself
     const questionWrapper = document.createElement('div');
@@ -40,8 +40,7 @@ export function renderCurrentQuestion() {
         const label = document.createElement('label');
         label.htmlFor = question.id;
         label.classList.add('attention', 'question-label');
-        const labelText = question.label[state.currentLanguage] || question.label.en;
-        label.innerHTML = formatLabel(labelText);
+        label.innerHTML = formatLabel(question.label);
         questionWrapper.appendChild(label);
     }
 
@@ -73,7 +72,7 @@ export function renderCurrentQuestion() {
                 }
                 const optLabel = document.createElement('span');
                 optLabel.classList.add('answer');
-                optLabel.innerHTML = formatLabel(opt.label[state.currentLanguage] || opt.label.en);
+                optLabel.innerHTML = formatLabel(opt.label);
                 labelEl.appendChild(radio);
                 labelEl.appendChild(optLabel);
                 radioGroup.appendChild(labelEl);

@@ -1,422 +1,643 @@
 {
   "id": "mathpattern",
-  "title": {
-    "en": "Math Pattern Recognition",
-    "zh": "數學模式識別"
-  },
+  "title": "數學模式識別",
   "questions": [
     {
       "id": "MPTr_Cover",
       "type": "text",
-      "label": {
-        "en": "Math Pattern 確認進入測試請按右下方箭頭（➜）。",
-        "zh": "Math Pattern 確認進入測試請按右下方箭頭（➜）。"
-      }
+      "label": "Math Pattern 確認進入測試請按右下方箭頭（➜）。"
     },
     {
       "id": "MPTr1",
       "type": "radio",
-      "label": {
-        "en": "Look at the number pattern: 7 6 7 8 5 7 6 7 8 5 7 6 7 ?. Which number should go in the question mark?",
-        "zh": "睇吓數字規律：7 6 7 8 5 7 6 7 8 5 7 6 7 ？ 問號應該擺邊個數字？"
-      },
+      "label": "睇吓數字規律：7 6 7 8 5 7 6 7 8 5 7 6 7 ？ 問號應該擺邊個數字？",
       "options": [
-        { "value": "5", "label": {"en": "5", "zh": "5"} },
-        { "value": "6", "label": {"en": "6", "zh": "6"} },
-        { "value": "8", "label": {"en": "8", "zh": "8"} },
-        { "value": "9", "label": {"en": "9", "zh": "9"} }
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        }
       ],
-      "scoring": { "correctAnswer": "8" }
+      "scoring": {
+        "correctAnswer": "8"
+      }
     },
     {
       "id": "MPTr2",
       "type": "radio",
-      "label": {
-        "en": "Look at the number pattern: 2 2 1 0 2 2 1 0 2 2 1 ?. Which number should go in the question mark?",
-        "zh": "睇吓數字規律：2 2 1 0 2 2 1 0 2 2 1 ？ 問號應該擺邊個數字？"
-      },
+      "label": "睇吓數字規律：2 2 1 0 2 2 1 0 2 2 1 ？ 問號應該擺邊個數字？",
       "options": [
-        { "value": "0", "label": {"en": "0", "zh": "0"} },
-        { "value": "1", "label": {"en": "1", "zh": "1"} },
-        { "value": "2", "label": {"en": "2", "zh": "2"} },
-        { "value": "3", "label": {"en": "3", "zh": "3"} }
+        {
+          "value": "0",
+          "label": "0"
+        },
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
       ],
-      "scoring": { "correctAnswer": "0" }
+      "scoring": {
+        "correctAnswer": "0"
+      }
     },
     {
       "id": "MPTr3",
       "type": "radio",
-      "label": {
-        "en": "Look at the number pattern: 4 7 5 4 4 7 5 4 4 7 5 ?. Which number should go in the question mark?",
-        "zh": "睇吓數字規律：4 7 5 4 4 7 5 4 4 7 5 ？ 問號應該擺邊個數字？"
-      },
+      "label": "睇吓數字規律：4 7 5 4 4 7 5 4 4 7 5 ？ 問號應該擺邊個數字？",
       "options": [
-        { "value": "4", "label": {"en": "4", "zh": "4"} },
-        { "value": "5", "label": {"en": "5", "zh": "5"} },
-        { "value": "6", "label": {"en": "6", "zh": "6"} },
-        { "value": "7", "label": {"en": "7", "zh": "7"} }
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        }
       ],
-      "scoring": { "correctAnswer": "4" }
+      "scoring": {
+        "correctAnswer": "4"
+      }
     },
     {
       "id": "MPTr4",
       "type": "radio",
-      "label": {
-        "en": "Look at the number pattern: 8 6 8 5 7 8 6 8 5 7 8 6 8 ?. Which number should go in the question mark?",
-        "zh": "睇吓數字規律：8 6 8 5 7 8 6 8 5 7 8 6 8 ？ 問號應該擺邊個數字？"
-      },
+      "label": "睇吓數字規律：8 6 8 5 7 8 6 8 5 7 8 6 8 ？ 問號應該擺邊個數字？",
       "options": [
-        { "value": "5", "label": {"en": "5", "zh": "5"} },
-        { "value": "6", "label": {"en": "6", "zh": "6"} },
-        { "value": "7", "label": {"en": "7", "zh": "7"} },
-        { "value": "9", "label": {"en": "9", "zh": "9"} }
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        }
       ],
-      "scoring": { "correctAnswer": "5" }
+      "scoring": {
+        "correctAnswer": "5"
+      }
     },
     {
       "id": "MPTr5",
       "type": "radio",
-      "label": {
-        "en": "Look at the number pattern: 8 6 2 4 2 8 6 2 4 2 8 6 2 ?. Which number should go in the question mark?",
-        "zh": "睇吓數字規律：8 6 2 4 2 8 6 2 4 2 8 6 2 ？ 問號應該擺邊個數字？"
-      },
+      "label": "睇吓數字規律：8 6 2 4 2 8 6 2 4 2 8 6 2 ？ 問號應該擺邊個數字？",
       "options": [
-        { "value": "3", "label": {"en": "3", "zh": "3"} },
-        { "value": "4", "label": {"en": "4", "zh": "4"} },
-        { "value": "6", "label": {"en": "6", "zh": "6"} },
-        { "value": "8", "label": {"en": "8", "zh": "8"} }
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        }
       ],
-      "scoring": { "correctAnswer": "4" }
+      "scoring": {
+        "correctAnswer": "4"
+      }
     },
     {
       "id": "MPTr6",
       "type": "radio",
-      "label": {
-        "en": "Look at the number pattern: 3 5 3 9 3 3 5 3 9 3 3 5 3 ?. Which number should go in the question mark?",
-        "zh": "睇吓數字規律：3 5 3 9 3 3 5 3 9 3 3 5 3 ？ 問號應該擺邊個數字？"
-      },
+      "label": "睇吓數字規律：3 5 3 9 3 3 5 3 9 3 3 5 3 ？ 問號應該擺邊個數字？",
       "options": [
-        { "value": "3", "label": {"en": "3", "zh": "3"} },
-        { "value": "4", "label": {"en": "4", "zh": "4"} },
-        { "value": "5", "label": {"en": "5", "zh": "5"} },
-        { "value": "9", "label": {"en": "9", "zh": "9"} }
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        }
       ],
-      "scoring": { "correctAnswer": "9" }
+      "scoring": {
+        "correctAnswer": "9"
+      }
     },
     {
       "id": "MPTgr_ins1",
       "type": "text",
-      "label": {
-        "en": "而家玩第二關，都會俾你睇一串有規律嘅數字。Look at the pattern in this series of numbers, and tell me which number should we put in the question mark?",
-        "zh": "而家玩第二關，都會俾你睇一串有規律嘅數字。Look at the pattern in this series of numbers, and tell me which number should we put in the question mark?"
-      }
+      "label": "而家玩第二關，都會俾你睇一串有規律嘅數字。Look at the pattern in this series of numbers, and tell me which number should we put in the question mark?"
     },
     {
       "id": "MPTgr1",
       "type": "radio",
-      "label": {
-        "en": "2 3 4 5 ? 7 - Which number is missing?",
-        "zh": "2 3 4 5 ？ 7 邊個數字唔見咗？"
-      },
+      "label": "2 3 4 5 ？ 7 邊個數字唔見咗？",
       "options": [
-        { "value": "Y", "label": {"en": "Y", "zh": "Y"} },
-        { "value": "N", "label": {"en": "N", "zh": "N"} }
+        {
+          "value": "Y",
+          "label": "Y"
+        },
+        {
+          "value": "N",
+          "label": "N"
+        }
       ],
-      "scoring": { "correctAnswer": "Y" }
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "MPTgr2",
       "type": "radio",
-      "label": {
-        "en": "13 14 15 ? 17 - Which number is missing?",
-        "zh": "13 14 15 ？ 17 邊個數字唔見咗？"
-      },
+      "label": "13 14 15 ？ 17 邊個數字唔見咗？",
       "options": [
-        { "value": "Y", "label": {"en": "Y", "zh": "Y"} },
-        { "value": "N", "label": {"en": "N", "zh": "N"} }
+        {
+          "value": "Y",
+          "label": "Y"
+        },
+        {
+          "value": "N",
+          "label": "N"
+        }
       ],
-      "scoring": { "correctAnswer": "Y" }
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "MPTgr3",
       "type": "radio",
-      "label": {
-        "en": "9 8 ? 6 5 4 - Which number is missing?",
-        "zh": "9 8 ？ 6 5 4 邊個數字唔見咗？"
-      },
+      "label": "9 8 ？ 6 5 4 邊個數字唔見咗？",
       "options": [
-        { "value": "Y", "label": {"en": "Y", "zh": "Y"} },
-        { "value": "N", "label": {"en": "N", "zh": "N"} }
+        {
+          "value": "Y",
+          "label": "Y"
+        },
+        {
+          "value": "N",
+          "label": "N"
+        }
       ],
-      "scoring": { "correctAnswer": "Y" }
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "MPTgr4",
       "type": "radio",
-      "label": {
-        "en": "13 12 11 ? 9 - Which number is missing?",
-        "zh": "13 12 11 ？ 9 邊個數字唔見咗？"
-      },
+      "label": "13 12 11 ？ 9 邊個數字唔見咗？",
       "options": [
-        { "value": "Y", "label": {"en": "Y", "zh": "Y"} },
-        { "value": "N", "label": {"en": "N", "zh": "N"} }
+        {
+          "value": "Y",
+          "label": "Y"
+        },
+        {
+          "value": "N",
+          "label": "N"
+        }
       ],
-      "scoring": { "correctAnswer": "Y" }
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "MPTgr5",
       "type": "radio",
-      "label": {
-        "en": "18 17 ? 15 14 13 - Which number is missing?",
-        "zh": "18 17 ？ 15 14 13 邊個數字唔見咗？"
-      },
+      "label": "18 17 ？ 15 14 13 邊個數字唔見咗？",
       "options": [
-        { "value": "Y", "label": {"en": "Y", "zh": "Y"} },
-        { "value": "N", "label": {"en": "N", "zh": "N"} }
+        {
+          "value": "Y",
+          "label": "Y"
+        },
+        {
+          "value": "N",
+          "label": "N"
+        }
       ],
-      "scoring": { "correctAnswer": "Y" }
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "MPTgr6",
       "type": "radio",
-      "label": {
-        "en": "15 14 ? 12 11 10 - Which number is missing?",
-        "zh": "15 14 ？ 12 11 10 邊個數字唔見咗？"
-      },
+      "label": "15 14 ？ 12 11 10 邊個數字唔見咗？",
       "options": [
-        { "value": "Y", "label": {"en": "Y", "zh": "Y"} },
-        { "value": "N", "label": {"en": "N", "zh": "N"} }
+        {
+          "value": "Y",
+          "label": "Y"
+        },
+        {
+          "value": "N",
+          "label": "N"
+        }
       ],
-      "scoring": { "correctAnswer": "Y" }
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "MPTm_ins1",
       "type": "text",
-      "label": {
-        "en": "而家玩第三關，我會俾你睇一個神奇嘅糖果機。唔同嘅圖形放入去糖果機，就會變成新嘅圖形。Here is a magical candy machine. When you put a shape into the machine, a new shape will be produced. Look carefully, and tell me which shape should we put in the question mark?",
-        "zh": "而家玩第三關，我會俾你睇一個神奇嘅糖果機。唔同嘅圖形放入去糖果機，就會變成新嘅圖形。Here is a magical candy machine. When you put a shape into the machine, a new shape will be produced. Look carefully, and tell me which shape should we put in the question mark?"
-      }
+      "label": "而家玩第三關，我會俾你睇一個神奇嘅糖果機。唔同嘅圖形放入去糖果機，就會變成新嘅圖形。Here is a magical candy machine. When you put a shape into the machine, a new shape will be produced. Look carefully, and tell me which shape should we put in the question mark?"
     },
     {
       "id": "MPTmP",
       "type": "radio",
-      "label": {
-        "en": "Which shape will be produced when we put this shape into the machine?",
-        "zh": "呢個圖形擺入去會變邊個圖形？"
-      },
+      "label": "呢個圖形擺入去會變邊個圖形？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "C" }
+      "scoring": {
+        "correctAnswer": "C"
+      }
     },
     {
       "id": "MPTm1",
       "type": "radio",
-      "label": {
-        "en": "Which shape will be produced when we put this shape into the machine?",
-        "zh": "呢個圖形擺入去會變邊個圖形？"
-      },
+      "label": "呢個圖形擺入去會變邊個圖形？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "D" }
+      "scoring": {
+        "correctAnswer": "D"
+      }
     },
     {
       "id": "MPTm2",
       "type": "radio",
-      "label": {
-        "en": "Which shape will be produced when we put this shape into the machine?",
-        "zh": "呢個圖形擺入去會變邊個圖形？"
-      },
+      "label": "呢個圖形擺入去會變邊個圖形？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "A" }
+      "scoring": {
+        "correctAnswer": "A"
+      }
     },
     {
       "id": "MPTm3",
       "type": "radio",
-      "label": {
-        "en": "Which shape will be produced when we put this shape into the machine?",
-        "zh": "呢個圖形擺入去會變邊個圖形？"
-      },
+      "label": "呢個圖形擺入去會變邊個圖形？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "C" }
+      "scoring": {
+        "correctAnswer": "C"
+      }
     },
     {
       "id": "MPTm4",
       "type": "radio",
-      "label": {
-        "en": "Which shape will be produced when we put this shape into the machine?",
-        "zh": "呢個圖形擺入去會變邊個圖形？"
-      },
+      "label": "呢個圖形擺入去會變邊個圖形？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "B" }
+      "scoring": {
+        "correctAnswer": "B"
+      }
     },
     {
       "id": "MPTm5",
       "type": "radio",
-      "label": {
-        "en": "Which shape will be produced when we put this shape into the machine?",
-        "zh": "呢個圖形擺入去會變邊個圖形？"
-      },
+      "label": "呢個圖形擺入去會變邊個圖形？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "D" }
+      "scoring": {
+        "correctAnswer": "D"
+      }
     },
     {
       "id": "MPTm6",
       "type": "radio",
-      "label": {
-        "en": "Which shape will be produced when we put this shape into the machine?",
-        "zh": "呢個圖形擺入去會變邊個圖形？"
-      },
+      "label": "呢個圖形擺入去會變邊個圖形？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "B" }
+      "scoring": {
+        "correctAnswer": "B"
+      }
     },
     {
       "id": "MPTge_ins1",
       "type": "text",
-      "label": {
-        "en": "而家玩第四關，我會俾你睇一串有規律嘅圖案。This is the last game, and I will show you some shapes.",
-        "zh": "而家玩第四關，我會俾你睇一串有規律嘅圖案。This is the last game, and I will show you some shapes."
-      }
+      "label": "而家玩第四關，我會俾你睇一串有規律嘅圖案。This is the last game, and I will show you some shapes."
     },
     {
       "id": "MPTge1",
       "type": "radio",
-      "label": {
-        "en": "Please look at these shapes and choose the one that should go in the question mark.",
-        "zh": "望下啲圖形，應該擺邊個圖形喺問號？"
-      },
+      "label": "望下啲圖形，應該擺邊個圖形喺問號？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "A" }
+      "scoring": {
+        "correctAnswer": "A"
+      }
     },
     {
       "id": "MPTge2",
       "type": "radio",
-      "label": {
-        "en": "Please look at these shapes and choose the one that should go in the question mark.",
-        "zh": "望下啲圖形，應該擺邊個圖形喺問號？"
-      },
+      "label": "望下啲圖形，應該擺邊個圖形喺問號？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "B" }
+      "scoring": {
+        "correctAnswer": "B"
+      }
     },
     {
       "id": "MPTge3",
       "type": "radio",
-      "label": {
-        "en": "Please look at these shapes and choose the one that should go in the question mark.",
-        "zh": "望下啲圖形，應該擺邊個圖形喺問號？"
-      },
+      "label": "望下啲圖形，應該擺邊個圖形喺問號？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "A" }
+      "scoring": {
+        "correctAnswer": "A"
+      }
     },
     {
       "id": "MPTge4",
       "type": "radio",
-      "label": {
-        "en": "Please look at these shapes and choose the one that should go in the question mark.",
-        "zh": "望下啲圖形，應該擺邊個圖形喺問號？"
-      },
+      "label": "望下啲圖形，應該擺邊個圖形喺問號？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "A" }
+      "scoring": {
+        "correctAnswer": "A"
+      }
     },
     {
       "id": "MPTge5",
       "type": "radio",
-      "label": {
-        "en": "Please look at these shapes and choose the one that should go in the question mark.",
-        "zh": "望下啲圖形，應該擺邊個圖形喺問號？"
-      },
+      "label": "望下啲圖形，應該擺邊個圖形喺問號？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "C" }
+      "scoring": {
+        "correctAnswer": "C"
+      }
     },
     {
       "id": "MPTge6",
       "type": "radio",
-      "label": {
-        "en": "Please look at these shapes and choose the one that should go in the question mark.",
-        "zh": "望下啲圖形，應該擺邊個圖形喺問號？"
-      },
+      "label": "望下啲圖形，應該擺邊個圖形喺問號？",
       "options": [
-        { "value": "A", "label": {"en": "A", "zh": "A"} },
-        { "value": "B", "label": {"en": "B", "zh": "B"} },
-        { "value": "C", "label": {"en": "C", "zh": "C"} },
-        { "value": "D", "label": {"en": "D", "zh": "D"} }
+        {
+          "value": "A",
+          "label": "A"
+        },
+        {
+          "value": "B",
+          "label": "B"
+        },
+        {
+          "value": "C",
+          "label": "C"
+        },
+        {
+          "value": "D",
+          "label": "D"
+        }
       ],
-      "scoring": { "correctAnswer": "D" }
+      "scoring": {
+        "correctAnswer": "D"
+      }
     },
     {
       "id": "MPT_Date",
       "type": "text",
-      "label": {
-        "en": "完成日期：",
-        "zh": "完成日期："
-      }
+      "label": "完成日期："
     },
     {
       "id": "MPT_Com",
       "type": "radio",
-      "label": {
-        "en": "Math Pattern 測試已完成。 請按右下方箭頭（➜），並填寫checklist。",
-        "zh": "Math Pattern 測試已完成。 請按右下方箭頭（➜），並填寫checklist。"
-      },
+      "label": "Math Pattern 測試已完成。 請按右下方箭頭（➜），並填寫checklist。",
       "options": [
-        { "value": "done", "label": {"en": "已完成", "zh": "已完成"} }
+        {
+          "value": "done",
+          "label": "已完成"
+        }
       ]
     }
   ]

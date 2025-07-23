@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
                     <div id="nav-info-display" class="nav-info">
                         <span id="nav-student-info" class="info-item"></span>
                         <span id="nav-datetime" class="info-item"></span>
-                        <button id="export-btn" class="export-btn">📤 Export CSV</button>
+                        <button id="export-btn" class="export-btn">📤 匯出 CSV</button>
                     </div>
                 </div>
             </nav>
@@ -33,14 +33,6 @@
                         </div>
                         <h2 id="entry-title">幼兒成長調查問卷</h2>
                         <div id="entry-form-container"></div>
-                        <div class="language-toggle-container">
-                            <span class="lang-zh">中</span>
-                            <label class="language-toggle">
-                                <input type="checkbox" id="language-toggle-checkbox">
-                                <span class="slider"></span>
-                            </label>
-                            <span class="lang-en">Eng</span>
-                        </div>
                         <button id="start-survey-btn">開始問卷</button>
                     </div>
                 </div>
@@ -48,8 +40,8 @@
                 <!-- TOC Page -->
                 <div id="toc-page" class="page">
                     <div class="toc-container">
-                        <h2 id="toc-title" data-lang-zh="問卷部分" data-lang-en="Survey Sections">問卷部分</h2>
-                        <p id="toc-instructions" data-lang-zh="請選擇一個部分開始問卷。" data-lang-en="Please select a section to begin the survey.">請選擇一個部分開始問卷。</p>
+                        <h2 id="toc-title">問卷部分</h2>
+                        <p id="toc-instructions">請選擇一個部分開始問卷。</p>
                         <p id="toc-start-date"></p>
                         <p id="toc-end-date"></p>
                         <div id="toc-list">
@@ -67,8 +59,8 @@
                     </div>
                     <div id="question-container"></div>
                     <div class="survey-navigation">
-                        <button id="back-btn">Back</button>
-                        <button id="next-btn">Next</button>
+                        <button id="back-btn">返回</button>
+                        <button id="next-btn">下一題</button>
                     </div>
                     <div id="debug-controls" class="hidden">
                         <button id="add-question-btn">Add Question</button>

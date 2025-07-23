@@ -2,10 +2,7 @@
   "sets": [
     {
       "id": "required",
-      "name": {
-        "en": "Required",
-        "zh": "必填部分"
-      },
+      "name": "必填部分",
       "order": 1,
       "sections": [
         {
@@ -16,14 +13,11 @@
     },
     {
       "id": "set1",
-      "name": {
-        "en": "Set 1",
-        "zh": "第一組"
-      },
+      "name": "第一組",
       "order": 2,
       "sections": [
         {
-          "file": "ERV.json", 
+          "file": "ERV.json",
           "order": 1
         },
         {
@@ -41,11 +35,8 @@
       ]
     },
     {
-      "id": "set2", 
-      "name": {
-        "en": "Set 2",
-        "zh": "第二組"
-      },
+      "id": "set2",
+      "name": "第二組",
       "order": 3,
       "sections": [
         {
@@ -55,21 +46,22 @@
         {
           "file": "TEC_Male.json",
           "order": 2,
-          "showIf": { "gender": "male" }
+          "showIf": {
+            "gender": "male"
+          }
         },
         {
           "file": "TEC_Female.json",
           "order": 3,
-          "showIf": { "gender": "female" }
+          "showIf": {
+            "gender": "female"
+          }
         }
       ]
     },
     {
       "id": "set3",
-      "name": {
-        "en": "Set 3", 
-        "zh": "第三組"
-      },
+      "name": "第三組",
       "order": 4,
       "sections": [
         {
@@ -88,10 +80,7 @@
     },
     {
       "id": "set4",
-      "name": {
-        "en": "Set 4",
-        "zh": "第四組"
-      },
+      "name": "第四組",
       "order": 5,
       "sections": [
         {

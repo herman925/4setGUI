@@ -1,11 +1,10 @@
 # 4setGUI - KeySteps@JC Offline Survey Application
 
-A web-based, offline-first survey application for the KS 4-Set Task, supporting bilingual content (English/Chinese) and complex survey logic.
+A web-based, offline-first survey application for the KS 4-Set Task, supporting complex survey logic.
 
 ## Features
 
 - **Offline-first design** - Works without internet connection
-- **Bilingual support** - Full English and Chinese translations
 - **Modular architecture** - Clean separation of concerns with ES6 modules
 - **Responsive design** - Works on mobile, tablet, and desktop
 - **Debug mode** - Password-protected verbose logging for development
