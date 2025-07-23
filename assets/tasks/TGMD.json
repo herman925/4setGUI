@@ -1,266 +1,182 @@
 {
   "id": "tgmd",
-  "title": {
-    "en": "Test of Gross Motor Development",
-    "zh": "大肌肉動作發展測試"
-  },
+  "title": "大肌肉動作發展測試",
   "questions": [
     {
       "id": "TGMD_Cover",
       "type": "text",
-      "label": {
-        "en": "TGMD\n\nScan QR code and press the arrow to continue.",
-        "zh": "TGMD\n\n掃描QR code後按右下方箭頭（➜）繼續。"
-      }
+      "label": "TGMD\n\n掃描QR code後按右下方箭頭（➜）繼續。"
     },
     {
       "id": "Leg",
       "type": "radio",
-      "label": {
-        "en": "Preferred foot",
-        "zh": "慣用腳"
-      },
+      "label": "慣用腳",
       "options": [
-        { "value": "left", "label": { "en": "左腳", "zh": "左腳" } },
-        { "value": "right", "label": { "en": "右腳", "zh": "右腳" } },
-        { "value": "undetermined", "label": { "en": "未形成", "zh": "未形成" } }
+        {
+          "value": "left",
+          "label": "左腳"
+        },
+        {
+          "value": "right",
+          "label": "右腳"
+        },
+        {
+          "value": "undetermined",
+          "label": "未形成"
+        }
       ]
     },
     {
       "id": "Hop",
       "type": "motor-assessment",
-      "prompt": {
-        "en": "Hop on the preferred foot four times",
-        "zh": "1.單腳跳 \u7528\u6167\u7528\u817f\u9023\u7e8c\u55ae\u8173\u8df3\u56db\u6b21"
-      },
+      "prompt": "1.單腳跳 用慧用腿連續單腳跳四次",
       "task": "hop",
       "repetitions": 2,
       "criteria": [
         {
           "id": "hop_c1",
-          "description": {
-            "en": "The non-support leg bends and swings forward to provide momentum",
-            "zh": "\u96e2\u5730\u8173\u6709\u81ea\u7136\u5f4e\u66f2\u4e26\u5411\u524d\u64fa\u52d5\u4ee5\u63d0\u4f9b\u52d5\u529b"
-          }
+          "description": "離地腳有自然彎曲並向前擺動以提供動力"
         },
         {
           "id": "hop_c2",
-          "description": {
-            "en": "The non-support foot does not pass the support foot",
-            "zh": "\u96e2\u5730\u8173\u7684\u978b\u6c92\u6709\u8d8a\u904e\u6167\u7528\u8173"
-          }
+          "description": "離地腳的鞋沒有越過慧用腳"
         },
         {
           "id": "hop_c3",
-          "description": {
-            "en": "Arms bend and swing forward to generate force",
-            "zh": "\u96d9\u81c2\u5f4e\u66f2\u5411\u524d\u64fa\u52d5\u7522\u751f\u52d5\u529b"
-          }
+          "description": "雙臂彎曲向前擺動產生動力"
         },
         {
           "id": "hop_c4",
-          "description": {
-            "en": "Preferred leg completes four consecutive hops",
-            "zh": "\u6167\u7528\u7684\u8173\u5b8c\u62104\u6b21\u9023\u7e8c\u55ae\u8173\u8df3"
-          }
+          "description": "慧用的腳完成4次連續單腳跳"
         }
       ]
     },
     {
       "id": "Jum",
       "type": "motor-assessment",
-      "prompt": {
-        "en": "Standing long jump",
-        "zh": "2.\u7acb\u5b9a\u8df3\u9060"
-      },
+      "prompt": "2.立定跳遠",
       "task": "long_jump",
       "repetitions": 2,
       "criteria": [
         {
           "id": "jum_c1",
-          "description": {
-            "en": "Knees bent and arms back before takeoff",
-            "zh": "\u6e96\u5099\u8d77\u8df3\u524d\uff0c\u96d9\u819d\u5f4e\u66f2\uff0c\u96d9\u81c2\u5728\u8eab\u9ad4\u5f8c\u9762"
-          }
+          "description": "準備起跳前，雙膝彎曲，雙臂在身體後面"
         },
         {
           "id": "jum_c2",
-          "description": {
-            "en": "Arms swing forcefully forward-upward above head",
-            "zh": "\u8e3a\u5730\u8d77\u8df3\u6642\uff0c\u96d9\u81c2\u6709\u529b\u5411\u524d\u4e0a\u65b9\u64fa\u52d5\u9ad8\u65bc\u982d\u9802"
-          }
+          "description": "踺地起跳時，雙臂有力向前上方擺動高於頭頂"
         },
         {
           "id": "jum_c3",
-          "description": {
-            "en": "Both feet take off and land at the same time",
-            "zh": "\u96d9\u8173\u540c\u6642\u8d77\u8df3\u540c\u6642\u843d\u5730"
-          }
+          "description": "雙腳同時起跳同時落地"
         },
         {
           "id": "jum_c4",
-          "description": {
-            "en": "Arms swing down as feet land",
-            "zh": "\u96d9\u8173\u843d\u5730\u6642\uff0c\u96d9\u81c2\u96a8\u4e4b\u5411\u4e0b\u64fa\u52d5"
-          }
+          "description": "雙腳落地時，雙臂隨之向下擺動"
         }
       ]
     },
     {
       "id": "Sli",
       "type": "motor-assessment",
-      "prompt": {
-        "en": "Side slide",
-        "zh": "3.\u5074\u6ed1\u6b65"
-      },
+      "prompt": "3.側滑步",
       "task": "slide",
       "repetitions": 2,
       "criteria": [
         {
           "id": "sli_c1",
-          "description": {
-            "en": "Body faces slide direction; shoulders level with floor (score first direction only)",
-            "zh": "\u8eab\u9ad4\u5074\u5c0d\u6ed1\u6b65\u65b9\u5411\uff0c\u80f8\u982d\u5927\u81f3\u8207\u5730\u9762\u4fdd\u6301\u5e73\u884c\u3001\u4e00\u81f4\uff08\u6b64\u984c\u8a08\u5206\u53ea\u9700\u8a08\u7b2c\u4e00\u500b\u65b9\u5411\uff09"
-          }
+          "description": "身體側對滑步方向，胸頭大至與地面保持平行、一致（此題計分只需計第一個方向）"
         },
         {
           "id": "sli_c2",
-          "description": {
-            "en": "Preferred foot steps to the side, other foot slides with brief air phase (score first direction only)",
-            "zh": "\u6167\u7528\u8173\u5411\u5074\u6ed1\u6b65\uff0c\u53e6\u4e00\u96bb\u8173\u96a8\u5f8c\u6ed1\u52d5\uff0c\u5074\u8df3\u6642\u96d9\u8173\u6709\u77ed\u66ab\u7684\u96e2\u5730\u9a30\u7a7a\uff08\u6b64\u984c\u8a08\u5206\u53ea\u9700\u8a08\u7b2c\u4e00\u500b\u65b9\u5411\uff09"
-          }
+          "description": "慧用腳向側滑步，另一隻腳隨後滑動，側跳時雙腳有短暫的離地騰空（此題計分只需計第一個方向）"
         },
         {
           "id": "sli_c3",
-          "description": {
-            "en": "Perform four continuous slides in the first direction",
-            "zh": "\u4ee5\u7b2c\u4e00\u500b\u65b9\u5411\u9023\u7e8c\u56db\u6b21\u5074\u6ed1\u6b65"
-          }
+          "description": "以第一個方向連續四次側滑步"
         },
         {
           "id": "sli_c4",
-          "description": {
-            "en": "Without turning around, repeat slides in opposite direction four times",
-            "zh": "\u4e0d\u7528\u8f49\u8eab\uff0c\u53cd\u65b9\u5411\u91cd\u8907\u5074\u6ed1\u6b65\u9023\u7e8c\u56db\u6b21"
-          }
+          "description": "不用轉身，反方向重複側滑步連續四次"
         }
       ]
     },
     {
       "id": "Dri",
       "type": "motor-assessment",
-      "prompt": {
-        "en": "Stationary dribble the ball four times and catch",
-        "zh": "4.\u55ae\u624b\u539f\u5730\u62cd\u7403\u55ae\u624b\u539f\u5730\u9023\u7e8c4\u6b21\u62cd\u7403\uff0c\u505c\u6b62\u5f8c\uff0c\u7528\u624b\u63a5\u4f4f\u7403"
-      },
+      "prompt": "4.單手原地拍球單手原地連續4次拍球，停止後，用手接住球",
       "task": "dribble",
       "repetitions": 2,
       "criteria": [
         {
           "id": "dri_c1",
-          "description": {
-            "en": "Ball rebounds to waist height",
-            "zh": "\u4e00\u96bb\u624b\u62cd\u7403\u7684\u6642\u5019\uff0c\u7403\u6709\u56de\u5f48\u81f3\u8170\u9593\u9ad8\u5ea6"
-          }
+          "description": "一隻手拍球的時候，球有回彈至腰間高度"
         },
         {
           "id": "dri_c2",
-          "description": {
-            "en": "Control ball with fingertips rather than slapping with palm",
-            "zh": "\u7528\u6307\u5c16\u63a7\u7403\uff0c\u800c\u4e0d\u662f\u7528\u624b\u638c\u62cd\u6253\u7c43\u7403"
-          }
+          "description": "用指尖控球，而不是用手掌拍打籃球"
         },
         {
           "id": "dri_c3",
-          "description": {
-            "en": "Complete four dribbles without moving feet",
-            "zh": "\u80fd\u9023\u7e8c\u62cd\u74034\u6b21\uff0c\u8173\u4e0d\u79fb\u52d5\u63a7\u5236\u4f4f\u7403"
-          }
+          "description": "能連續拍球4次，腳不移動控制住球"
         }
       ]
     },
     {
       "id": "Cat",
       "type": "motor-assessment",
-      "prompt": {
-        "en": "Two-hand catch",
-        "zh": "5.\u96d9\u624b\u63a5\u7403"
-      },
+      "prompt": "5.雙手接球",
       "task": "catch",
       "repetitions": 2,
       "criteria": [
         {
           "id": "cat_c1",
-          "description": {
-            "en": "Arms extended in front with elbows bent before catching",
-            "zh": "\u6e96\u5099\u63a5\u7403\u524d\uff0c\u96d9\u624b\u81ea\u7136\u4f38\u5c55\u7f6e\u65bc\u80f8\u524d\uff0c\u8098\u95dc\u7bc0\u81ea\u7136\u5f4e\u66f2"
-          }
+          "description": "準備接球前，雙手自然伸展置於胸前，肘關節自然彎曲"
         },
         {
           "id": "cat_c2",
-          "description": {
-            "en": "Arms extend to receive the ball",
-            "zh": "\u96d9\u81c2\u81ea\u7136\u4f38\u5c55\u53bb\u8fce\u63a5\u7403"
-          }
+          "description": "雙臂自然伸展去迎接球"
         },
         {
           "id": "cat_c3",
-          "description": {
-            "en": "Catch the ball only with the hands",
-            "zh": "\u50c5\u9760\u96d9\u624b\u63a5\u4f4f\u7403"
-          }
+          "description": "僅靠雙手接住球"
         }
       ]
     },
     {
       "id": "Thr",
       "type": "motor-assessment",
-      "prompt": {
-        "en": "Underhand throw",
-        "zh": "6.\u4e0b\u624b\u62cb\u7403"
-      },
+      "prompt": "6.下手拋球",
       "task": "underhand_throw",
       "repetitions": 2,
       "criteria": [
         {
           "id": "thr_c1",
-          "description": {
-            "en": "Preferred hand swings back below waist behind body",
-            "zh": "\u62cb\u7403\u524d\u6167\u7528\u624b\u6301\u7403\u5411\u5f8c\u4e0b\u65b9\u64fa\u52d5\uff0c\u4e26\u7f6e\u65bc\u8eab\u9ad4\u5f8c\u65b9"
-          }
+          "description": "拋球前慧用手持球向後下方擺動，並置於身體後方"
         },
         {
           "id": "thr_c2",
-          "description": {
-            "en": "Step forward with foot opposite the throwing hand",
-            "zh": "\u65bc\u6167\u7528\u624b\u53e6\u4e00\u908a\u7684\u8173\u8e0f\u524d\u4e00\u6b65"
-          }
+          "description": "於慧用手另一邊的腳踏前一步"
         },
         {
           "id": "thr_c3",
-          "description": {
-            "en": "Ball hits the wall directly without bouncing",
-            "zh": "\u7403\u62cb\u51fa\u5f8c\u76f4\u63a5\u64ca\u6253\u7246\u9762\uff0c\u6c92\u6709\u5f48\u5730"
-          }
+          "description": "球拋出後直接擊打牆面，沒有彈地"
         },
         {
           "id": "thr_c4",
-          "description": {
-            "en": "Throwing hand reaches at least chest height at release",
-            "zh": "\u7403\u96e2\u624b\u6642\uff0c\u6295\u7403\u7684\u624b\u81f3\u5c11\u9054\u80f8\u90e8\u4f4d\u7f6e"
-          }
+          "description": "球離手時，投球的手至少達胸部位置"
         }
       ]
     },
     {
       "id": "TGMD_Com",
       "type": "radio",
-      "label": {
-        "en": "Have all items been completed?",
-        "zh": "\u662f\u5426\u5df2\u586b\u5beb\u6240\u6709\u4fe1\u606f\uff1f"
-      },
+      "label": "是否已填寫所有信息？",
       "options": [
-        { "value": "done", "label": { "en": "Completed", "zh": "\u5df2\u5b8c\u6210" } }
+        {
+          "value": "done",
+          "label": "已完成"
+        }
       ]
     }
   ]

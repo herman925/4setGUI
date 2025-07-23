@@ -1,57 +1,36 @@
 {
   "id": "theoryofmind",
-  "title": {
-    "en": "Theory of Mind",
-    "zh": "心理理論"
-  },
+  "title": "心理理論",
   "questions": [
     {
       "id": "tom_q1",
       "type": "video-choice",
-      "prompt": {
-        "en": "Watch the video and select the correct answer.",
-        "zh": "觀看影片並選擇正確答案。"
-      },
+      "prompt": "觀看影片並選擇正確答案。",
       "video": "assets/videos/tom_scenario1.mp4",
       "options": [
         {
           "id": "tom_q1_a",
-          "text": {
-            "en": "The character thinks the object is in the box",
-            "zh": "角色認為物品在盒子裡"
-          }
+          "text": "角色認為物品在盒子裡"
         },
         {
           "id": "tom_q1_b",
-          "text": {
-            "en": "The character thinks the object is in the basket",
-            "zh": "角色認為物品在籃子裡"
-          }
+          "text": "角色認為物品在籃子裡"
         }
       ]
     },
     {
       "id": "tom_q2",
       "type": "video-choice",
-      "prompt": {
-        "en": "What does the character believe?",
-        "zh": "角色相信什麼？"
-      },
+      "prompt": "角色相信什麼？",
       "video": "assets/videos/tom_scenario2.mp4",
       "options": [
         {
           "id": "tom_q2_a",
-          "text": {
-            "en": "The character knows the truth",
-            "zh": "角色知道真相"
-          }
+          "text": "角色知道真相"
         },
         {
           "id": "tom_q2_b",
-          "text": {
-            "en": "The character has a false belief",
-            "zh": "角色有錯誤信念"
-          }
+          "text": "角色有錯誤信念"
         }
       ]
     }

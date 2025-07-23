@@ -1,17 +1,11 @@
 {
   "id": "sym",
-  "title": {
-    "en": "Symbolic Relations",
-    "zh": "符號關係"
-  },
+  "title": "符號關係",
   "questions": [
     {
       "id": "sym_q1",
       "type": "text",
-      "label": {
-        "en": "This is a placeholder question for Symbolic Relations.",
-        "zh": "這是一個符號關係的佔位問題。"
-      },
+      "label": "這是一個符號關係的佔位問題。",
       "required": true
     }
   ]

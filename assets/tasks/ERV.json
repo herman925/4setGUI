@@ -1,33 +1,21 @@
 {
   "id": "erv",
-  "title": {
-    "en": "English Vocabulary",
-    "zh": "英文詞彙"
-  },
+  "title": "英文詞彙",
   "questions": [
     {
       "id": "ERV_Cover",
       "type": "text",
-      "label": {
-        "en": "English Vocab 確認進入測試請按右下方箭頭（➜）",
-        "zh": "English Vocab 確認進入測試請按右下方箭頭（➜）"
-      }
+      "label": "English Vocab 確認進入測試請按右下方箭頭（➜）"
     },
     {
       "id": "ERV_ins1",
       "type": "text",
-      "label": {
-        "en": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」\nHere are 4 pictures, can you listen and point to the picture you hear? Let's try.",
-        "zh": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」\nHere are 4 pictures, can you listen and point to the picture you hear? Let's try."
-      }
+      "label": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」\nHere are 4 pictures, can you listen and point to the picture you hear? Let's try."
     },
     {
       "id": "ERV_P1",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_p1.mp3"
       },
@@ -64,10 +52,7 @@
     {
       "id": "ERV_P2",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_p2.mp3"
       },
@@ -104,10 +89,7 @@
     {
       "id": "ERV_P3",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_p3.mp3"
       },
@@ -144,18 +126,12 @@
     {
       "id": "注意事項",
       "type": "text",
-      "label": {
-        "en": "「正式開始，我唔會再比提示同埋答案你。\nLet's begin, but I cannot give you any more clues.\n正式開始後，請勿給予答案 或 給出正/負面反饋。\n確保小朋友能聽清的狀態下，每道題目只聽一次。",
-        "zh": "「正式開始，我唔會再比提示同埋答案你。\nLet's begin, but I cannot give you any more clues.\n正式開始後，請勿給予答案 或 給出正/負面反饋。\n確保小朋友能聽清的狀態下，每道題目只聽一次。"
-      }
+      "label": "「正式開始，我唔會再比提示同埋答案你。\nLet's begin, but I cannot give you any more clues.\n正式開始後，請勿給予答案 或 給出正/負面反饋。\n確保小朋友能聽清的狀態下，每道題目只聽一次。"
     },
     {
       "id": "ERV_1",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_1.mp3"
       },
@@ -192,10 +168,7 @@
     {
       "id": "ERV_2",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_2.mp3"
       },
@@ -232,10 +205,7 @@
     {
       "id": "ERV_3",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_3.mp3"
       },
@@ -272,10 +242,7 @@
     {
       "id": "ERV_4",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_4.mp3"
       },
@@ -312,10 +279,7 @@
     {
       "id": "ERV_5",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_5.mp3"
       },
@@ -352,10 +316,7 @@
     {
       "id": "ERV_6",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_6.mp3"
       },
@@ -392,10 +353,7 @@
     {
       "id": "ERV_7",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_7.mp3"
       },
@@ -432,10 +390,7 @@
     {
       "id": "ERV_8",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_8.mp3"
       },
@@ -472,10 +427,7 @@
     {
       "id": "ERV_9",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_9.mp3"
       },
@@ -512,10 +464,7 @@
     {
       "id": "ERV_10",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_10.mp3"
       },
@@ -552,10 +501,7 @@
     {
       "id": "ERV_11",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_11.mp3"
       },
@@ -592,10 +538,7 @@
     {
       "id": "ERV_12",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_12.mp3"
       },
@@ -632,18 +575,12 @@
     {
       "id": "ERV_Ter1",
       "type": "text",
-      "label": {
-        "en": "再按右下方箭頭（➜）進入下一環節。",
-        "zh": "再按右下方箭頭（➜）進入下一環節。"
-      }
+      "label": "再按右下方箭頭（➜）進入下一環節。"
     },
     {
       "id": "ERV_13",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_13.mp3"
       },
@@ -680,10 +617,7 @@
     {
       "id": "ERV_14",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_14.mp3"
       },
@@ -720,10 +654,7 @@
     {
       "id": "ERV_15",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_15.mp3"
       },
@@ -760,10 +691,7 @@
     {
       "id": "ERV_16",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_16.mp3"
       },
@@ -800,10 +728,7 @@
     {
       "id": "ERV_17",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_17.mp3"
       },
@@ -840,10 +765,7 @@
     {
       "id": "ERV_18",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_18.mp3"
       },
@@ -880,10 +802,7 @@
     {
       "id": "ERV_19",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_19.mp3"
       },
@@ -920,10 +839,7 @@
     {
       "id": "ERV_20",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_20.mp3"
       },
@@ -960,10 +876,7 @@
     {
       "id": "ERV_21",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_21.mp3"
       },
@@ -1000,10 +913,7 @@
     {
       "id": "ERV_22",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_22.mp3"
       },
@@ -1040,10 +950,7 @@
     {
       "id": "ERV_23",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_23.mp3"
       },
@@ -1080,10 +987,7 @@
     {
       "id": "ERV_24",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_24.mp3"
       },
@@ -1120,18 +1024,12 @@
     {
       "id": "ERV_Ter2",
       "type": "text",
-      "label": {
-        "en": "再按右下方箭頭（➜）進入下一環節。",
-        "zh": "再按右下方箭頭（➜）進入下一環節。"
-      }
+      "label": "再按右下方箭頭（➜）進入下一環節。"
     },
     {
       "id": "ERV_25",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_25.mp3"
       },
@@ -1168,10 +1066,7 @@
     {
       "id": "ERV_26",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_26.mp3"
       },
@@ -1208,10 +1103,7 @@
     {
       "id": "ERV_27",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_27.mp3"
       },
@@ -1248,10 +1140,7 @@
     {
       "id": "ERV_28",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_28.mp3"
       },
@@ -1288,10 +1177,7 @@
     {
       "id": "ERV_29",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_29.mp3"
       },
@@ -1328,10 +1214,7 @@
     {
       "id": "ERV_30",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_30.mp3"
       },
@@ -1368,10 +1251,7 @@
     {
       "id": "ERV_31",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_31.mp3"
       },
@@ -1408,10 +1288,7 @@
     {
       "id": "ERV_32",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_32.mp3"
       },
@@ -1448,10 +1325,7 @@
     {
       "id": "ERV_33",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_33.mp3"
       },
@@ -1488,10 +1362,7 @@
     {
       "id": "ERV_34",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_34.mp3"
       },
@@ -1528,10 +1399,7 @@
     {
       "id": "ERV_35",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_35.mp3"
       },
@@ -1568,10 +1436,7 @@
     {
       "id": "ERV_36",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_36.mp3"
       },
@@ -1608,18 +1473,12 @@
     {
       "id": "ERV_Ter3",
       "type": "text",
-      "label": {
-        "en": "再按右下方箭頭（➜）進入下一環節。",
-        "zh": "再按右下方箭頭（➜）進入下一環節。"
-      }
+      "label": "再按右下方箭頭（➜）進入下一環節。"
     },
     {
       "id": "ERV_37",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_37.mp3"
       },
@@ -1656,10 +1515,7 @@
     {
       "id": "ERV_38",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_38.mp3"
       },
@@ -1696,10 +1552,7 @@
     {
       "id": "ERV_39",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_39.mp3"
       },
@@ -1736,10 +1589,7 @@
     {
       "id": "ERV_40",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_40.mp3"
       },
@@ -1776,10 +1626,7 @@
     {
       "id": "ERV_41",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_41.mp3"
       },
@@ -1816,10 +1663,7 @@
     {
       "id": "ERV_42",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_42.mp3"
       },
@@ -1856,10 +1700,7 @@
     {
       "id": "ERV_43",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_43.mp3"
       },
@@ -1896,10 +1737,7 @@
     {
       "id": "ERV_44",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_44.mp3"
       },
@@ -1936,10 +1774,7 @@
     {
       "id": "ERV_45",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_45.mp3"
       },
@@ -1976,10 +1811,7 @@
     {
       "id": "ERV_46",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_46.mp3"
       },
@@ -2016,10 +1848,7 @@
     {
       "id": "ERV_47",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_47.mp3"
       },
@@ -2056,10 +1885,7 @@
     {
       "id": "ERV_48",
       "type": "image-choice",
-      "label": {
-        "en": "",
-        "zh": ""
-      },
+      "label": "",
       "media": {
         "audio": "audio/erv_48.mp3"
       },
@@ -2096,10 +1922,7 @@
     {
       "id": "ERV_Date",
       "type": "text",
-      "label": {
-        "en": "完成日期：",
-        "zh": "完成日期："
-      }
+      "label": "完成日期："
     }
   ]
 }
