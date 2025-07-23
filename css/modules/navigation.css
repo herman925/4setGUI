@@ -41,6 +41,19 @@
     color: #333;
 }
 
+.export-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.export-btn:hover {
+    background-color: #f3f4f6;
+}
+
 
 .nav-brand {
     display: flex;
