@@ -51,6 +51,16 @@
         {
           "file": "MathPattern.json",
           "order": 1
+        },
+        {
+          "file": "TEC_Male.json",
+          "order": 2,
+          "showIf": { "gender": "male" }
+        },
+        {
+          "file": "TEC_Female.json",
+          "order": 3,
+          "showIf": { "gender": "female" }
         }
       ]
     },

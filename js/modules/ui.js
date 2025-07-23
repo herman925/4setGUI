@@ -11,6 +11,12 @@ const questionContainer = document.getElementById('question-container');
 const currentSectionDisplay = document.getElementById('current-section-display');
 const pageInfo = document.getElementById('page-info');
 
+function sectionVisible(sectionInfo) {
+    if (!sectionInfo || !sectionInfo.showIf) return true;
+    const conditions = sectionInfo.showIf;
+    return Object.keys(conditions).every(key => state.userResponses[key] === conditions[key]);
+}
+
 export function renderEntryForm() {
     const backgroundSection = state.surveySections['background'];
     if (!backgroundSection || !backgroundSection.entryForm) {
@@ -150,6 +156,7 @@ export function renderToc() {
         set.sections.forEach(sectionInfo => {
             const sectionId = sectionInfo.file.replace('.json', '');
             if (sectionId === 'background') return; // skip background section in TOC
+            if (!sectionVisible(sectionInfo)) return; // hide by condition
             const section = state.surveySections[sectionId];
             if (section) {
                 logDebug(`renderToc:   - Section: ${sectionId}`);
@@ -183,6 +190,7 @@ export function renderSectionJumper() {
 
         set.sections.forEach(sectionObj => {
             const sectionId = sectionObj.file.replace('.json', '').toLowerCase();
+            if (!sectionVisible(sectionObj)) return;
             const section = state.surveySections[sectionId];
             if (section) {
                 const dropdownItem = document.createElement('a');

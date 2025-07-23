@@ -1,0 +1,17 @@
+{
+  "id": "tec_female",
+  "title": {
+    "en": "Emotion Game (Girl)",
+    "zh": "情緒遊戲 (Girl)"
+  },
+  "questions": [
+    {
+      "id": "TEC_F_placeholder",
+      "type": "text",
+      "label": {
+        "en": "This section is a placeholder for the female version.",
+        "zh": "此部分為女孩子版本的佔位內容。"
+      }
+    }
+  ]
+}
