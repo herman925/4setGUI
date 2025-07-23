@@ -1,34 +1,77 @@
 {
   "id": "erv",
   "title": {
-    "en": "English Receptive Vocabulary",
-    "zh": "英語接受性詞彙"
+    "en": "English Vocabulary",
+    "zh": "英文詞彙"
   },
   "questions": [
     {
-      "id": "erv_q1",
+      "id": "ERV_Cover",
+      "type": "text",
+      "label": {
+        "en": "English Vocab 確認進入測試請按右下方箭頭（➜）",
+        "zh": "English Vocab 確認進入測試請按右下方箭頭（➜）"
+      }
+    },
+    {
+      "id": "ERV_ins1",
+      "type": "text",
+      "label": {
+        "en": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」\nHere are 4 pictures, can you listen and point to the picture you hear? Let's try.",
+        "zh": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」\nHere are 4 pictures, can you listen and point to the picture you hear? Let's try."
+      }
+    },
+    {
+      "id": "ERV_P1",
       "type": "image-choice",
       "label": {
-        "en": "Which one is the 'ball'?",
-        "zh": "哪一個是「球」？"
+        "en": "",
+        "zh": ""
       },
       "media": {
-        "audio": "audio/erv_q1.mp3"
+        "audio": "audio/erv_p1.mp3"
       },
-      "required": true,
       "options": [
         {
-          "value": "ball",
+          "value": "baby",
           "media": {
-            "image": "images/ball.png"
+            "image": "images/baby.png"
           }
         },
         {
-          "value": "doll",
+          "value": "opt1",
           "media": {
-            "image": "images/doll.png"
+            "image": "images/opt1.png"
           }
         },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "baby"
+      }
+    },
+    {
+      "id": "ERV_P2",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_p2.mp3"
+      },
+      "options": [
         {
           "value": "car",
           "media": {
@@ -36,14 +79,2026 @@
           }
         },
         {
-          "value": "book",
+          "value": "opt1",
           "media": {
-            "image": "images/book.png"
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
           }
         }
       ],
       "scoring": {
-        "correctAnswer": "ball"
+        "correctAnswer": "car"
+      }
+    },
+    {
+      "id": "ERV_P3",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_p3.mp3"
+      },
+      "options": [
+        {
+          "value": "crying",
+          "media": {
+            "image": "images/crying.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "crying"
+      }
+    },
+    {
+      "id": "注意事項",
+      "type": "text",
+      "label": {
+        "en": "「正式開始，我唔會再比提示同埋答案你。\nLet's begin, but I cannot give you any more clues.\n正式開始後，請勿給予答案 或 給出正/負面反饋。\n確保小朋友能聽清的狀態下，每道題目只聽一次。",
+        "zh": "「正式開始，我唔會再比提示同埋答案你。\nLet's begin, but I cannot give you any more clues.\n正式開始後，請勿給予答案 或 給出正/負面反饋。\n確保小朋友能聽清的狀態下，每道題目只聽一次。"
+      }
+    },
+    {
+      "id": "ERV_1",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_1.mp3"
+      },
+      "options": [
+        {
+          "value": "cat",
+          "media": {
+            "image": "images/cat.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "cat"
+      }
+    },
+    {
+      "id": "ERV_2",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_2.mp3"
+      },
+      "options": [
+        {
+          "value": "apple",
+          "media": {
+            "image": "images/apple.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "apple"
+      }
+    },
+    {
+      "id": "ERV_3",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_3.mp3"
+      },
+      "options": [
+        {
+          "value": "balloon",
+          "media": {
+            "image": "images/balloon.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "balloon"
+      }
+    },
+    {
+      "id": "ERV_4",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_4.mp3"
+      },
+      "options": [
+        {
+          "value": "hand",
+          "media": {
+            "image": "images/hand.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "hand"
+      }
+    },
+    {
+      "id": "ERV_5",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_5.mp3"
+      },
+      "options": [
+        {
+          "value": "airplane",
+          "media": {
+            "image": "images/airplane.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "airplane"
+      }
+    },
+    {
+      "id": "ERV_6",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_6.mp3"
+      },
+      "options": [
+        {
+          "value": "bird",
+          "media": {
+            "image": "images/bird.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "bird"
+      }
+    },
+    {
+      "id": "ERV_7",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_7.mp3"
+      },
+      "options": [
+        {
+          "value": "tree",
+          "media": {
+            "image": "images/tree.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "tree"
+      }
+    },
+    {
+      "id": "ERV_8",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_8.mp3"
+      },
+      "options": [
+        {
+          "value": "table",
+          "media": {
+            "image": "images/table.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "table"
+      }
+    },
+    {
+      "id": "ERV_9",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_9.mp3"
+      },
+      "options": [
+        {
+          "value": "drinking",
+          "media": {
+            "image": "images/drinking.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "drinking"
+      }
+    },
+    {
+      "id": "ERV_10",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_10.mp3"
+      },
+      "options": [
+        {
+          "value": "frog",
+          "media": {
+            "image": "images/frog.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "frog"
+      }
+    },
+    {
+      "id": "ERV_11",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_11.mp3"
+      },
+      "options": [
+        {
+          "value": "money",
+          "media": {
+            "image": "images/money.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "money"
+      }
+    },
+    {
+      "id": "ERV_12",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_12.mp3"
+      },
+      "options": [
+        {
+          "value": "umbrella",
+          "media": {
+            "image": "images/umbrella.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "umbrella"
+      }
+    },
+    {
+      "id": "ERV_Ter1",
+      "type": "text",
+      "label": {
+        "en": "再按右下方箭頭（➜）進入下一環節。",
+        "zh": "再按右下方箭頭（➜）進入下一環節。"
+      }
+    },
+    {
+      "id": "ERV_13",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_13.mp3"
+      },
+      "options": [
+        {
+          "value": "running",
+          "media": {
+            "image": "images/running.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "running"
+      }
+    },
+    {
+      "id": "ERV_14",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_14.mp3"
+      },
+      "options": [
+        {
+          "value": "window",
+          "media": {
+            "image": "images/window.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "window"
+      }
+    },
+    {
+      "id": "ERV_15",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_15.mp3"
+      },
+      "options": [
+        {
+          "value": "neck",
+          "media": {
+            "image": "images/neck.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "neck"
+      }
+    },
+    {
+      "id": "ERV_16",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_16.mp3"
+      },
+      "options": [
+        {
+          "value": "talking",
+          "media": {
+            "image": "images/talking.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "talking"
+      }
+    },
+    {
+      "id": "ERV_17",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_17.mp3"
+      },
+      "options": [
+        {
+          "value": "blue",
+          "media": {
+            "image": "images/blue.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "blue"
+      }
+    },
+    {
+      "id": "ERV_18",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_18.mp3"
+      },
+      "options": [
+        {
+          "value": "thumb",
+          "media": {
+            "image": "images/thumb.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "thumb"
+      }
+    },
+    {
+      "id": "ERV_19",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_19.mp3"
+      },
+      "options": [
+        {
+          "value": "grapes",
+          "media": {
+            "image": "images/grapes.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "grapes"
+      }
+    },
+    {
+      "id": "ERV_20",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_20.mp3"
+      },
+      "options": [
+        {
+          "value": "swimming",
+          "media": {
+            "image": "images/swimming.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "swimming"
+      }
+    },
+    {
+      "id": "ERV_21",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_21.mp3"
+      },
+      "options": [
+        {
+          "value": "circle",
+          "media": {
+            "image": "images/circle.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "circle"
+      }
+    },
+    {
+      "id": "ERV_22",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_22.mp3"
+      },
+      "options": [
+        {
+          "value": "mail",
+          "media": {
+            "image": "images/mail.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "mail"
+      }
+    },
+    {
+      "id": "ERV_23",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_23.mp3"
+      },
+      "options": [
+        {
+          "value": "hammer",
+          "media": {
+            "image": "images/hammer.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "hammer"
+      }
+    },
+    {
+      "id": "ERV_24",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_24.mp3"
+      },
+      "options": [
+        {
+          "value": "candle",
+          "media": {
+            "image": "images/candle.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "candle"
+      }
+    },
+    {
+      "id": "ERV_Ter2",
+      "type": "text",
+      "label": {
+        "en": "再按右下方箭頭（➜）進入下一環節。",
+        "zh": "再按右下方箭頭（➜）進入下一環節。"
+      }
+    },
+    {
+      "id": "ERV_25",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_25.mp3"
+      },
+      "options": [
+        {
+          "value": "flag",
+          "media": {
+            "image": "images/flag.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "flag"
+      }
+    },
+    {
+      "id": "ERV_26",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_26.mp3"
+      },
+      "options": [
+        {
+          "value": "gate",
+          "media": {
+            "image": "images/gate.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "gate"
+      }
+    },
+    {
+      "id": "ERV_27",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_27.mp3"
+      },
+      "options": [
+        {
+          "value": "sad",
+          "media": {
+            "image": "images/sad.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "sad"
+      }
+    },
+    {
+      "id": "ERV_28",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_28.mp3"
+      },
+      "options": [
+        {
+          "value": "hopping",
+          "media": {
+            "image": "images/hopping.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "hopping"
+      }
+    },
+    {
+      "id": "ERV_29",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_29.mp3"
+      },
+      "options": [
+        {
+          "value": "plant",
+          "media": {
+            "image": "images/plant.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "plant"
+      }
+    },
+    {
+      "id": "ERV_30",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_30.mp3"
+      },
+      "options": [
+        {
+          "value": "kangaroo",
+          "media": {
+            "image": "images/kangaroo.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "kangaroo"
+      }
+    },
+    {
+      "id": "ERV_31",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_31.mp3"
+      },
+      "options": [
+        {
+          "value": "muffin",
+          "media": {
+            "image": "images/muffin.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "muffin"
+      }
+    },
+    {
+      "id": "ERV_32",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_32.mp3"
+      },
+      "options": [
+        {
+          "value": "game",
+          "media": {
+            "image": "images/game.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "game"
+      }
+    },
+    {
+      "id": "ERV_33",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_33.mp3"
+      },
+      "options": [
+        {
+          "value": "barn",
+          "media": {
+            "image": "images/barn.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "barn"
+      }
+    },
+    {
+      "id": "ERV_34",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_34.mp3"
+      },
+      "options": [
+        {
+          "value": "writing",
+          "media": {
+            "image": "images/writing.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "writing"
+      }
+    },
+    {
+      "id": "ERV_35",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_35.mp3"
+      },
+      "options": [
+        {
+          "value": "ring",
+          "media": {
+            "image": "images/ring.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "ring"
+      }
+    },
+    {
+      "id": "ERV_36",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_36.mp3"
+      },
+      "options": [
+        {
+          "value": "farmer",
+          "media": {
+            "image": "images/farmer.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "farmer"
+      }
+    },
+    {
+      "id": "ERV_Ter3",
+      "type": "text",
+      "label": {
+        "en": "再按右下方箭頭（➜）進入下一環節。",
+        "zh": "再按右下方箭頭（➜）進入下一環節。"
+      }
+    },
+    {
+      "id": "ERV_37",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_37.mp3"
+      },
+      "options": [
+        {
+          "value": "zipper",
+          "media": {
+            "image": "images/zipper.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "zipper"
+      }
+    },
+    {
+      "id": "ERV_38",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_38.mp3"
+      },
+      "options": [
+        {
+          "value": "nest",
+          "media": {
+            "image": "images/nest.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "nest"
+      }
+    },
+    {
+      "id": "ERV_39",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_39.mp3"
+      },
+      "options": [
+        {
+          "value": "mountain",
+          "media": {
+            "image": "images/mountain.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "mountain"
+      }
+    },
+    {
+      "id": "ERV_40",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_40.mp3"
+      },
+      "options": [
+        {
+          "value": "horn",
+          "media": {
+            "image": "images/horn.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "horn"
+      }
+    },
+    {
+      "id": "ERV_41",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_41.mp3"
+      },
+      "options": [
+        {
+          "value": "pear",
+          "media": {
+            "image": "images/pear.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "pear"
+      }
+    },
+    {
+      "id": "ERV_42",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_42.mp3"
+      },
+      "options": [
+        {
+          "value": "yawning",
+          "media": {
+            "image": "images/yawning.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "yawning"
+      }
+    },
+    {
+      "id": "ERV_43",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_43.mp3"
+      },
+      "options": [
+        {
+          "value": "caterpillar",
+          "media": {
+            "image": "images/caterpillar.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "caterpillar"
+      }
+    },
+    {
+      "id": "ERV_44",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_44.mp3"
+      },
+      "options": [
+        {
+          "value": "chin",
+          "media": {
+            "image": "images/chin.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "chin"
+      }
+    },
+    {
+      "id": "ERV_45",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_45.mp3"
+      },
+      "options": [
+        {
+          "value": "pouring",
+          "media": {
+            "image": "images/pouring.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "pouring"
+      }
+    },
+    {
+      "id": "ERV_46",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_46.mp3"
+      },
+      "options": [
+        {
+          "value": "decorated",
+          "media": {
+            "image": "images/decorated.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "decorated"
+      }
+    },
+    {
+      "id": "ERV_47",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_47.mp3"
+      },
+      "options": [
+        {
+          "value": "triangle",
+          "media": {
+            "image": "images/triangle.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "triangle"
+      }
+    },
+    {
+      "id": "ERV_48",
+      "type": "image-choice",
+      "label": {
+        "en": "",
+        "zh": ""
+      },
+      "media": {
+        "audio": "audio/erv_48.mp3"
+      },
+      "options": [
+        {
+          "value": "desk",
+          "media": {
+            "image": "images/desk.png"
+          }
+        },
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/opt1.png"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/opt2.png"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/opt3.png"
+          }
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "desk"
+      }
+    },
+    {
+      "id": "ERV_Date",
+      "type": "text",
+      "label": {
+        "en": "完成日期：",
+        "zh": "完成日期："
       }
     }
   ]
