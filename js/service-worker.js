@@ -8,8 +8,8 @@ const urlsToCache = [
     '/js/script.js',
     '/js/lib/localforage.min.js',
     '/assets/survey-definition.json',
-    '/assets/background.json',
-    '/assets/ERV.json',
+    '/assets/tasks/background.json',
+    '/assets/tasks/ERV.json',
     '/assets/logos/EdUHK.png',
     '/assets/logos/KS.png'
     // Add other assets that need to be cached

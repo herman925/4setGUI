@@ -1,12 +1,15 @@
 import { state } from './state.js';
 
 export function exportResponsesToCsv() {
-    const rows = [];
-    rows.push(['QuestionID','Response']);
-    for (const id in state.userResponses) {
-        rows.push([id, state.userResponses[id]]);
+    const combined = { ...state.userResponses };
+    for (const section in state.completionTimes) {
+        combined[`completed_${section}`] = state.completionTimes[section];
     }
-    const csvContent = rows.map(row => row.map(v => '"' + String(v).replace(/"/g,'""') + '"').join(',')).join('\n');
+    const headers = Object.keys(combined);
+    const rows = [headers, headers.map(h => combined[h] ?? '')];
+    const csvContent = rows
+        .map(row => row.map(v => '"' + String(v).replace(/"/g,'""') + '"').join(','))
+        .join('\n');
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
