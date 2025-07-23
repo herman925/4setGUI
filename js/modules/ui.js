@@ -232,11 +232,15 @@ export function updateInfoDisplay() {
     
     const studentName = state.userResponses['q1_child_name'] || 'N/A';
     const studentAge = state.userResponses['q2_child_age'] || 'N/A';
-    
-    studentInfoEl.textContent = `Name: ${studentName}, Age: ${studentAge}`;
+
+    const studentInfo = `Name: ${studentName} | Age: ${studentAge}`;
+    studentInfoEl.textContent = studentInfo;
+    studentInfoEl.title = studentInfo;
     
     const now = new Date();
     const dateString = now.toLocaleDateString();
     const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
-    datetimeEl.textContent = `${dateString} ${timeString}`;
+    const datetimeString = `${dateString} ${timeString}`;
+    datetimeEl.textContent = datetimeString;
+    datetimeEl.title = datetimeString;
 }
