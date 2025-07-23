@@ -13,6 +13,13 @@ export function navigateToSection(sectionId) {
     logDebug('Navigating to section:', sectionId);
     state.currentSectionId = sectionId;
     state.currentPage = 0;
+    const now = formatTimestamp(new Date());
+    if (!state.sectionTimestamps[sectionId]) {
+        state.sectionTimestamps[sectionId] = { start: now, lastUsed: now };
+    } else {
+        state.sectionTimestamps[sectionId].lastUsed = now;
+    }
+    saveToLocal();
     loadSectionData(sectionId).then(() => {
         topNav.classList.remove('hidden');
         topNav.classList.add('visible');
@@ -71,6 +78,13 @@ export function navigatePage(direction) {
 }
 
 export function showToc() {
+    if (state.currentSectionId) {
+        const now = formatTimestamp(new Date());
+        const ts = state.sectionTimestamps[state.currentSectionId] || {};
+        ts.lastUsed = now;
+        state.sectionTimestamps[state.currentSectionId] = ts;
+        saveToLocal();
+    }
     renderToc();
     document.getElementById('top-nav').classList.add('hidden');
     document.body.classList.remove('nav-visible');
@@ -128,6 +142,7 @@ export function startSurvey() {
             if (saved) {
                 Object.assign(state.userResponses, saved.responses || {});
                 Object.assign(state.completionTimes, saved.completionTimes || {});
+                state.sectionTimestamps = saved.sectionTimestamps || {};
                 state.startDate = saved.startDate || formatTimestamp(new Date());
                 state.endDate = saved.endDate || state.startDate;
                 state.viewedQuestions = saved.viewedQuestions || {};

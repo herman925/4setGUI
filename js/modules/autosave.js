@@ -34,6 +34,7 @@ export function saveToLocal() {
     const data = {
         responses: state.userResponses,
         completionTimes: state.completionTimes,
+        sectionTimestamps: state.sectionTimestamps,
         startDate: state.startDate,
         endDate: state.endDate,
         viewedQuestions: state.viewedQuestions,

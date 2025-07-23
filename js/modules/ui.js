@@ -1,4 +1,4 @@
-import { state, logDebug } from './state.js';
+import { state, logDebug, labelTranslations } from './state.js';
 import { navigateToSection } from './navigation.js';
 
 const entryPage = document.getElementById('entry-page');
@@ -90,13 +90,38 @@ export function renderToc() {
         const tocItem = document.createElement('div');
         tocItem.className = 'toc-item';
         tocItem.dataset.section = section.id;
+
         const answered = section.questions.filter(q => state.userResponses[q.id]).length;
         const total = section.questions.length;
-        tocItem.innerHTML = `
-            <div class="toc-item-title">${section.title[state.currentLanguage] || section.title.en || section.id}</div>
-            <div class="toc-item-progress">${answered}/${total}</div>
-            <div class="toc-item-arrow">→</div>
-        `;
+        const timestamps = state.sectionTimestamps[section.id] || {};
+
+        const info = document.createElement('div');
+        info.className = 'toc-item-info';
+
+        const title = document.createElement('div');
+        title.className = 'toc-item-title';
+        title.textContent = section.title[state.currentLanguage] || section.title.en || section.id;
+        info.appendChild(title);
+
+        const times = document.createElement('div');
+        times.className = 'toc-item-times';
+        const startedLabel = labelTranslations.started[state.currentLanguage];
+        const lastLabel = labelTranslations.lastUsed[state.currentLanguage];
+        const startSpan = document.createElement('span');
+        startSpan.textContent = `${startedLabel}: ${timestamps.start || '-'}`;
+        const lastSpan = document.createElement('span');
+        lastSpan.textContent = `${lastLabel}: ${timestamps.lastUsed || '-'}`;
+        times.appendChild(startSpan);
+        times.appendChild(lastSpan);
+        info.appendChild(times);
+
+        const progress = document.createElement('div');
+        progress.className = 'toc-item-progress';
+        progress.textContent = `${answered}/${total}`;
+
+        tocItem.appendChild(info);
+        tocItem.appendChild(progress);
+
         tocItem.addEventListener('click', () => {
             logDebug('TOC item clicked:', section.id);
             navigateToSection(section.id);
@@ -224,9 +249,11 @@ export function updateSurveyTimestamps() {
     const startEl = document.getElementById('toc-start-date');
     const endEl = document.getElementById('toc-end-date');
     if (startEl) {
-        startEl.textContent = `Started: ${state.startDate || '-'}`;
+        const startedLabel = labelTranslations.started[state.currentLanguage];
+        startEl.textContent = `${startedLabel}: ${state.startDate || '-'}`;
     }
     if (endEl) {
-        endEl.textContent = `Last Used: ${state.endDate || '-'}`;
+        const lastLabel = labelTranslations.lastUsed[state.currentLanguage];
+        endEl.textContent = `${lastLabel}: ${state.endDate || '-'}`;
     }
 }
