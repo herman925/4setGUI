@@ -17,6 +17,11 @@ export function renderCurrentQuestion() {
         return;
     }
 
+    if (!state.viewedQuestions) {
+        state.viewedQuestions = {};
+    }
+    state.viewedQuestions[question.id] = true;
+
     questionContainer.innerHTML = ''; // Clear previous question
 
     // Update header

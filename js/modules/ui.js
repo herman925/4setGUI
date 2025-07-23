@@ -90,8 +90,11 @@ export function renderToc() {
         const tocItem = document.createElement('div');
         tocItem.className = 'toc-item';
         tocItem.dataset.section = section.id;
+        const answered = section.questions.filter(q => state.userResponses[q.id]).length;
+        const total = section.questions.length;
         tocItem.innerHTML = `
             <div class="toc-item-title">${section.title[state.currentLanguage] || section.title.en || section.id}</div>
+            <div class="toc-item-progress">${answered}/${total}</div>
             <div class="toc-item-arrow">→</div>
         `;
         tocItem.addEventListener('click', () => {
@@ -134,6 +137,7 @@ export function renderToc() {
         tocList.appendChild(setContainer);
     });
     logDebug('renderToc: Finished rendering TOC.');
+    updateSurveyTimestamps();
 }
 
 export function renderSectionJumper() {
@@ -214,4 +218,15 @@ export function updateInfoDisplay() {
     const datetimeString = `${dateString} ${timeString}`;
     datetimeEl.textContent = datetimeString;
     datetimeEl.title = datetimeString;
+}
+
+export function updateSurveyTimestamps() {
+    const startEl = document.getElementById('toc-start-date');
+    const endEl = document.getElementById('toc-end-date');
+    if (startEl) {
+        startEl.textContent = `Started: ${state.startDate || '-'}`;
+    }
+    if (endEl) {
+        endEl.textContent = `Last Used: ${state.endDate || '-'}`;
+    }
 }

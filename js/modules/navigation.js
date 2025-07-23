@@ -1,4 +1,4 @@
-import { state, logDebug } from './state.js';
+import { state, logDebug, formatTimestamp } from './state.js';
 import { renderCurrentQuestion } from './question.js';
 import { startAutosave, loadAutosave, saveToLocal } from './autosave.js';
 import { loadSectionData } from './data.js';
@@ -62,6 +62,10 @@ export function navigatePage(direction) {
         logDebug(`navigatePage: End of section ${state.currentSectionId} reached.`);
         state.completionTimes[state.currentSectionId] = new Date().toISOString();
         saveToLocal();
+        if (checkSurveyCompletion()) {
+            state.completed = true;
+        }
+        saveToLocal();
         showToc();
     }
 }
@@ -124,7 +128,18 @@ export function startSurvey() {
             if (saved) {
                 Object.assign(state.userResponses, saved.responses || {});
                 Object.assign(state.completionTimes, saved.completionTimes || {});
+                state.startDate = saved.startDate || formatTimestamp(new Date());
+                state.endDate = saved.endDate || state.startDate;
+                state.viewedQuestions = saved.viewedQuestions || {};
+                state.completed = saved.completed || false;
+            } else {
+                const now = new Date();
+                state.startDate = formatTimestamp(now);
+                state.endDate = formatTimestamp(now);
+                state.viewedQuestions = {};
+                state.completed = false;
             }
+            saveToLocal();
             startAutosave();
             showToc();
         });
@@ -142,4 +157,9 @@ export function toggleLanguage(event) {
     if (state.currentSectionId) {
         renderCurrentQuestion();
     }
+}
+
+function checkSurveyCompletion() {
+    const sectionIds = Object.keys(state.surveySections).filter(id => id !== 'background');
+    return sectionIds.every(id => state.completionTimes[id]);
 }

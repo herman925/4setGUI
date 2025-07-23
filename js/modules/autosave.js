@@ -1,11 +1,31 @@
-import { state } from './state.js';
+import { state, formatTimestamp } from './state.js';
 
 const AUTOSAVE_INTERVAL = 30000; // 30 seconds
+const END_UPDATE_INTERVAL = 60000; // 60 seconds
 let autosaveTimer = null;
+let endDateTimer = null;
 
 export function startAutosave() {
     if (autosaveTimer) return;
     autosaveTimer = setInterval(saveToLocal, AUTOSAVE_INTERVAL);
+    endDateTimer = setInterval(updateEndDate, END_UPDATE_INTERVAL);
+}
+
+export function stopAutosave() {
+    if (autosaveTimer) {
+        clearInterval(autosaveTimer);
+        autosaveTimer = null;
+    }
+    if (endDateTimer) {
+        clearInterval(endDateTimer);
+        endDateTimer = null;
+    }
+}
+
+function updateEndDate() {
+    if (state.completed) return;
+    state.endDate = formatTimestamp(new Date());
+    saveToLocal();
 }
 
 export function saveToLocal() {
@@ -13,7 +33,11 @@ export function saveToLocal() {
     if (!studentId) return;
     const data = {
         responses: state.userResponses,
-        completionTimes: state.completionTimes
+        completionTimes: state.completionTimes,
+        startDate: state.startDate,
+        endDate: state.endDate,
+        viewedQuestions: state.viewedQuestions,
+        completed: state.completed
     };
     localforage.setItem(`autosave_${studentId}`, data).catch(console.error);
 }

@@ -5,6 +5,8 @@ export function exportResponsesToCsv() {
     for (const section in state.completionTimes) {
         combined[`completed_${section}`] = state.completionTimes[section];
     }
+    combined.startDate = state.startDate;
+    combined.endDate = state.endDate;
     const headers = Object.keys(combined);
     const rows = [headers, headers.map(h => combined[h] ?? '')];
     const csvContent = rows
