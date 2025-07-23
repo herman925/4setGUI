@@ -10,7 +10,6 @@ const sectionJumper = document.getElementById('section-jumper');
 const questionContainer = document.getElementById('question-container');
 const currentSectionDisplay = document.getElementById('current-section-display');
 const pageInfo = document.getElementById('page-info');
-const requiredModal = document.getElementById('required-section-modal');
 
 export function renderEntryForm() {
     const backgroundSection = state.surveySections['background'];
@@ -74,30 +73,18 @@ export function renderToc() {
         return;
     }
 
-    logDebug(`renderToc: state.backgroundCompleted is ${state.backgroundCompleted}`);
-
-    const createTocItem = (section, isEnabled) => {
+    const createTocItem = (section) => {
         const tocItem = document.createElement('div');
         tocItem.className = 'toc-item';
-        if (!isEnabled) {
-            tocItem.classList.add('disabled');
-        }
         tocItem.dataset.section = section.id;
         tocItem.innerHTML = `
             <div class="toc-item-title">${section.title[state.currentLanguage] || section.title.en || section.id}</div>
             <div class="toc-item-arrow">→</div>
         `;
-        if (isEnabled) {
-            tocItem.addEventListener('click', () => {
-                logDebug('TOC item clicked:', section.id);
-                navigateToSection(section.id);
-            });
-        } else {
-            tocItem.addEventListener('click', () => {
-                logDebug('Disabled TOC item clicked, showing modal');
-                showRequiredModal();
-            });
-        }
+        tocItem.addEventListener('click', () => {
+            logDebug('TOC item clicked:', section.id);
+            navigateToSection(section.id);
+        });
         return tocItem;
     };
 
@@ -124,9 +111,8 @@ export function renderToc() {
             if (sectionId === 'background') return; // skip background section in TOC
             const section = state.surveySections[sectionId];
             if (section) {
-                const isEnabled = set.order === 1 || state.backgroundCompleted;
-                logDebug(`renderToc:   - Section: ${sectionId}, Enabled: ${isEnabled}`);
-                const tocItem = createTocItem(section, isEnabled);
+                logDebug(`renderToc:   - Section: ${sectionId}`);
+                const tocItem = createTocItem(section);
                 setContainer.appendChild(tocItem);
             } else {
                 logDebug(`renderToc:   - Section data for ${sectionId} not found in state.surveySections.`);
@@ -180,31 +166,6 @@ export function renderQuestion() {
     renderCurrentQuestion();
 }
 
-export function showRequiredModal() {
-    if (requiredModal) {
-        const modalTitle = document.getElementById('modal-title');
-        const modalText = document.getElementById('modal-text');
-        const modalCloseBtn = document.getElementById('modal-close-btn');
-
-        if (state.currentLanguage === 'zh') {
-            modalTitle.textContent = '必須完成的部分';
-            modalText.textContent = '請先完成背景問卷部分。';
-            modalCloseBtn.textContent = '明白';
-        } else {
-            modalTitle.textContent = 'Required Section';
-            modalText.textContent = 'Please complete the background section first.';
-            modalCloseBtn.textContent = 'I Understand';
-        }
-
-        requiredModal.classList.remove('hidden');
-    }
-}
-
-export function hideRequiredModal() {
-    if (requiredModal) {
-        requiredModal.classList.add('hidden');
-    }
-}
 
 export function showPage(pageToShow) {
     [entryPage, tocPage, surveyPage].forEach(page => {
