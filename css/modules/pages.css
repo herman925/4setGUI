@@ -54,6 +54,14 @@
     margin-bottom: 30px;
 }
 
+#toc-start-date,
+#toc-end-date {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    text-align: left;
+}
+
 #toc-list {
     display: flex;
     flex-direction: column;
@@ -65,6 +73,9 @@
     border: 2px solid #e9ecef;
     border-radius: 8px;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: left;
@@ -96,6 +107,12 @@
     font-size: 18px;
     font-weight: bold;
     color: #333;
+    margin-bottom: 5px;
+}
+
+.toc-item-progress {
+    font-size: 14px;
+    color: #666;
     margin-bottom: 5px;
 }
 
