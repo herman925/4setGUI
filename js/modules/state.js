@@ -9,7 +9,8 @@ export const state = {
         'child-name': '',
         'gender': '',
         'student-id': '',
-        'school-id': ''
+        'school-id': '',
+        'school-name': ''
     },
     completionTimes: {},
     infoDisplayInterval: null,

@@ -45,6 +45,18 @@
       }
     },
     {
+      "id": "school-name",
+      "type": "text",
+      "label": {
+        "en": "School Name",
+        "zh": "學校名稱"
+      },
+      "placeholder": {
+        "en": "Auto-filled",
+        "zh": "自動填寫"
+      }
+    },
+    {
       "id": "child-name",
       "type": "text",
       "label": {
