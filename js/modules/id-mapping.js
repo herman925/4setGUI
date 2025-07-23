@@ -37,7 +37,12 @@ function parseCSV(text) {
 
 export function loadIdMappings() {
     const studentPromise = fetch('assets/id_mapping/coreid.csv')
-        .then(res => res.text())
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Failed to fetch coreid.csv: ${res.status} ${res.statusText}`);
+            }
+            return res.text();
+        })
         .then(txt => {
             const rows = parseCSV(txt);
             rows.forEach(r => {
@@ -48,10 +53,19 @@ export function loadIdMappings() {
                     gender: r['Gender'] || ''
                 };
             });
+        })
+        .catch(error => {
+            console.error('Error loading student ID mappings:', error);
+            // Continue without student mappings
         });
 
     const schoolPromise = fetch('assets/id_mapping/schoolid.csv')
-        .then(res => res.text())
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Failed to fetch schoolid.csv: ${res.status} ${res.statusText}`);
+            }
+            return res.text();
+        })
         .then(txt => {
             const rows = parseCSV(txt);
             rows.forEach(r => {
@@ -59,6 +73,10 @@ export function loadIdMappings() {
                     name: r['School Name (Chinese)'] || ''
                 };
             });
+        })
+        .catch(error => {
+            console.error('Error loading school ID mappings:', error);
+            // Continue without school mappings
         });
 
     return Promise.all([studentPromise, schoolPromise]);

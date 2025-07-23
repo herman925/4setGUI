@@ -7,7 +7,9 @@ import { initializeDebug } from './modules/debug.js';
 import { loadIdMappings } from './modules/id-mapping.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('top-nav').classList.add('hidden');
+    const nav = document.getElementById('top-nav');
+    nav.classList.add('hidden');
+    nav.classList.remove('visible');
 
     loadIdMappings()
         .then(fetchSurveyData)

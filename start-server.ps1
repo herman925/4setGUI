@@ -83,6 +83,7 @@ try {
                     ".css"  { "text/css" }
                     ".js"   { "application/javascript" }
                     ".json" { "application/json" }
+                    ".csv"  { "text/csv; charset=utf-8" }
                     ".png"  { "image/png" }
                     ".jpg"  { "image/jpeg" }
                     ".jpeg" { "image/jpeg" }

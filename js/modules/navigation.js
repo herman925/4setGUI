@@ -13,8 +13,9 @@ export function navigateToSection(sectionId) {
     state.currentSectionId = sectionId;
     state.currentPage = 0;
     loadSectionData(sectionId).then(() => {
-        document.getElementById('top-nav').classList.remove('hidden');
-        document.body.classList.add('nav-visible');
+        document.getElementById('top-nav').classList.add('hidden');
+        document.body.classList.remove('nav-visible');
+        nav.classList.add('visible');
         showPage(surveyPage);
         renderCurrentQuestion();
 
