@@ -1,7 +1,7 @@
 import { state, logDebug } from './state.js';
 import { renderCurrentQuestion } from './question.js';
 import { loadSectionData } from './data.js';
-import { showPage, renderToc, updateInfoDisplay, renderEntryForm, renderSectionJumper, clearErrors, displayError, showRequiredModal } from './ui.js';
+import { showPage, renderToc, updateInfoDisplay, renderEntryForm, clearErrors, displayError, showRequiredModal } from './ui.js';
 
 const entryPage = document.getElementById('entry-page');
 const tocPage = document.getElementById('toc-page');
@@ -121,7 +121,6 @@ export function toggleLanguage(event) {
     }
     renderEntryForm();
     renderToc();
-    renderSectionJumper();
     if (state.currentSectionId) {
         renderCurrentQuestion();
     }

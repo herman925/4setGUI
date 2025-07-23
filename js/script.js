@@ -1,6 +1,6 @@
 import { state, logDebug } from './modules/state.js';
 import { fetchSurveyData } from './modules/data.js';
-import { renderEntryForm, renderToc, renderSectionJumper } from './modules/ui.js';
+import { renderEntryForm, renderToc } from './modules/ui.js';
 import { initializeEventListeners } from './modules/events.js';
 import { startSurvey, toggleLanguage, navigateToSection, navigatePage } from './modules/navigation.js';
 import { initializeDebug } from './modules/debug.js';
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(() => {
             renderEntryForm();
             renderToc();
-            renderSectionJumper();
             initializeEventListeners();
             initializeDebug();
         })
