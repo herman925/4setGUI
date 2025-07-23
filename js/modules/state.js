@@ -6,8 +6,10 @@ export const state = {
     currentSectionId: null,
     backgroundCompleted: false,
     userResponses: {
-        'q1_child_name': '',
-        'q2_child_age': ''
+        'child-name': '',
+        'gender': '',
+        'student-id': '',
+        'school-id': ''
     },
     completionTimes: {},
     infoDisplayInterval: null,
