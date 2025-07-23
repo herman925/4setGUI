@@ -1,5 +1,4 @@
 import { startSurvey, showToc, toggleLanguage, navigatePage } from './navigation.js';
-import { hideRequiredModal } from './ui.js';
 import { exportResponsesToCsv } from './export.js';
 import { findStudent } from './id-mapping.js';
 import { state } from './state.js';
@@ -10,7 +9,6 @@ export function initializeEventListeners() {
     document.getElementById('language-toggle-checkbox').addEventListener('change', toggleLanguage);
     document.getElementById('next-btn').addEventListener('click', () => navigatePage(1));
     document.getElementById('back-btn').addEventListener('click', () => navigatePage(-1));
-    document.getElementById('modal-close-btn').addEventListener('click', hideRequiredModal);
     const exportBtn = document.getElementById('export-btn');
     if (exportBtn) {
         exportBtn.addEventListener('click', exportResponsesToCsv);
