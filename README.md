@@ -66,6 +66,7 @@ A web-based, offline-first survey application for the KS 4-Set Task, supporting 
 - **Debug Mode**: Verbose console logging when activated
 - **Hot Reload**: No compilation step needed for development
 - **Modular CSS**: Organized stylesheets for maintainability
+- **Universal highlight classes**: Reusable `.highlight-*` CSS helpers for emphasising key text across all survey tasks
 - **Error Handling**: Comprehensive error catching and user feedback
 
 ## Configuration
