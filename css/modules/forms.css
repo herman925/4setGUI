@@ -94,7 +94,7 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-#start-survey-btn, #back-btn, #next-btn {
+#start-survey-btn, #back-btn, #next-btn, #load-session-btn {
     background-color: #2b3990;
     color: white;
     border: none;
@@ -107,12 +107,16 @@ input:checked + .slider:before {
     transition: background-color 0.3s;
 }
 
-#start-survey-btn:hover, #back-btn:hover, #next-btn:hover {
+#start-survey-btn:hover, #back-btn:hover, #next-btn:hover, #load-session-btn:hover {
     background-color: #1e2a70;
 }
 
 #start-survey-btn {
     width: 100%;
+}
+
+#load-session-btn {
+    margin-top: 10px;
 }
 
 #autosave-status {
