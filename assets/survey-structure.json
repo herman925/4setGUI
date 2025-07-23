@@ -65,6 +65,10 @@
         {
           "file": "HeadToeKneeShoulder.json",
           "order": 1
+        },
+        {
+          "file": "CCM.json",
+          "order": 2
         }
       ]
     },

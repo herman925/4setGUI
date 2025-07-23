@@ -94,7 +94,7 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-#start-survey-btn, #back-btn, #next-btn, #home-btn {
+#start-survey-btn, #back-btn, #next-btn {
     background-color: #2b3990;
     color: white;
     border: none;
@@ -107,7 +107,7 @@ input:checked + .slider:before {
     transition: background-color 0.3s;
 }
 
-#start-survey-btn:hover, #back-btn:hover, #next-btn:hover, #home-btn:hover {
+#start-survey-btn:hover, #back-btn:hover, #next-btn:hover {
     background-color: #1e2a70;
 }
 
