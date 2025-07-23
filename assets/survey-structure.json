@@ -79,6 +79,10 @@
         {
           "file": "CCM.json",
           "order": 2
+        },
+        {
+          "file": "CM.json",
+          "order": 3
         }
       ]
     },
