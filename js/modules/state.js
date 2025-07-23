@@ -4,7 +4,6 @@ export const state = {
     surveySections: {},
     currentPage: 0,
     currentSectionId: null,
-    backgroundCompleted: false,
     userResponses: {
         'q1_child_name': '',
         'q2_child_age': ''

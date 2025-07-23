@@ -77,20 +77,6 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.toc-item.disabled {
-    background-color: #e9ecef;
-    cursor: not-allowed;
-    color: #6c757d;
-}
-
-.toc-item.disabled .toc-item-arrow {
-    display: none;
-}
-
-.toc-item.highlight {
-    border-color: #f99d33; /* Orange from palette */
-    background-color: #fffbe6;
-}
 
 .toc-item-title {
     font-size: 18px;

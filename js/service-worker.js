@@ -8,7 +8,6 @@ const urlsToCache = [
     '/js/script.js',
     '/js/lib/localforage.min.js',
     '/assets/survey-definition.json',
-    '/assets/tasks/background.json',
     '/assets/tasks/ERV.json',
     '/assets/logos/EdUHK.png',
     '/assets/logos/KS.png'
