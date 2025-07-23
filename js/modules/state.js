@@ -12,6 +12,7 @@ export const state = {
         'school-name': ''
     },
     completionTimes: {},
+    sectionTimestamps: {},
     startDate: null,
     endDate: null,
     viewedQuestions: {},
@@ -31,3 +32,8 @@ export function logDebug(...args) {
         console.log('[DEBUG]', ...args);
     }
 }
+
+export const labelTranslations = {
+    started: { en: 'Started', zh: '開始' },
+    lastUsed: { en: 'Last Used', zh: '最後使用' }
+};

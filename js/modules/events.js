@@ -61,6 +61,7 @@ export function attachEntryFormListeners() {
                 if (saved) {
                     Object.assign(state.userResponses, saved.responses || {});
                     Object.assign(state.completionTimes, saved.completionTimes || {});
+                    state.sectionTimestamps = saved.sectionTimestamps || {};
                     state.startDate = saved.startDate || state.startDate;
                     state.endDate = saved.endDate || state.endDate;
                     state.viewedQuestions = saved.viewedQuestions || {};
