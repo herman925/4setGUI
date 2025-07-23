@@ -1,7 +1,29 @@
 import { state } from './state.js';
 
-function formatLabel(text) {
-    return (text || '').replace(/\n/g, '<br>');
+function formatLabel(label) {
+    if (typeof label === 'string') {
+        return (label || '').replace(/\n/g, '<br>');
+    }
+
+    if (typeof label === 'object' && label !== null) {
+        let text = (label.zh || label.en || '').replace(/\n/g, '<br>');
+        const mappings = {
+            attention: 'highlight-attention',
+            instruction: 'highlight-instruction',
+            target: 'highlight-target',
+            word_compound: 'highlight-word-compound'
+        };
+        for (const key of Object.keys(mappings)) {
+            if (label[key]) {
+                const val = label[key];
+                const span = `<span class="${mappings[key]}">${val}</span>`;
+                // replace first occurrence only
+                text = text.replace(val, span);
+            }
+        }
+        return text;
+    }
+    return '';
 }
 
 const questionContainer = document.getElementById('question-container');

@@ -18,6 +18,26 @@
     color: #f04e69; /* pink from PRD palette */
 }
 
+/* Universal inline highlight classes */
+.highlight-target {
+    font-weight: bold;
+    color: #f04e69; /* matches emphasize */
+}
+
+.highlight-instruction {
+    font-weight: bold;
+    color: #2b3990; /* same as attention */
+}
+
+.highlight-attention {
+    font-weight: bold;
+    color: #2b3990;
+}
+
+.highlight-word-compound {
+    text-decoration: underline;
+}
+
 /* Helpers for layout within survey items */
 .question-label {
     display: block;
