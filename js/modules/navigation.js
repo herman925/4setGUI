@@ -114,6 +114,7 @@ export function startSurvey() {
     if (isValid) {
         const summary = `Student ID: ${state.userResponses['student-id']}\n` +
                         `School ID: ${state.userResponses['school-id']}\n` +
+                        `School Name: ${state.userResponses['school-name']}\n` +
                         `Name: ${state.userResponses['child-name']}\n` +
                         `Gender: ${state.userResponses['gender']}`;
         if (!confirm(summary)) return;

@@ -46,8 +46,8 @@ export function loadIdMappings() {
         .then(txt => {
             const rows = parseCSV(txt);
             rows.forEach(r => {
-                const sid = (r['Student ID Copy'] || '').replace(/^[^0-9]*/, '');
-                idMapping.students[sid] = {
+                const cid = (r['Core ID'] || '').replace(/^[^0-9]*/, '');
+                idMapping.students[cid] = {
                     name: r['Student Name'] || '',
                     schoolId: r['School ID'] || '',
                     gender: r['Gender'] || ''
@@ -85,12 +85,19 @@ export function loadIdMappings() {
 export function findStudent(studentId, schoolId) {
     const sid = String(studentId).replace(/^[^0-9]*/, '');
     const student = idMapping.students[sid];
-    if (student && (!schoolId || student.schoolId === schoolId)) {
+    if (student && (!schoolId || student.schoolId === formatSchoolId(schoolId))) {
         return student;
     }
     return null;
 }
 
+function formatSchoolId(id) {
+    if (!id) return id;
+    const num = String(id).replace(/^[^0-9]*/, '');
+    return `S${num.padStart(3, '0')}`;
+}
+
 export function findSchool(schoolId) {
-    return idMapping.schools[schoolId] || null;
+    const formatted = formatSchoolId(schoolId);
+    return idMapping.schools[formatted] || null;
 }

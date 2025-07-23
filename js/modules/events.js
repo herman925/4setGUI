@@ -1,6 +1,6 @@
 import { startSurvey, showToc, toggleLanguage, navigatePage } from './navigation.js';
 import { exportResponsesToCsv } from './export.js';
-import { findStudent } from './id-mapping.js';
+import { findStudent, findSchool } from './id-mapping.js';
 import { state } from './state.js';
 
 export function initializeEventListeners() {
@@ -33,6 +33,14 @@ export function attachEntryFormListeners() {
             if (nameEl) {
                 nameEl.value = student.name;
                 state.userResponses['child-name'] = student.name;
+            }
+        }
+        const school = findSchool(sch.value.trim());
+        if (school) {
+            const schoolNameEl = document.getElementById('school-name');
+            if (schoolNameEl) {
+                schoolNameEl.value = school.name;
+                state.userResponses['school-name'] = school.name;
             }
         }
     };
