@@ -37,7 +37,17 @@ export function renderEntryForm() {
             input.type = 'text';
             input.id = field.id;
             input.placeholder = field.placeholder[state.currentLanguage];
+            if (state.userResponses[field.id]) {
+                input.value = state.userResponses[field.id];
+            }
             formGroup.appendChild(input);
+            if (field.id === 'student-id') {
+                const loadBtn = document.createElement('button');
+                loadBtn.type = 'button';
+                loadBtn.id = 'load-session-btn';
+                loadBtn.textContent = state.currentLanguage === 'en' ? 'Load Previous Session' : '載入上次資料';
+                formGroup.appendChild(loadBtn);
+            }
         } else if (field.type === 'select') {
             const select = document.createElement('select');
             select.id = field.id;
@@ -47,6 +57,9 @@ export function renderEntryForm() {
                 opt.textContent = option.label[state.currentLanguage];
                 select.appendChild(opt);
             });
+            if (state.userResponses[field.id]) {
+                select.value = state.userResponses[field.id];
+            }
             formGroup.appendChild(select);
         }
 
