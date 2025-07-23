@@ -1,5 +1,9 @@
 import { state } from './state.js';
 
+function formatLabel(text) {
+    return (text || '').replace(/\n/g, '<br>');
+}
+
 const questionContainer = document.getElementById('question-container');
 const currentSectionDisplay = document.getElementById('current-section-display');
 const pageInfo = document.getElementById('page-info');
@@ -35,7 +39,8 @@ export function renderCurrentQuestion() {
     if (question.label) {
         const label = document.createElement('label');
         label.htmlFor = question.id;
-        label.textContent = question.label[state.currentLanguage] || question.label.en;
+        const labelText = question.label[state.currentLanguage] || question.label.en;
+        label.innerHTML = formatLabel(labelText);
         questionWrapper.appendChild(label);
     }
 
@@ -63,8 +68,10 @@ export function renderCurrentQuestion() {
                 if (state.userResponses[question.id] === opt.value) {
                     radio.checked = true;
                 }
+                const optLabel = document.createElement('span');
+                optLabel.innerHTML = formatLabel(opt.label[state.currentLanguage] || opt.label.en);
                 labelEl.appendChild(radio);
-                labelEl.appendChild(document.createTextNode(opt.label[state.currentLanguage] || opt.label.en));
+                labelEl.appendChild(optLabel);
                 radioGroup.appendChild(labelEl);
             });
             questionWrapper.appendChild(radioGroup);
