@@ -1,5 +1,6 @@
 import { state, logDebug } from './state.js';
 import { renderCurrentQuestion } from './question.js';
+import { startAutosave, loadAutosave, saveToLocal } from './autosave.js';
 import { loadSectionData } from './data.js';
 import { showPage, renderToc, updateInfoDisplay, renderEntryForm, clearErrors, displayError, showRequiredModal } from './ui.js';
 
@@ -44,6 +45,7 @@ export function navigatePage(direction) {
     if (value !== undefined) {
         state.userResponses[question.id] = value;
         logDebug('Saved response:', question.id, '=', value);
+        saveToLocal();
         if (question.id === 'q1_child_name' || question.id === 'q2_child_age') {
             updateInfoDisplay();
         }
@@ -54,6 +56,8 @@ export function navigatePage(direction) {
         renderCurrentQuestion();
     } else if (newPage >= section.questions.length) {
         logDebug(`navigatePage: End of section ${state.currentSectionId} reached.`);
+        state.completionTimes[state.currentSectionId] = new Date().toISOString();
+        saveToLocal();
         if (state.currentSectionId === 'background') {
             state.backgroundCompleted = true;
             logDebug('navigatePage: Background section completed, setting state.backgroundCompleted to true');
@@ -109,7 +113,14 @@ export function startSurvey() {
     });
 
     if (isValid) {
-        showToc();
+        loadAutosave(state.userResponses['student-id']).then(saved => {
+            if (saved) {
+                Object.assign(state.userResponses, saved.responses || {});
+                Object.assign(state.completionTimes, saved.completionTimes || {});
+            }
+            startAutosave();
+            showToc();
+        });
     }
 }
 

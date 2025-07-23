@@ -15,7 +15,7 @@ export function fetchSurveyData() {
             });
             
             const loadPromises = state.sectionFiles.map(file =>
-                fetch(`assets/${file}`)
+                fetch(`assets/tasks/${file}`)
                     .then(response => response.json())
                     .then(data => {
                         const sectionId = file.replace('.json', '');
@@ -37,7 +37,7 @@ export function loadSectionData(sectionId) {
         return Promise.resolve(state.surveySections[sectionId]);
     }
     const file = `${sectionId}.json`;
-    return fetch(`assets/${file}`)
+    return fetch(`assets/tasks/${file}`)
         .then(response => response.json())
         .then(data => {
             state.surveySections[sectionId] = data;

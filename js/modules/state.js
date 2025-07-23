@@ -9,6 +9,7 @@ export const state = {
         'q1_child_name': '',
         'q2_child_age': ''
     },
+    completionTimes: {},
     infoDisplayInterval: null,
     debugMode: false
 };
