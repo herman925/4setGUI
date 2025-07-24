@@ -5,20 +5,14 @@ const debugInfoEl = document.getElementById('debug-info');
 
 function updateDebugInfo(questionId) {
     if (!debugInfoEl) return;
-<<<<<<< wwz4pu-codex/style-questions-in-finemotor.json
     if (!state.debugMode) {
-=======
     const sectionId = state.currentSectionId;
     if (!state.debugMode || (sectionId !== 'erv' && sectionId !== 'cm')) {
->>>>>>> master
         debugInfoEl.textContent = '';
         return;
     }
 
-<<<<<<< wwz4pu-codex/style-questions-in-finemotor.json
     const sectionId = state.currentSectionId;
-=======
->>>>>>> master
     const rules = terminationRules[sectionId];
     const section = state.surveySections[sectionId];
     if (!rules || !section) {
@@ -51,12 +45,14 @@ function updateDebugInfo(questionId) {
     const score = calculateScore(sectionId, currentRule.startId, currentRule.endId);
     const needed = currentRule.minScore - score;
     const message = needed > 0 ? `還需要 ${needed} 分` : '已達標';
-    const label = sectionId === 'erv' ? 'ERV' : sectionId === 'finemotor' ? 'FM' : sectionId;
-    debugInfoEl.textContent = `${label} 分數：${score} / ${currentRule.minScore}，${message}`;
-    } else {
+    
+    if (sectionId === 'cm') {
         const partMatch = /CM_(?:Ter|S)(\d+)/i.exec(currentRule.terminationId);
         const part = partMatch ? partMatch[1] : '';
         debugInfoEl.textContent = `CM 第 ${part} 部分分數：${score} / ${currentRule.minScore}，${message}`;
+    } else {
+        const label = sectionId === 'erv' ? 'ERV' : sectionId === 'finemotor' ? 'FM' : sectionId;
+        debugInfoEl.textContent = `${label} 分數：${score} / ${currentRule.minScore}，${message}`;
     }
 }
 
