@@ -162,6 +162,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* When there are multiple label images, arrange them side by side */
+.question-label .label-image + .label-image {
+    display: inline-block;
+    max-width: 45%;
+    margin: 8px 2% 12px 2%;
+    vertical-align: top;
+}
+
 /* Generic radio group layout */
 .radio-group {
     display: flex;

@@ -57,6 +57,28 @@ function updateDebugInfo(questionId) {
     }
 }
 
+/**
+ * Formats a label object into HTML text with styling and images.
+ * 
+ * Supports the following styling properties (can be string or array):
+ * - attention: highlight-attention styling
+ * - instruction: highlight-instruction styling  
+ * - target: highlight-target styling
+ * - emphasize: emphasize styling
+ * - word_compound: highlight-word-compound styling
+ * - blue: highlight-blue styling
+ * - orange: highlight-orange styling
+ * - blue_text: text-blue styling
+ * - orange_text: text-orange styling
+ * 
+ * Image property:
+ * - image: single image path (string) or multiple images (array)
+ * 
+ * Examples:
+ * - Single: { "emphasize": "開心" }
+ * - Array: { "emphasize": ["開心", "難過", "害怕"] }
+ * - Multiple arrays: { "attention": ["右下方箭頭", "（➜）"], "emphasize": ["開心", "難過"] }
+ */
 function formatLabel(label) {
     if (typeof label === 'string') {
         return (label || '').replace(/\n/g, '<br>');
@@ -78,15 +100,33 @@ function formatLabel(label) {
         for (const key of Object.keys(mappings)) {
             if (label[key]) {
                 const val = label[key];
-                const span = `<span class="${mappings[key]}">${val}</span>`;
-                // replace first occurrence only
-                text = text.replace(val, span);
+                if (Array.isArray(val)) {
+                    // Handle multiple styling values
+                    val.forEach(styleValue => {
+                        const span = `<span class="${mappings[key]}">${styleValue}</span>`;
+                        // replace first occurrence only
+                        text = text.replace(styleValue, span);
+                    });
+                } else {
+                    // Handle single styling value
+                    const span = `<span class="${mappings[key]}">${val}</span>`;
+                    // replace first occurrence only
+                    text = text.replace(val, span);
+                }
             }
         }
         
-        // Add image if specified in label
+        // Add image(s) if specified in label
         if (label.image) {
-            text += `<br><img src="assets/${label.image}" class="label-image" alt="Label image">`;
+            if (Array.isArray(label.image)) {
+                // Handle multiple images
+                label.image.forEach(imagePath => {
+                    text += `<br><img src="assets/${imagePath}" class="label-image" alt="Label image">`;
+                });
+            } else {
+                // Handle single image
+                text += `<br><img src="assets/${label.image}" class="label-image" alt="Label image">`;
+            }
         }
         
         return text;
