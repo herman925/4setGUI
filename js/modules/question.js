@@ -159,6 +159,7 @@ export function renderCurrentQuestion() {
             break;
         case 'radio':
             const radioGroup = document.createElement('div');
+            radioGroup.classList.add('radio-group');
             question.options.forEach(opt => {
                 const labelEl = document.createElement('label');
                 labelEl.classList.add('option-label', 'answer');

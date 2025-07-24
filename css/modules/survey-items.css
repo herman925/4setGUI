@@ -143,3 +143,31 @@
     width: 100%;
     margin-bottom: 12px;
 }
+
+/* Generic radio group layout */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Larger, centered choices for Math Pattern task */
+[data-section-id="mathpattern"] .radio-group {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+[data-section-id="mathpattern"] .radio-group .option-label {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+[data-section-id="mathpattern"] .radio-group input[type="radio"] {
+    transform: scale(1.5);
+}
