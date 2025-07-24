@@ -43,6 +43,7 @@ function updateDebugInfo(questionId) {
     }
 
     const score = calculateScore(sectionId, currentRule.startId, currentRule.endId);
+    const score = calculateScore(sectionId, currentRule.startId, currentRule.endId);
     const needed = currentRule.minScore - score;
     const message = needed > 0 ? `還需要 ${needed} 分` : '已達標';
     
