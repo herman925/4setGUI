@@ -58,6 +58,7 @@ export function attachEntryFormListeners() {
             }
             loadAutosave(studentId).then(saved => {
                 if (saved) {
+                    // Load ALL data from local storage FIRST
                     Object.assign(state.userResponses, saved.responses || {});
                     Object.assign(state.completionTimes, saved.completionTimes || {});
                     state.sectionTimestamps = saved.sectionTimestamps || {};
@@ -65,6 +66,8 @@ export function attachEntryFormListeners() {
                     state.endDate = saved.endDate || state.endDate;
                     state.viewedQuestions = saved.viewedQuestions || {};
                     state.completed = saved.completed || false;
+                    
+                    // THEN populate form fields
                     const bg = state.surveySections['background'];
                     if (bg && bg.entryForm) {
                         bg.entryForm.forEach(field => {
