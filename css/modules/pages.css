@@ -150,6 +150,7 @@
 .survey-header {
     text-align: center;
     margin-bottom: 30px;
+    position: relative;
 }
 
 #current-section-display {
@@ -177,8 +178,12 @@
     color: #0f0;
     padding: 4px 8px;
     border-radius: 4px;
-    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
     display: inline-block;
+    pointer-events: none;
 }
 
 #question-container {
