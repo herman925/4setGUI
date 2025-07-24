@@ -7,13 +7,22 @@ export function initializeDebug() {
     const addBtn = document.getElementById('add-question-btn');
 
     if (trigger) {
-        trigger.addEventListener('click', () => {
+        trigger.addEventListener('click', (e) => {
+            if (state.debugMode && e.ctrlKey) {
+                state.debugMode = false;
+                document.body.classList.remove('debug-mode');
+                if (controls) controls.classList.add('hidden');
+                renderCurrentQuestion();
+                logDebug('Debug mode disabled');
+                return;
+            }
             const pwd = prompt('Enter debug password');
             if (pwd === 'ks2.0') {
                 state.debugMode = true;
                 document.body.classList.add('debug-mode');
                 if (controls) controls.classList.remove('hidden');
                 logDebug('Debug mode enabled');
+                renderCurrentQuestion();
             }
         });
     }

@@ -33,6 +33,7 @@ function formatLabel(label) {
 const questionContainer = document.getElementById('question-container');
 const currentSectionDisplay = document.getElementById('current-section-display');
 const pageInfo = document.getElementById('page-info');
+const questionIdDisplay = document.getElementById('question-id-display');
 
 export function renderCurrentQuestion() {
     const section = state.surveySections[state.currentSectionId];
@@ -57,6 +58,9 @@ export function renderCurrentQuestion() {
     // Update header
     currentSectionDisplay.textContent = section.title;
     pageInfo.textContent = `第 ${state.currentPage + 1} 頁，共 ${section.questions.length} 頁`;
+    if (questionIdDisplay) {
+        questionIdDisplay.textContent = question.id;
+    }
 
     // Render the question itself
     const questionWrapper = document.createElement('div');
@@ -100,6 +104,9 @@ export function renderCurrentQuestion() {
             question.options.forEach(opt => {
                 const labelEl = document.createElement('label');
                 labelEl.classList.add('option-label', 'answer');
+                if (state.debugMode && question.scoring && question.scoring.correctAnswer === opt.value) {
+                    labelEl.classList.add('correct-option');
+                }
                 const radio = document.createElement('input');
                 radio.type = 'radio';
                 radio.name = question.id;
@@ -123,6 +130,9 @@ export function renderCurrentQuestion() {
             question.options.forEach(opt => {
                 const labelImg = document.createElement('label');
                 labelImg.classList.add('option-label', 'answer', 'image-choice-option');
+                if (state.debugMode && question.scoring && question.scoring.correctAnswer === opt.value) {
+                    labelImg.classList.add('correct-option');
+                }
                 const radioImg = document.createElement('input');
                 radioImg.type = 'radio';
                 radioImg.name = question.id;

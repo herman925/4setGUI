@@ -163,6 +163,12 @@
     color: #666;
 }
 
+#question-id-display {
+    font-size: 14px;
+    color: #999;
+    margin-top: 4px;
+}
+
 #timer {
     font-size: 20px;
     font-weight: bold;
