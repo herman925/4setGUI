@@ -3,13 +3,1197 @@
   "title": "非符號數量比較",
   "timer": 120,
   "questions": [
-    {"id": "NONSYM_ins1", "type": "instruction", "label": "此測驗採用計時方式，小朋友需在兩分鐘內盡量答完。\n\u300c你睇吓啲點點，話俾我聽邊一格有多啲點點。\u300d"},
-    {"id": "NONSYM_S1", "type": "image-choice", "label": "邊格有多啲點點？", "options": [{"value":"A","label":"左邊"},{"value":"B","label":"右邊"}], "scoring":{"correctAnswer":"A"}},
-    {"id": "NONSYM_ins2", "type": "instruction", "label": "做得好好，跟住會計時兩分鐘，你試下好似啱啱咁，好快咁指俾我睇邊個多啲點點，準備好未?"},
-    {"id": "NONSYM_1", "type": "image-choice", "label": "非符號數量比較", "options": [{"value":"left","label":"左邊"},{"value":"right","label":"右邊"}], "scoring":{"correctAnswer":"right"}},
-    {"id": "NONSYM_2", "type": "image-choice", "label": "非符號數量比較", "options": [{"value":"left","label":"左邊"},{"value":"right","label":"右邊"}], "scoring":{"correctAnswer":"left"}},
-    {"id": "NONSYM_timeout", "type": "instruction", "label": "時間到／已完成，請進行下一部分。"},
-    {"id": "NONSYM_Date", "type": "text", "label": "完成日期："},
-    {"id": "NONSYM_Com", "type": "radio", "label": "已完成", "options": [{"value":"done","label":"已完成"}]}
+    {
+      "id": "NONSYM_ins1",
+      "type": "instruction",
+      "label": "此測驗採用計時方式，小朋友需在兩分鐘內盡量答完。\n「你睇吓啲點點，話俾我聽邊一格有多啲點點。」"
+    },
+    {
+      "id": "NONSYM_S1",
+      "type": "image-choice",
+      "label": "邊格有多啲點點？",
+      "options": [
+        {
+          "value": "A",
+          "label": "左邊"
+        },
+        {
+          "value": "B",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "A"
+      }
+    },
+    {
+      "id": "NONSYM_P1",
+      "type": "image-choice",
+      "label": "Practice 1",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_P2",
+      "type": "image-choice",
+      "label": "Practice 2",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_P3",
+      "type": "image-choice",
+      "label": "Practice 3",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_P4",
+      "type": "image-choice",
+      "label": "Practice 4",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_P5",
+      "type": "image-choice",
+      "label": "Practice 5",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_P6",
+      "type": "image-choice",
+      "label": "Practice 6",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_P7",
+      "type": "image-choice",
+      "label": "Practice 7",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_P8",
+      "type": "image-choice",
+      "label": "Practice 8",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_P9",
+      "type": "image-choice",
+      "label": "Practice 9",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "NONSYM_ins2",
+      "type": "instruction",
+      "label": "做得好好，跟住會計時兩分鐘，你試下好似啱啱咁，好快咁指俾我睇邊個多啲點點，準備好未?"
+    },
+    {
+      "id": "NONSYM_1",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_2",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_3",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_4",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_5",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_6",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_7",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_8",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_9",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_10",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_11",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_12",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_13",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_14",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_15",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_16",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_17",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_18",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_19",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_20",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_21",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_22",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_23",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_24",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_25",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_26",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_27",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_28",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_29",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_30",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_31",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_32",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_33",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_34",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_35",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_36",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_37",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_38",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_39",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_40",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_41",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_42",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_43",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_44",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_45",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_46",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_47",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_48",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_49",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_50",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_51",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_52",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_53",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_54",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_55",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "NONSYM_56",
+      "type": "image-choice",
+      "label": "非符號數量比較",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "NONSYM_timeout",
+      "type": "instruction",
+      "label": "時間到／已完成，請進行下一部分。"
+    },
+    {
+      "id": "NONSYM_Date",
+      "type": "text",
+      "label": "完成日期："
+    },
+    {
+      "id": "NONSYM_Com",
+      "type": "radio",
+      "label": "已完成",
+      "options": [
+        {
+          "value": "done",
+          "label": "已完成"
+        }
+      ]
+    }
   ]
 }

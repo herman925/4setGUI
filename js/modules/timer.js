@@ -47,6 +47,20 @@ export function stopTimer() {
     updateDisplay();
 }
 
+export function finishTimer() {
+    if (timerState.interval) {
+        clearInterval(timerState.interval);
+        timerState.interval = null;
+    }
+    const cb = timerState.callback;
+    timerState.running = false;
+    timerState.remaining = 0;
+    updateDisplay();
+    if (typeof cb === 'function') {
+        cb();
+    }
+}
+
 export function isTimerRunning() {
     return timerState.running;
 }
