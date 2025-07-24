@@ -13,7 +13,20 @@ export function initializeEventListeners() {
     if (exportBtn) {
         exportBtn.addEventListener('click', exportResponsesToCsv);
     }
+    document.addEventListener('keydown', handleArrowNavigation);
     attachEntryFormListeners();
+}
+
+function handleArrowNavigation(e) {
+    const active = document.activeElement;
+    if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) {
+        return;
+    }
+    if (e.key === 'ArrowLeft') {
+        navigatePage(-1);
+    } else if (e.key === 'ArrowRight') {
+        navigatePage(1);
+    }
 }
 
 let isLoadingData = false; // Flag to prevent multiple simultaneous loads
