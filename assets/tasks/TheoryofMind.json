@@ -307,8 +307,30 @@
       "type": "instruction",
       "label": { "zh": "答啱喇，佢地會話 小光 成個 bb 咁。" },
       "showIf": { "ToM_7b": "話小光成個bb咁" }
+        { "value": "話小光成個bb咁", "label": "話小光成個bb咁" },
+        { "value": "其他", "label": "其他" }
+      ]
     },
     {
+      "id": "ToM_7a_ins4",
+      "type": "instruction",
+      "label": { "zh": "答啱喇，佢地會話 小光 成個 bb 咁。" },
+      "showIf": { "ToM_7b": "話小光成個bb咁" }
+    },
+    {
+      "id": "ToM_7c",
+      "type": "image-choice",
+      "label": "當大家一齊笑 小光，小光 嘅感受係咩？\n係 開心、 無表情、定 唔開心？",
+      "options": [
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_7d",
+      "type": "image-choice",
+      "label": "小光嘗試露出嘅表情係點㗎？\n係 開心、 無表情、定 唔開心 ?",
       "id": "ToM_7c",
       "type": "image-choice",
       "label": "當大家一齊笑 小光，小光 嘅感受係咩？\n係 開心、 無表情、定 唔開心？",
@@ -344,7 +366,29 @@
       "label": "Theory of Mind 測試已完成。\n請按右下方箭頭（➜），並填寫checklist。",
       "options": [
         { "value": "已完成", "label": "已完成" }
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_Date",
+      "type": "text",
+      "label": "完成日期："
+    },
+    {
+      "id": "ToM_Score",
+      "type": "text",
+      "label": "ToM_Score"
+    },
+    {
+      "id": "ToM_Com",
+      "type": "radio",
+      "label": "Theory of Mind 測試已完成。\n請按右下方箭頭（➜），並填寫checklist。",
+      "options": [
+        { "value": "已完成", "label": "已完成" }
       ]
     }
   ]
 }
+
