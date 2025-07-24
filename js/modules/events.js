@@ -4,6 +4,20 @@ import { findStudent, findSchool } from './id-mapping.js';
 import { loadAutosave } from './autosave.js';
 import { state } from './state.js';
 
+function displayFieldError(elementId, message) {
+    const el = document.getElementById(elementId);
+    if (el) {
+        el.textContent = message;
+    }
+}
+
+function clearFieldError(elementId) {
+    const el = document.getElementById(elementId);
+    if (el) {
+        el.textContent = '';
+    }
+}
+
 export function initializeEventListeners() {
     document.getElementById('start-survey-btn').addEventListener('click', startSurvey);
     document.getElementById('home-btn').addEventListener('click', showToc);
@@ -97,12 +111,39 @@ export function attachEntryFormListeners() {
             console.log('DEBUG: Setting isLoadingData to true');
             
             const studentId = sid.value.trim();
+            const schoolId = sch.value.trim();
+
+            clearFieldError('student-id-error');
+            clearFieldError('school-id-error');
+
             if (!studentId) {
                 console.log('DEBUG: No student ID provided');
                 isLoadingData = false;
                 alert('請先輸入學生編號。');
                 return;
             }
+
+            let validationFailed = false;
+            const studentRegex = /^1[0-9]{4}$/;
+            if (!studentRegex.test(studentId)) {
+                displayFieldError('student-id-error', '學生編號必須是5位數字，並以1開頭。');
+                validationFailed = true;
+            }
+
+            if (schoolId) {
+                const num = parseInt(schoolId, 10);
+                if (isNaN(num) || num < 1 || num > 115) {
+                    displayFieldError('school-id-error', '學校編號必須是1到115之間的數字。');
+                    validationFailed = true;
+                }
+            }
+
+            if (validationFailed) {
+                console.log('DEBUG: Validation failed for IDs');
+                isLoadingData = false;
+                return;
+            }
+
             console.log('DEBUG: Loading autosave for student ID:', studentId);
             loadAutosave(studentId).then(saved => {
                 if (saved) {
