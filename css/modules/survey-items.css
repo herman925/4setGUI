@@ -105,7 +105,13 @@
 }
 
 .image-choice-option img {
-    max-width: 120px;
+    width: clamp(240px, 40vw, 100%);
     height: auto;
     margin-top: 4px;
+}
+
+/* Audio player within questions */
+.question-audio {
+    width: 100%;
+    margin-bottom: 12px;
 }

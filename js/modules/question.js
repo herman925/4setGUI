@@ -70,6 +70,14 @@ export function renderCurrentQuestion() {
         questionWrapper.appendChild(label);
     }
 
+    if (question.media && question.media.audio) {
+        const audio = document.createElement('audio');
+        audio.controls = true;
+        audio.src = `assets/${question.media.audio}`;
+        audio.classList.add('question-audio');
+        questionWrapper.appendChild(audio);
+    }
+
     // Render based on question type
     switch (question.type) {
         case 'instruction':
@@ -111,6 +119,7 @@ export function renderCurrentQuestion() {
         case 'image-choice':
             const imgGroup = document.createElement('div');
             imgGroup.classList.add('image-choice-group');
+
             question.options.forEach(opt => {
                 const labelImg = document.createElement('label');
                 labelImg.classList.add('option-label', 'answer', 'image-choice-option');
