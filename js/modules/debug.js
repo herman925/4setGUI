@@ -1,10 +1,13 @@
 import { state, logDebug } from './state.js';
 import { renderCurrentQuestion } from './question.js';
+import { stopTimer, finishTimer, isTimerRunning } from './timer.js';
 
 export function initializeDebug() {
     const trigger = document.getElementById('debug-trigger');
     const controls = document.getElementById('debug-controls');
     const addBtn = document.getElementById('add-question-btn');
+    const stopBtn = document.getElementById('stop-timer-btn');
+    const endBtn = document.getElementById('end-timer-btn');
 
     if (trigger) {
         trigger.addEventListener('click', (e) => {
@@ -56,6 +59,24 @@ export function initializeDebug() {
             section.questions.push(q);
             renderCurrentQuestion();
             logDebug('Question added via debug UI', q);
+        });
+    }
+
+    if (stopBtn) {
+        stopBtn.addEventListener('click', () => {
+            if (isTimerRunning()) {
+                stopTimer();
+                logDebug('Timer stopped via debug');
+            }
+        });
+    }
+
+    if (endBtn) {
+        endBtn.addEventListener('click', () => {
+            if (isTimerRunning()) {
+                finishTimer();
+                logDebug('Timer ended via debug');
+            }
         });
     }
 }
