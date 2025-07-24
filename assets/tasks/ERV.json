@@ -15,7 +15,7 @@
     {
       "id": "ERV_P1",
       "type": "image-choice",
-      "label": "",
+      "label": "請為幼兒戴上耳機，確保音量適中)\n只可播放一次)\n答對便稱讚；答錯則用手指指出正確的圖片)",
       "media": {
         "audio": "audio/erv_p1.mp3"
       },
@@ -52,7 +52,7 @@
     {
       "id": "ERV_P2",
       "type": "image-choice",
-      "label": "",
+      "label": "請為幼兒戴上耳機，確保音量適中)\n只可播放一次)\n答對便稱讚；答錯則用手指指出正確的圖片)",
       "media": {
         "audio": "audio/erv_p2.mp3"
       },
@@ -89,7 +89,7 @@
     {
       "id": "ERV_P3",
       "type": "image-choice",
-      "label": "",
+      "label": "請為幼兒戴上耳機，確保音量適中)\n只可播放一次)\n答對便稱讚；答錯則用手指指出正確的圖片)",
       "media": {
         "audio": "audio/erv_p3.mp3"
       },
