@@ -1,6 +1,6 @@
 import { state, logDebug, formatTimestamp } from './state.js';
 import { renderCurrentQuestion } from './question.js';
-import { startTimer, stopTimer } from './timer.js';
+import { startTimer, stopTimer, setTimerVisibility } from './timer.js';
 import { startAutosave, loadAutosave, saveToLocal } from './autosave.js';
 import { loadSectionData } from './data.js';
 import { showPage, renderToc, updateInfoDisplay, renderEntryForm, clearErrors, displayError } from './ui.js';
@@ -13,6 +13,7 @@ const topNav = document.getElementById('top-nav');
 export function navigateToSection(sectionId) {
     logDebug('Navigating to section:', sectionId);
     stopTimer();
+    setTimerVisibility(false);
     state.autoNext = false;
     state.currentSectionId = sectionId;
     state.currentPage = 0;
@@ -125,6 +126,7 @@ export function navigatePage(direction) {
 
 export function showToc() {
     stopTimer();
+    setTimerVisibility(false);
     state.autoNext = false;
     if (state.currentSectionId) {
         const now = formatTimestamp(new Date());

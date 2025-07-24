@@ -152,6 +152,16 @@
     margin: 12px auto;
 }
 
+/* Image shown within question label */
+.label-image {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin: 8px auto 12px auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Generic radio group layout */
 .radio-group {
     display: flex;

@@ -83,6 +83,12 @@ function formatLabel(label) {
                 text = text.replace(val, span);
             }
         }
+        
+        // Add image if specified in label
+        if (label.image) {
+            text += `<br><img src="assets/${label.image}" class="label-image" alt="Label image">`;
+        }
+        
         return text;
     }
     return '';
@@ -106,12 +112,25 @@ export function renderCurrentQuestion() {
         return;
     }
 
-    const symPattern = /^SYM_(?:[1-9]|[1-4][0-9]|5[0-6])$/;
-    const nonsymPattern = /^NONSYM_(?:[1-9]|[1-4][0-9]|5[0-6])$/;
-    const showTimerNow =
-        isTimerRunning() &&
-        ((state.timerSection === 'sym' && symPattern.test(question.id)) ||
-         (state.timerSection === 'nonsym' && nonsymPattern.test(question.id)));
+    // Define the exact question IDs where timer should be visible
+    const timedQuestions = new Set([
+        // NONSYM questions
+        'NONSYM_1', 'NONSYM_2', 'NONSYM_3', 'NONSYM_4', 'NONSYM_5', 'NONSYM_6', 'NONSYM_7', 'NONSYM_8', 'NONSYM_9', 'NONSYM_10',
+        'NONSYM_11', 'NONSYM_12', 'NONSYM_13', 'NONSYM_14', 'NONSYM_15', 'NONSYM_16', 'NONSYM_17', 'NONSYM_18', 'NONSYM_19', 'NONSYM_20',
+        'NONSYM_21', 'NONSYM_22', 'NONSYM_23', 'NONSYM_24', 'NONSYM_25', 'NONSYM_26', 'NONSYM_27', 'NONSYM_28', 'NONSYM_29', 'NONSYM_30',
+        'NONSYM_31', 'NONSYM_32', 'NONSYM_33', 'NONSYM_34', 'NONSYM_35', 'NONSYM_36', 'NONSYM_37', 'NONSYM_38', 'NONSYM_39', 'NONSYM_40',
+        'NONSYM_41', 'NONSYM_42', 'NONSYM_43', 'NONSYM_44', 'NONSYM_45', 'NONSYM_46', 'NONSYM_47', 'NONSYM_48', 'NONSYM_49', 'NONSYM_50',
+        'NONSYM_51', 'NONSYM_52', 'NONSYM_53', 'NONSYM_54', 'NONSYM_55', 'NONSYM_56',
+        // SYM questions
+        'SYM_1', 'SYM_2', 'SYM_3', 'SYM_4', 'SYM_5', 'SYM_6', 'SYM_7', 'SYM_8', 'SYM_9', 'SYM_10',
+        'SYM_11', 'SYM_12', 'SYM_13', 'SYM_14', 'SYM_15', 'SYM_16', 'SYM_17', 'SYM_18', 'SYM_19', 'SYM_20',
+        'SYM_21', 'SYM_22', 'SYM_23', 'SYM_24', 'SYM_25', 'SYM_26', 'SYM_27', 'SYM_28', 'SYM_29', 'SYM_30',
+        'SYM_31', 'SYM_32', 'SYM_33', 'SYM_34', 'SYM_35', 'SYM_36', 'SYM_37', 'SYM_38', 'SYM_39', 'SYM_40',
+        'SYM_41', 'SYM_42', 'SYM_43', 'SYM_44', 'SYM_45', 'SYM_46', 'SYM_47', 'SYM_48', 'SYM_49', 'SYM_50',
+        'SYM_51', 'SYM_52', 'SYM_53', 'SYM_54', 'SYM_55', 'SYM_56'
+    ]);
+    
+    const showTimerNow = isTimerRunning() && timedQuestions.has(question.id);
     setTimerVisibility(showTimerNow);
 
     const terminationInfo = evaluateTermination(section.id, question.id);

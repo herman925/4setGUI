@@ -5,125 +5,219 @@
     {
       "id": "TEC_Cover",
       "type": "instruction",
-      "label": "情緒遊戲 (Boy)\n\n確認進入測試請按右下方箭頭（➜）。"
+      "label": {
+        "zh": "情緒遊戲 (Boy)\n\n確認進入測試請按右下方箭頭（➜）。",
+        "attention": "右下方箭頭（➜）"
+      }
     },
     {
       "id": "TEC_ins1",
       "type": "instruction",
-      "label": "小朋友，我而家會俾啲圖片你睇，然後問你啲問題，我想你用手指指出答案，好冇？"
+      "label": {
+        "zh": "小朋友，我而家會俾啲圖片你睇，然後問你啲問題，我想你用手指指出答案，好冇？"
+      }
     },
     {
       "id": "TEC_1",
-      "type": "radio",
-      "label": "呢四張圖，指俾我睇，邊個係 難過 ?",
+      "type": "image-choice",
+      "label":{
+        "zh": "呢四張圖，指俾我睇，邊個係 難過 ?",
+        "emphasize": "難過"
+      },
       "options": [
         {
-          "value": "1",
-          "label": "1"
+          "value": "opt1",
+          "media": {
+            "image": "images/TEC_M/TEC_Q1.1.jpg"
+          }
         },
         {
-          "value": "2",
-          "label": "2"
+          "value": "opt2",
+          "media": {
+            "image": "images/TEC_M/TEC_Q1.2.jpg"
+          }
         },
         {
-          "value": "3",
-          "label": "3"
+          "value": "opt3",
+          "media": {
+            "image": "images/TEC_M/TEC_Q1.3.jpg"
+          }
         },
         {
-          "value": "4",
-          "label": "4"
+          "value": "opt4",
+          "media": {
+            "image": "images/TEC_M/TEC_Q1.4.jpg"
+          }
         }
       ]
     },
     {
       "id": "TEC_2",
-      "type": "radio",
-      "label": "呢四張圖，指俾我睇，邊個係 開心 ?",
+      "type": "image-choice",
+      "label": {
+        "zh": "呢四張圖，指俾我睇，邊個係 開心 ?",
+        "emphasize": "開心"
+      },
       "options": [
         {
-          "value": "1",
-          "label": "1"
+          "value": "opt1",
+          "media": {
+            "image": "images/TEC_M/TEC_Q2.1.jpg"
+          }
         },
         {
-          "value": "2",
-          "label": "2"
+          "value": "opt2",
+          "media": {
+            "image": "images/TEC_M/TEC_Q2.2.jpg"
+          }
         },
         {
-          "value": "3",
-          "label": "3"
+          "value": "opt3",
+          "media": {
+            "image": "images/TEC_M/TEC_Q2.3.jpg"
+          }
         },
         {
-          "value": "4",
-          "label": "4"
+          "value": "opt4",
+          "media": {
+            "image": "images/TEC_M/TEC_Q2.4.jpg"
+          }
         }
       ]
     },
     {
       "id": "TEC_3",
-      "type": "radio",
-      "label": "呢四張圖，指俾我睇，邊個係 生氣 ?",
+      "type": "image-choice",
+      "label": {
+        "zh": "呢四張圖，指俾我睇，邊個係 生氣 ?",
+        "emphasize": "生氣"
+      },
       "options": [
         {
-          "value": "1",
-          "label": "1"
+          "value": "opt1",
+          "media": {
+            "image": "images/TEC_M/TEC_Q3.1.jpg"
+          }
         },
         {
-          "value": "2",
-          "label": "2"
+          "value": "opt2",
+          "media": {
+            "image": "images/TEC_M/TEC_Q3.2.jpg"
+          }
         },
         {
-          "value": "3",
-          "label": "3"
+          "value": "opt3",
+          "media": {
+            "image": "images/TEC_M/TEC_Q3.3.jpg"
+          }
         },
         {
-          "value": "4",
-          "label": "4"
+          "value": "opt4",
+          "media": {
+            "image": "images/TEC_M/TEC_Q3.4.jpg"
+          }
         }
       ]
     },
     {
       "id": "TEC_4",
-      "type": "radio",
-      "label": "呢四張圖，指俾我睇，邊個係 無表情 ?",
+      "type": "image-choice",
+      "label": {
+        "zh": "呢四張圖，指俾我睇，邊個係 無表情 ?",
+        "emphasize": "無表情"
+      },
       "options": [
         {
-          "value": "1",
-          "label": "1"
+          "value": "opt1",
+          "media": {
+            "image": "images/TEC_M/TEC_Q4.1.jpg"
+          }
         },
         {
-          "value": "2",
-          "label": "2"
+          "value": "opt2",
+          "media": {
+            "image": "images/TEC_M/TEC_Q4.2.jpg"
+          }
         },
         {
-          "value": "3",
-          "label": "3"
+          "value": "opt3",
+          "media": {
+            "image": "images/TEC_M/TEC_Q4.3.jpg"
+          }
         },
         {
-          "value": "4",
-          "label": "4"
+          "value": "opt4",
+          "media": {
+            "image": "images/TEC_M/TEC_Q4.4.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TEC_4",
+      "type": "image-choice",
+      "label": {
+        "zh": "呢四張圖，指俾我睇，邊個係 無表情 ?",
+        "emphasize": "無表情"
+      },
+      "options": [
+        {
+          "value": "opt1",
+          "media": {
+            "image": "images/TEC_M/TEC_Q4.1.jpg"
+          }
+        },
+        {
+          "value": "opt2",
+          "media": {
+            "image": "images/TEC_M/TEC_Q4.2.jpg"
+          }
+        },
+        {
+          "value": "opt3",
+          "media": {
+            "image": "images/TEC_M/TEC_Q4.3.jpg"
+          }
+        },
+        {
+          "value": "opt4",
+          "media": {
+            "image": "images/TEC_M/TEC_Q4.4.jpg"
+          }
         }
       ]
     },
     {
       "id": "TEC_5",
-      "type": "radio",
-      "label": "呢四張圖，指俾我睇，邊個係 害怕 ?",
+      "type": "image-choice",
+      "label": {
+        "zh": "呢四張圖，指俾我睇，邊個係 害怕 ?",
+        "emphasize": "害怕"
+      },
       "options": [
         {
-          "value": "1",
-          "label": "1"
+          "value": "opt1",
+          "media": {
+            "image": "images/TEC_M/TEC_Q5.1.jpg"
+          }
         },
         {
-          "value": "2",
-          "label": "2"
+          "value": "opt2",
+          "media": {
+            "image": "images/TEC_M/TEC_Q5.2.jpg"
+          }
         },
         {
-          "value": "3",
-          "label": "3"
+          "value": "opt3",
+          "media": {
+            "image": "images/TEC_M/TEC_Q5.3.jpg"
+          }
         },
         {
-          "value": "4",
-          "label": "4"
+          "value": "opt4",
+          "media": {
+            "image": "images/TEC_M/TEC_Q5.4.jpg"
+          }
         }
       ]
     },
@@ -134,47 +228,73 @@
     },
     {
       "id": "TEC_6",
-      "type": "radio",
-      "label": "「呢個男仔喺度望住佢死咗嘅小烏龜。\n呢個男仔嘅心情係點？佢係 開心、難過、生氣 定 無表情 ?」",
+      "type": "image-choice",
+      "label": {
+        "zh": "「呢個男仔喺度望住佢死咗嘅小烏龜。\n呢個男仔嘅心情係點？佢係 開心、難過、生氣 定 無表情 ?」",
+        "image": "images/TEC_M/TEC_Q6.1.jpg",
+        "emphasize": "開心、難過、生氣 定 無表情"
+      },
       "options": [
         {
-          "value": "1",
-          "label": "1"
+          "value": "opt1",
+          "media": {
+            "image": "images/TEC_M/TEC_Q6.2.jpg"
+          }
         },
         {
-          "value": "2",
-          "label": "2"
+          "value": "opt2",
+          "media": {
+            "image": "images/TEC_M/TEC_Q6.3.jpg"
+          }
         },
         {
-          "value": "3",
-          "label": "3"
+          "value": "opt3",
+          "media": {
+            "image": "images/TEC_M/TEC_Q6.4.jpg"
+          }
         },
         {
-          "value": "4",
-          "label": "4"
+          "value": "opt4",
+          "media": {
+            "image": "images/TEC_M/TEC_Q6.5.jpg"
+          }
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "opt2"
+      }
     },
     {
       "id": "TEC_7",
-      "type": "radio",
-      "label": "「呢個男仔得到一份生日禮物。\n呢個男仔嘅心情係點？佢係 開心、難過、無表情 定 害怕 ?」",
+      "type": "image-choice",
+      "label": {
+        "zh": "「呢個男仔得到一份生日禮物。\n呢個男仔嘅心情係點？佢係 開心、難過、無表情 定 害怕 ?」",
+        "image": "images/TEC_M/TEC_Q7.1.jpg"
+      },
       "options": [
         {
-          "value": "1",
-          "label": "1"
+          "value": "opt1",
+          "media": {
+            "image": "images/TEC_M/TEC_Q7.2.jpg"
+          }
         },
         {
-          "value": "2",
-          "label": "2"
+          "value": "opt2",
+          "media": {
+            "image": "images/TEC_M/TEC_Q7.3.jpg"
+          }
         },
         {
-          "value": "3",
-          "label": "3"
+          "value": "opt3",
+          "media": {
+            "image": "images/TEC_M/TEC_Q7.4.jpg"
+          }
         },
         {
-          "value": "4",
-          "label": "4"
+          "value": "opt4",
+          "media": {
+            "image": "images/TEC_M/TEC_Q7.5.jpg"
+          }
         }
       ]
     },
