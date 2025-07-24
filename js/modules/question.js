@@ -106,9 +106,10 @@ export function renderCurrentQuestion() {
             break;
         case 'image-choice':
             const imgGroup = document.createElement('div');
+            imgGroup.classList.add('image-choice-group');
             question.options.forEach(opt => {
                 const labelImg = document.createElement('label');
-                labelImg.classList.add('option-label', 'answer');
+                labelImg.classList.add('option-label', 'answer', 'image-choice-option');
                 const radioImg = document.createElement('input');
                 radioImg.type = 'radio';
                 radioImg.name = question.id;

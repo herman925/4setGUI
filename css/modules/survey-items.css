@@ -70,3 +70,22 @@
     color: #000;
 }
 
+/* Layout for image-choice questions */
+.image-choice-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    justify-items: center;
+}
+
+.image-choice-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-choice-option img {
+    max-width: 120px;
+    height: auto;
+    margin-top: 4px;
+}
