@@ -123,6 +123,11 @@
     filter: brightness(0.9);
 }
 
+/* Highlight correct option in debug mode */
+.correct-option {
+    outline: 3px dashed red;
+}
+
 /* Audio player within questions */
 .question-audio {
     width: 100%;
