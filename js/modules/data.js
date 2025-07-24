@@ -13,6 +13,11 @@ export function fetchSurveyData() {
                 const setFiles = set.sections.map(section => section.file);
                 state.sectionFiles = state.sectionFiles.concat(setFiles);
             });
+
+            // Always include background.json so the entry form is loaded
+            if (!state.sectionFiles.includes('background.json')) {
+                state.sectionFiles.unshift('background.json');
+            }
             
             const loadPromises = state.sectionFiles.map(file =>
                 fetch(`assets/tasks/${file}`)
