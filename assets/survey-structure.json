@@ -1,17 +1,6 @@
 {
   "sets": [
     {
-      "id": "required",
-      "name": "必填部分",
-      "order": 1,
-      "sections": [
-        {
-          "file": "background.json",
-          "order": 1
-        }
-      ]
-    },
-    {
       "id": "set1",
       "name": "第一組",
       "order": 2,
