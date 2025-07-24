@@ -27,13 +27,13 @@
       "id": "school-name",
       "type": "text",
       "label": "學校名稱",
-      "placeholder": "自動填寫"
+      "placeholder": "輸入學校編號後自動填寫"
     },
     {
       "id": "child-name",
       "type": "text",
       "label": "小朋友姓名",
-      "placeholder": "自動填寫",
+      "placeholder": "輸入學生編號自動填寫，可自行修改",
       "required": true
     },
     {
