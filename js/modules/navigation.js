@@ -75,16 +75,6 @@ export function navigatePage(direction) {
                     renderCurrentQuestion();
                 }
             });
-        } else if (section.id === 'nonsym' && prevQuestion && prevQuestion.id === 'NONSYM_ins2') {
-            state.timerSection = 'nonsym';
-            state.autoNext = true;
-            startTimer(120, () => {
-                const idx = section.questions.findIndex(q => q.id === 'NONSYM_timeout');
-                if (idx !== -1) {
-                    state.currentPage = idx;
-                    renderCurrentQuestion();
-                }
-            });
         }
     }
 
@@ -102,6 +92,11 @@ export function navigatePage(direction) {
     if (newPage < 0) {
         showToc();
     } else if (newPage >= 0 && newPage < section.questions.length) {
+        const nextQuestion = section.questions[newPage];
+        if (nextQuestion && nextQuestion.id === 'SYM_timeout') {
+            stopTimer();
+            state.autoNext = false;
+        }
         state.currentPage = newPage;
         renderCurrentQuestion();
     } else if (newPage >= section.questions.length) {

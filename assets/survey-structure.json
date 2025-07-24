@@ -25,12 +25,8 @@
           "order": 2
         },
         {
-          "file": "NONSYM.json",
-          "order": 3
-        },
-        {
           "file": "TheoryofMind.json",
-          "order": 4
+          "order": 3
         }
       ]
     },

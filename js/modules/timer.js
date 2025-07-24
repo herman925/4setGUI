@@ -7,6 +7,14 @@ export const timerState = {
 
 const timerEl = document.getElementById('timer');
 
+function showTimer() {
+    if (timerEl) timerEl.classList.remove('hidden');
+}
+
+function hideTimer() {
+    if (timerEl) timerEl.classList.add('hidden');
+}
+
 function formatTime(sec) {
     const m = String(Math.floor(sec / 60)).padStart(2, '0');
     const s = String(sec % 60).padStart(2, '0');
@@ -24,6 +32,7 @@ export function startTimer(seconds, cb) {
     timerState.remaining = seconds;
     timerState.callback = cb;
     timerState.running = true;
+    showTimer();
     updateDisplay();
     timerState.interval = setInterval(() => {
         timerState.remaining--;
@@ -44,6 +53,7 @@ export function stopTimer() {
     }
     timerState.running = false;
     timerState.remaining = 0;
+    hideTimer();
     updateDisplay();
 }
 
@@ -55,6 +65,7 @@ export function finishTimer() {
     const cb = timerState.callback;
     timerState.running = false;
     timerState.remaining = 0;
+    hideTimer();
     updateDisplay();
     if (typeof cb === 'function') {
         cb();
