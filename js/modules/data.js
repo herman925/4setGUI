@@ -28,7 +28,16 @@ export function fetchSurveyData() {
                     })
             );
 
-            return Promise.all(loadPromises);
+            return Promise.all(loadPromises).then(() => {
+                return fetch('assets/tasks/NONSYM.json')
+                    .then(resp => resp.json())
+                    .then(nonsym => {
+                        if (state.surveySections['sym']) {
+                            state.surveySections['sym'].questions = state.surveySections['sym'].questions.concat(nonsym.questions);
+                        }
+                        state.surveySections['nonsym'] = nonsym;
+                    });
+            });
         });
 }
 
