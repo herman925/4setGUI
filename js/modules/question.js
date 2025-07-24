@@ -9,14 +9,15 @@ function updateDebugInfo(questionId) {
     if (!debugInfoEl) return;
 
     const sectionId = state.currentSectionId;
-    if (!state.debugMode || (sectionId !== 'erv' && sectionId !== 'cm' && sectionId !== 'finemotor')) {
+    const rules = terminationRules[sectionId];
+
+    if (!state.debugMode || !rules) {
         debugInfoEl.textContent = '';
         return;
     }
 
-    const rules = terminationRules[sectionId];
     const section = state.surveySections[sectionId];
-    if (!rules || !section) {
+    if (!section) {
         debugInfoEl.textContent = '';
         return;
     }
@@ -86,6 +87,11 @@ function formatLabel(label) {
     }
 
     if (typeof label === 'object' && label !== null) {
+        // New: Handle `parts` array for complex labels
+        if (Array.isArray(label.parts)) {
+            return label.parts.map(part => formatLabel(part)).join('');
+        }
+
         let text = (label.zh || label.en || '').replace(/\n/g, '<br>');
         const mappings = {
             attention: 'highlight-attention',
@@ -102,30 +108,23 @@ function formatLabel(label) {
             if (label[key]) {
                 const val = label[key];
                 if (Array.isArray(val)) {
-                    // Handle multiple styling values
                     val.forEach(styleValue => {
                         const span = `<span class="${mappings[key]}">${styleValue}</span>`;
-                        // replace first occurrence only
                         text = text.replace(styleValue, span);
                     });
                 } else {
-                    // Handle single styling value
                     const span = `<span class="${mappings[key]}">${val}</span>`;
-                    // replace first occurrence only
                     text = text.replace(val, span);
                 }
             }
         }
         
-        // Add image(s) if specified in label
         if (label.image) {
             if (Array.isArray(label.image)) {
-                // Handle multiple images - stack vertically
                 label.image.forEach(imagePath => {
                     text += `<br><img src="assets/${imagePath}" class="label-image" alt="Label image">`;
                 });
             } else {
-                // Handle single image
                 text += `<br><img src="assets/${label.image}" class="label-image" alt="Label image">`;
             }
         }
