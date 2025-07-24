@@ -60,6 +60,17 @@ export function navigatePage(direction) {
         }
     }
 
+    if (direction > 0 && state.pendingTermination && state.pendingTermination.id === question.id) {
+        if (!state.pendingTermination.allowNext) {
+            state.completionTimes[state.currentSectionId] = new Date().toISOString();
+            saveToLocal();
+            showToc();
+            state.pendingTermination = null;
+            return;
+        }
+        state.pendingTermination = null;
+    }
+
     if (newPage < 0) {
         showToc();
     } else if (newPage >= 0 && newPage < section.questions.length) {

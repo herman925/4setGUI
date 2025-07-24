@@ -17,7 +17,8 @@ export const state = {
     viewedQuestions: {},
     completed: false,
     infoDisplayInterval: null,
-    debugMode: false
+    debugMode: false,
+    pendingTermination: null
 };
 
 export function formatTimestamp(date) {
