@@ -1,5 +1,6 @@
 import { state, logDebug, formatTimestamp } from './state.js';
 import { renderCurrentQuestion } from './question.js';
+import { startTimer, stopTimer } from './timer.js';
 import { startAutosave, loadAutosave, saveToLocal } from './autosave.js';
 import { loadSectionData } from './data.js';
 import { showPage, renderToc, updateInfoDisplay, renderEntryForm, clearErrors, displayError } from './ui.js';
@@ -11,6 +12,8 @@ const topNav = document.getElementById('top-nav');
 
 export function navigateToSection(sectionId) {
     logDebug('Navigating to section:', sectionId);
+    stopTimer();
+    state.autoNext = false;
     state.currentSectionId = sectionId;
     state.currentPage = 0;
     const now = formatTimestamp(new Date());
@@ -40,6 +43,7 @@ export function navigatePage(direction) {
     if (!section) return;
 
     const newPage = state.currentPage + direction;
+    const prevQuestion = section.questions[state.currentPage];
 
     // Save response before navigating
     const question = section.questions[state.currentPage];
@@ -57,6 +61,30 @@ export function navigatePage(direction) {
         saveToLocal();
         if (question.id === 'child-name') {
             updateInfoDisplay();
+        }
+    }
+
+    if (direction > 0) {
+        if (section.id === 'sym' && prevQuestion && prevQuestion.id === 'SYM_ins2') {
+            state.timerSection = 'sym';
+            state.autoNext = true;
+            startTimer(120, () => {
+                const idx = section.questions.findIndex(q => q.id === 'SYM_timeout');
+                if (idx !== -1) {
+                    state.currentPage = idx;
+                    renderCurrentQuestion();
+                }
+            });
+        } else if (section.id === 'nonsym' && prevQuestion && prevQuestion.id === 'NONSYM_ins2') {
+            state.timerSection = 'nonsym';
+            state.autoNext = true;
+            startTimer(120, () => {
+                const idx = section.questions.findIndex(q => q.id === 'NONSYM_timeout');
+                if (idx !== -1) {
+                    state.currentPage = idx;
+                    renderCurrentQuestion();
+                }
+            });
         }
     }
 
@@ -78,6 +106,8 @@ export function navigatePage(direction) {
         renderCurrentQuestion();
     } else if (newPage >= section.questions.length) {
         logDebug(`navigatePage: End of section ${state.currentSectionId} reached.`);
+        stopTimer();
+        state.autoNext = false;
         state.completionTimes[state.currentSectionId] = new Date().toISOString();
         saveToLocal();
         if (checkSurveyCompletion()) {
@@ -89,6 +119,8 @@ export function navigatePage(direction) {
 }
 
 export function showToc() {
+    stopTimer();
+    state.autoNext = false;
     if (state.currentSectionId) {
         const now = formatTimestamp(new Date());
         const ts = state.sectionTimestamps[state.currentSectionId] || {};

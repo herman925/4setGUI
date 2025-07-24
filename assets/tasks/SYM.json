@@ -1,12 +1,1240 @@
 {
   "id": "sym",
-  "title": "符號關係",
+  "title": "符號數字比較",
+  "timer": 120,
   "questions": [
     {
-      "id": "sym_q1",
+      "id": "SYM_Cover",
+      "type": "instruction",
+      "label": "Symbolic \n\n確認進入測試請按右下方箭頭（➜）"
+    },
+    {
+      "id": "SYM_ins1",
+      "type": "instruction",
+      "label": "此測驗採用計時方式，小朋友需在兩分鐘內盡量答完。\n「你睇吓啲數字，話俾我聽邊一個數字比較大?」"
+    },
+    {
+      "id": "SYM_S1",
+      "type": "image-choice",
+      "label": "邊個大啲？1定係7？",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "7"
+      }
+    },
+    {
+      "id": "SYM_S2",
+      "type": "image-choice",
+      "label": "邊個大啲？8定係2？",
+      "options": [
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "8"
+      }
+    },
+    {
+      "id": "SYM_S3",
+      "type": "image-choice",
+      "label": "邊個大啲？2定係5？",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "5"
+      }
+    },
+    {
+      "id": "SYM_P1",
+      "type": "image-choice",
+      "label": "Practice 1",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_P2",
+      "type": "image-choice",
+      "label": "Practice 2",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_P3",
+      "type": "image-choice",
+      "label": "Practice 3",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_P4",
+      "type": "image-choice",
+      "label": "Practice 4",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_P5",
+      "type": "image-choice",
+      "label": "Practice 5",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_P6",
+      "type": "image-choice",
+      "label": "Practice 6",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_P7",
+      "type": "image-choice",
+      "label": "Practice 7",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_P8",
+      "type": "image-choice",
+      "label": "Practice 8",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_P9",
+      "type": "image-choice",
+      "label": "Practice 9",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ]
+    },
+    {
+      "id": "SYM_ins2",
+      "type": "instruction",
+      "label": "做得好，跟住會計時兩分鐘，你試下好似啱啱咁，好快咁指俾我睇邊個數字大啲，準備好就開始啦。"
+    },
+    {
+      "id": "SYM_1",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_2",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_3",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_4",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_5",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_6",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_7",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_8",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_9",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_10",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_11",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_12",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_13",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_14",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_15",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_16",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_17",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_18",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_19",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_20",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_21",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_22",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_23",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_24",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_25",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_26",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_27",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_28",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_29",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_30",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_31",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_32",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_33",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_34",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_35",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_36",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_37",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_38",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_39",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_40",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_41",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_42",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_43",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_44",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_45",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_46",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_47",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_48",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_49",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_50",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_51",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_52",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_53",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_54",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_55",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "L"
+      }
+    },
+    {
+      "id": "SYM_56",
+      "type": "image-choice",
+      "label": "數字大小比較測試",
+      "options": [
+        {
+          "value": "L",
+          "label": "左邊"
+        },
+        {
+          "value": "R",
+          "label": "右邊"
+        }
+      ],
+      "scoring": {
+        "correctAnswer": "R"
+      }
+    },
+    {
+      "id": "SYM_timeout",
+      "type": "instruction",
+      "label": "時間到／已完成，請進行下一部分。"
+    },
+    {
+      "id": "SYM_Date",
       "type": "text",
-      "label": "這是一個符號關係的佔位問題。",
-      "required": true
+      "label": "完成日期："
+    },
+    {
+      "id": "SYM_Com",
+      "type": "radio",
+      "label": "已完成",
+      "options": [
+        {
+          "value": "done",
+          "label": "已完成"
+        }
+      ]
     }
   ]
 }
