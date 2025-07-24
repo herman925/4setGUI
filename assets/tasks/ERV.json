@@ -582,7 +582,7 @@
     },
     {
       "id": "ERV_Ter1",
-      "type": "text",
+      "type": "instruction",
       "label": "再按右下方箭頭（➜）進入下一環節。"
     },
     {
