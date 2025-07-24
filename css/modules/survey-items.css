@@ -90,6 +90,16 @@
     color: #000;
 }
 
+/* Sequence styling for Math Pattern questions */
+.math-seq {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
 /* Layout for image-choice questions */
 .image-choice-group {
     display: grid;

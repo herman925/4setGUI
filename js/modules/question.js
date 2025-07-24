@@ -75,6 +75,10 @@ export function renderCurrentQuestion() {
     // Render the question itself
     const questionWrapper = document.createElement('div');
     questionWrapper.className = 'question';
+    // expose section id as data attribute for styling hooks
+    if (section && section.id) {
+        questionWrapper.dataset.sectionId = section.id;
+    }
 
     if (labelText) {
         const label = document.createElement('label');

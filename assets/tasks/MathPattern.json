@@ -10,7 +10,7 @@
     {
       "id": "MPTr1",
       "type": "radio",
-      "label": "睇吓數字規律：7 6 7 8 5 7 6 7 8 5 7 6 7 ？ 問號應該擺邊個數字？",
+      "label": "睇吓數字規律：<span class="math-seq">7 6 7 8 5 7 6 7 8 5 7 6 7 ？</span> 問號應該擺邊個數字？",
       "options": [
         {
           "value": "5",
@@ -36,7 +36,7 @@
     {
       "id": "MPTr2",
       "type": "radio",
-      "label": "睇吓數字規律：2 2 1 0 2 2 1 0 2 2 1 ？ 問號應該擺邊個數字？",
+      "label": "睇吓數字規律：<span class="math-seq">2 2 1 0 2 2 1 0 2 2 1 ？</span> 問號應該擺邊個數字？",
       "options": [
         {
           "value": "0",
@@ -62,7 +62,7 @@
     {
       "id": "MPTr3",
       "type": "radio",
-      "label": "睇吓數字規律：4 7 5 4 4 7 5 4 4 7 5 ？ 問號應該擺邊個數字？",
+      "label": "睇吓數字規律：<span class="math-seq">4 7 5 4 4 7 5 4 4 7 5 ？</span> 問號應該擺邊個數字？",
       "options": [
         {
           "value": "4",
@@ -88,7 +88,7 @@
     {
       "id": "MPTr4",
       "type": "radio",
-      "label": "睇吓數字規律：8 6 8 5 7 8 6 8 5 7 8 6 8 ？ 問號應該擺邊個數字？",
+      "label": "睇吓數字規律：<span class="math-seq">8 6 8 5 7 8 6 8 5 7 8 6 8 ？</span> 問號應該擺邊個數字？",
       "options": [
         {
           "value": "5",
@@ -114,7 +114,7 @@
     {
       "id": "MPTr5",
       "type": "radio",
-      "label": "睇吓數字規律：8 6 2 4 2 8 6 2 4 2 8 6 2 ？ 問號應該擺邊個數字？",
+      "label": "睇吓數字規律：<span class="math-seq">8 6 2 4 2 8 6 2 4 2 8 6 2 ？</span> 問號應該擺邊個數字？",
       "options": [
         {
           "value": "3",
@@ -140,7 +140,7 @@
     {
       "id": "MPTr6",
       "type": "radio",
-      "label": "睇吓數字規律：3 5 3 9 3 3 5 3 9 3 3 5 3 ？ 問號應該擺邊個數字？",
+      "label": "睇吓數字規律：<span class="math-seq">3 5 3 9 3 3 5 3 9 3 3 5 3 ？</span> 問號應該擺邊個數字？",
       "options": [
         {
           "value": "3",
@@ -171,7 +171,7 @@
     {
       "id": "MPTgr1",
       "type": "radio",
-      "label": "2 3 4 5 ？ 7 邊個數字唔見咗？",
+      "label": "<span class="math-seq">2 3 4 5 ？ 7</span> 邊個數字唔見咗？",
       "options": [
         {
           "value": "Y",
@@ -189,7 +189,7 @@
     {
       "id": "MPTgr2",
       "type": "radio",
-      "label": "13 14 15 ？ 17 邊個數字唔見咗？",
+      "label": "<span class="math-seq">13 14 15 ？ 17</span> 邊個數字唔見咗？",
       "options": [
         {
           "value": "Y",
@@ -207,7 +207,7 @@
     {
       "id": "MPTgr3",
       "type": "radio",
-      "label": "9 8 ？ 6 5 4 邊個數字唔見咗？",
+      "label": "<span class="math-seq">9 8 ？ 6 5 4</span> 邊個數字唔見咗？",
       "options": [
         {
           "value": "Y",
@@ -225,7 +225,7 @@
     {
       "id": "MPTgr4",
       "type": "radio",
-      "label": "13 12 11 ？ 9 邊個數字唔見咗？",
+      "label": "<span class="math-seq">13 12 11 ？ 9</span> 邊個數字唔見咗？",
       "options": [
         {
           "value": "Y",
@@ -243,7 +243,7 @@
     {
       "id": "MPTgr5",
       "type": "radio",
-      "label": "18 17 ？ 15 14 13 邊個數字唔見咗？",
+      "label": "<span class="math-seq">18 17 ？ 15 14 13</span> 邊個數字唔見咗？",
       "options": [
         {
           "value": "Y",
@@ -261,7 +261,7 @@
     {
       "id": "MPTgr6",
       "type": "radio",
-      "label": "15 14 ？ 12 11 10 邊個數字唔見咗？",
+      "label": "<span class="math-seq">15 14 ？ 12 11 10</span> 邊個數字唔見咗？",
       "options": [
         {
           "value": "Y",
