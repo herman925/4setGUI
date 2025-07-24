@@ -38,6 +38,26 @@
     text-decoration: underline;
 }
 
+/* Additional highlight colours used across tasks */
+.highlight-blue {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.highlight-orange {
+    font-weight: bold;
+    color: #e67d21;
+}
+
+/* Simple coloured spans without emphasis */
+.text-blue {
+    color: #2980b9;
+}
+
+.text-orange {
+    color: #e67d21;
+}
+
 /* Helpers for layout within survey items */
 .question-label {
     display: block;

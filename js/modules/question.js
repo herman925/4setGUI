@@ -11,7 +11,11 @@ function formatLabel(label) {
             attention: 'highlight-attention',
             instruction: 'highlight-instruction',
             target: 'highlight-target',
-            word_compound: 'highlight-word-compound'
+            word_compound: 'highlight-word-compound',
+            blue: 'highlight-blue',
+            orange: 'highlight-orange',
+            blue_text: 'text-blue',
+            orange_text: 'text-orange'
         };
         for (const key of Object.keys(mappings)) {
             if (label[key]) {
