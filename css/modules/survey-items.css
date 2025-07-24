@@ -49,6 +49,18 @@
     margin-bottom: 8px;
 }
 
+/* Instruction type styling */
+.question .instruction-note {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #6c757d;
+    border-radius: 4px;
+    font-style: italic;
+    color: #6c757d;
+    text-align: center;
+}
+
 /* Specific style for Chinese Word Reading characters */
 .cwr-word {
     font-size: 32px;
