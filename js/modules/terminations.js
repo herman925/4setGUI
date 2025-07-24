@@ -18,6 +18,14 @@ export const terminationRules = {
             endId: 'ERV_36',
             minScore: 5
         }
+    ],
+    finemotor: [
+        {
+            terminationId: 'FM_Ter',
+            startId: 'FMsqu_1',
+            endId: 'FMsqu_3',
+            minScore: 1
+        }
     ]
 };
 
@@ -48,8 +56,15 @@ export function evaluateTermination(sectionId, questionId) {
     if (!rule) return null;
     const total = calculateScore(sectionId, rule.startId, rule.endId);
     const allowNext = total >= rule.minScore;
-    const message = allowNext
-        ? '該部分得分多於 4 分，請按此繼續測試。'
-        : '該部分得分少於 5 分，該測試已完成，按此結束該測試。';
+    let message;
+    if (sectionId === 'finemotor') {
+        message = allowNext
+            ? '正方形剪紙得分大於0分，可以繼續剪樹測試。'
+            : '正方形剪紙得分為0分，該測試已完成，按此結束。';
+    } else {
+        message = allowNext
+            ? '該部分得分多於 4 分，請按此繼續測試。'
+            : '該部分得分少於 5 分，該測試已完成，按此結束該測試。';
+    }
     return { id: questionId, allowNext, message };
 }
