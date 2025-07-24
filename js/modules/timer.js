@@ -1,4 +1,3 @@
-import { state } from './state.js';
 
 export const timerState = {
     remaining: 0,
@@ -11,16 +10,20 @@ const timerEl = document.getElementById('timer');
 
 function showTimer() {
     if (timerEl) {
-        if (['sym', 'nonsym'].includes(state.timerSection)) {
-            timerEl.classList.remove('hidden');
-        } else {
-            timerEl.classList.add('hidden');
-        }
+        timerEl.classList.remove('hidden');
     }
 }
 
 function hideTimer() {
     if (timerEl) timerEl.classList.add('hidden');
+}
+
+export function setTimerVisibility(visible) {
+    if (visible) {
+        showTimer();
+    } else {
+        hideTimer();
+    }
 }
 
 function formatTime(sec) {

@@ -75,7 +75,7 @@ export function navigatePage(direction) {
                     renderCurrentQuestion();
                 }
             });
-        } else if (section.id === 'sym' && prevQuestion && prevQuestion.id === 'NONSYM_ins2') {
+        } else if (section.id === 'nonsym' && prevQuestion && prevQuestion.id === 'NONSYM_ins2') {
             state.timerSection = 'nonsym';
             state.autoNext = true;
             startTimer(120, () => {

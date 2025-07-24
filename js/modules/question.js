@@ -1,7 +1,7 @@
 import { state } from './state.js';
 import { evaluateTermination, terminationRules, calculateScore } from './terminations.js';
 import { navigatePage } from './navigation.js';
-import { isTimerRunning } from './timer.js';
+import { isTimerRunning, setTimerVisibility } from './timer.js';
 
 const debugInfoEl = document.getElementById('debug-info');
 
@@ -105,6 +105,14 @@ export function renderCurrentQuestion() {
         questionContainer.innerHTML = 'Error: Question not found.';
         return;
     }
+
+    const symPattern = /^SYM_(?:[1-9]|[1-4][0-9]|5[0-6])$/;
+    const nonsymPattern = /^NONSYM_(?:[1-9]|[1-4][0-9]|5[0-6])$/;
+    const showTimerNow =
+        isTimerRunning() &&
+        ((state.timerSection === 'sym' && symPattern.test(question.id)) ||
+         (state.timerSection === 'nonsym' && nonsymPattern.test(question.id)));
+    setTimerVisibility(showTimerNow);
 
     const terminationInfo = evaluateTermination(section.id, question.id);
     if (terminationInfo) {
