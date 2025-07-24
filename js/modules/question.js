@@ -1,4 +1,5 @@
 import { state } from './state.js';
+import { evaluateTermination } from './terminations.js';
 
 function formatLabel(label) {
     if (typeof label === 'string') {
@@ -48,6 +49,15 @@ export function renderCurrentQuestion() {
         return;
     }
 
+    const terminationInfo = evaluateTermination(section.id, question.id);
+    if (terminationInfo) {
+        state.pendingTermination = terminationInfo;
+    } else {
+        state.pendingTermination = null;
+    }
+
+    const labelText = terminationInfo ? terminationInfo.message : question.label;
+
     if (!state.viewedQuestions) {
         state.viewedQuestions = {};
     }
@@ -66,11 +76,11 @@ export function renderCurrentQuestion() {
     const questionWrapper = document.createElement('div');
     questionWrapper.className = 'question';
 
-    if (question.label) {
+    if (labelText) {
         const label = document.createElement('label');
         label.htmlFor = question.id;
         label.classList.add('attention', 'question-label');
-        label.innerHTML = formatLabel(question.label);
+        label.innerHTML = formatLabel(labelText);
         questionWrapper.appendChild(label);
     }
 
