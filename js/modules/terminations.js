@@ -81,7 +81,11 @@ export function evaluateTermination(sectionId, questionId) {
     const total = calculateScore(sectionId, rule.startId, rule.endId);
     const allowNext = total >= rule.minScore;
     let message;
-    if (sectionId === 'cm') {
+    if (sectionId === 'finemotor') {
+        message = allowNext
+            ? '正方形剪紙得分大於0分，可以繼續剪樹測試。'
+            : '正方形剪紙得分為0分，該測試已完成，按此結束。';
+    } else if (sectionId === 'cm') {
         const partMatch = /CM_(?:Ter|S)(\d+)/i.exec(rule.terminationId);
         const part = partMatch ? partMatch[1] : '';
         if (rule.terminationId === 'CM_S5') {
@@ -91,7 +95,6 @@ export function evaluateTermination(sectionId, questionId) {
         } else {
             message = `Part ${part} 得分：${total}\n該測試已完成，按此結束該測試。`;
         }
->>>>>>> master
     } else {
         message = allowNext
             ? '該部分得分多於 4 分，請按此繼續測試。'

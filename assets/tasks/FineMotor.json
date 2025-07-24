@@ -9,7 +9,7 @@
     },
     {
       "id": "FMsquare_ins1",
-      "type": "text",
+      "type": "instruction",
       "label": {
         "zh": "「小朋友而家請你用鉸剪沿住黑色邊，將紙上面嘅正方形剪出嚟。」\nPlease follow the line and cut the square.\n展示印有正方形圖案的紙張，請小朋友剪下正方形。\n評分方法：於每一列評分標準的下方選取 0 或 1 以表示小朋友的剪裁有否到相應的正確百分比：\n1 代表有；0 代表沒有\n小朋友必須使用鉸剪完成此 assessment.\n注意：若小朋友在剪正方形時取得 0 分，則無需剪裁樹形圖案。",
         "instruction": "評分方法：",
@@ -96,7 +96,10 @@
           "value": "1",
           "label": "1"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "1"
+      }
     },
     {
       "id": "FMsqu_2",
@@ -111,7 +114,10 @@
           "value": "1",
           "label": "1"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "1"
+      }
     },
     {
       "id": "FMsqu_3",
@@ -126,16 +132,22 @@
           "value": "1",
           "label": "1"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "1"
+      }
     },
     {
       "id": "FM_Ter",
-      "type": "text",
-      "label": "正方形剪紙得分大於0分，可以繼續剪樹測試"
+      "type": "instruction",
+      "label": {
+        "zh": "正方形剪紙得分大於0分，可以繼續剪樹測試",
+        "emphasize": "0分"
+      }
     },
     {
       "id": "FMtree_ins1",
-      "type": "text",
+      "type": "instruction",
       "label": {
         "zh": "「小朋友而家請你用鉸剪將紙上面棵 樹 剪出嚟。」\nPlease follow the line and cut the tree.\n展示印有一棵樹圖案的紙張，請小朋友沿著圖形剪裁。\n評分標準：就幼兒裁剪整個樹形圖案形對以下部分進行評分",
         "instruction": "評分標準："

@@ -5,7 +5,10 @@
     {
       "id": "ERV_Cover",
       "type": "instruction",
-      "label": "English Vocab 確認進入測試請按右下方箭頭（➜）"
+      "label": {
+        "zh": "English Vocab\n確認進入測試請按右下方箭頭（➜）",
+        "attention": "右下方箭頭（➜）"
+      }
     },
     {
       "id": "ERV_ins1",
