@@ -86,8 +86,10 @@ export function showToc() {
         saveToLocal();
     }
     renderToc();
-    document.getElementById('top-nav').classList.add('hidden');
-    document.body.classList.remove('nav-visible');
+    topNav.classList.remove('hidden');
+    topNav.classList.add('visible');
+    document.body.classList.add('nav-visible');
+    updateInfoDisplay();
     if (state.infoDisplayInterval) {
         clearInterval(state.infoDisplayInterval);
         state.infoDisplayInterval = null;
