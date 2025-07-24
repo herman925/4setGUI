@@ -42,7 +42,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_P2a",
@@ -65,12 +68,15 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_ins3",
       "type": "instruction",
-      "label":{
+      "label": {
         "zh": "記錄規則：\n必須標準答案才能比分。\n請勿在現場教導他們相關知識。\n\n提示語：\n「我哋而家正式開始，我唔會再比提示同埋答案你。」\nLet's start.",
         "orange_text": "Let's start.",
         "emphasize": "請勿在現場教導他們相關知識。",
@@ -98,7 +104,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_2a",
@@ -121,7 +130,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_3a",
@@ -144,7 +156,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_4a",
@@ -167,7 +182,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_5a",
@@ -190,7 +208,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_6a",
@@ -213,7 +234,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_7a",
@@ -236,7 +260,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_Ter1",
@@ -264,7 +291,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_9a",
@@ -287,7 +317,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_10a",
@@ -310,7 +343,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_11a",
@@ -333,7 +369,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_12a",
@@ -356,7 +395,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_Ter2",
@@ -384,7 +426,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_14a",
@@ -407,7 +452,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_15a",
@@ -430,7 +478,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_16a",
@@ -453,7 +504,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_17a",
@@ -476,7 +530,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_Ter3",
@@ -504,7 +561,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_19a",
@@ -527,7 +587,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_20a",
@@ -550,7 +613,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_21a",
@@ -573,7 +639,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_22a",
@@ -596,7 +665,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_Ter4",
@@ -624,7 +696,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_24a",
@@ -647,7 +722,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_25a",
@@ -670,7 +748,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_26a",
@@ -693,7 +774,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_27a",
@@ -716,7 +800,10 @@
           "value": "N",
           "label": "N"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     },
     {
       "id": "CM_S5",
@@ -737,7 +824,10 @@
           "value": "done",
           "label": "已完成"
         }
-      ]
+      ],
+      "scoring": {
+        "correctAnswer": "Y"
+      }
     }
   ]
 }
