@@ -98,7 +98,13 @@ export function renderToc() {
         tocItem.dataset.section = section.id;
 
         const answered = section.questions.filter(q => state.userResponses[q.id]).length;
-        const total = section.questions.length;
+        let total = section.questions.length;
+        if (section.id === 'sym' && state.surveySections['nonsym']) {
+            const hasNonsym = section.questions.some(q => q.id && q.id.startsWith('NONSYM_'));
+            if (!hasNonsym) {
+                total += state.surveySections['nonsym'].questions.length;
+            }
+        }
         const timestamps = state.sectionTimestamps[section.id] || {};
 
         const info = document.createElement('div');
@@ -109,17 +115,6 @@ export function renderToc() {
         title.textContent = section.title || section.id;
         info.appendChild(title);
 
-        const times = document.createElement('div');
-        times.className = 'toc-item-times';
-        const startedLabel = labelTranslations.started;
-        const lastLabel = labelTranslations.lastUsed;
-        const startSpan = document.createElement('span');
-        startSpan.textContent = `${startedLabel}: ${timestamps.start || '-'}`;
-        const lastSpan = document.createElement('span');
-        lastSpan.textContent = `${lastLabel}: ${timestamps.lastUsed || '-'}`;
-        times.appendChild(startSpan);
-        times.appendChild(lastSpan);
-        info.appendChild(times);
 
         const progress = document.createElement('div');
         progress.className = 'toc-item-progress';
@@ -140,6 +135,15 @@ export function renderToc() {
 
     sortedSets.forEach(set => {
         logDebug('renderToc: Processing set:', set.id);
+        const visibleSections = set.sections.filter(sectionInfo => {
+            const sectionId = sectionInfo.file.replace('.json', '');
+            if (sectionId === 'background') return false; // skip background section
+            if (!sectionVisible(sectionInfo)) return false;
+            return state.surveySections[sectionId];
+        });
+
+        if (visibleSections.length === 0) return; // skip empty sets
+
         const setContainer = document.createElement('div');
         setContainer.className = 'toc-set';
 
@@ -148,23 +152,16 @@ export function renderToc() {
         setTitle.textContent = set.name || set.id;
         setContainer.appendChild(setTitle);
 
-        set.sections.forEach(sectionInfo => {
+        visibleSections.forEach(sectionInfo => {
             const sectionId = sectionInfo.file.replace('.json', '');
-            if (sectionId === 'background') return; // skip background section in TOC
-            if (!sectionVisible(sectionInfo)) return; // hide by condition
             const section = state.surveySections[sectionId];
-            if (section) {
-                logDebug(`renderToc:   - Section: ${sectionId}`);
-                const tocItem = createTocItem(section);
-                setContainer.appendChild(tocItem);
-            } else {
-                logDebug(`renderToc:   - Section data for ${sectionId} not found in state.surveySections.`);
-            }
+            const tocItem = createTocItem(section);
+            setContainer.appendChild(tocItem);
         });
+
         tocList.appendChild(setContainer);
     });
     logDebug('renderToc: Finished rendering TOC.');
-    updateSurveyTimestamps();
 }
 
 export function renderSectionJumper() {
@@ -248,15 +245,3 @@ export function updateInfoDisplay() {
     datetimeEl.title = datetimeString;
 }
 
-export function updateSurveyTimestamps() {
-    const startEl = document.getElementById('toc-start-date');
-    const endEl = document.getElementById('toc-end-date');
-    if (startEl) {
-        const startedLabel = labelTranslations.started;
-        startEl.textContent = `${startedLabel}: ${state.startDate || '-'}`;
-    }
-    if (endEl) {
-        const lastLabel = labelTranslations.lastUsed;
-        endEl.textContent = `${lastLabel}: ${state.endDate || '-'}`;
-    }
-}

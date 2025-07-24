@@ -1,3 +1,5 @@
+import { state } from './state.js';
+
 export const timerState = {
     remaining: 0,
     interval: null,
@@ -8,7 +10,13 @@ export const timerState = {
 const timerEl = document.getElementById('timer');
 
 function showTimer() {
-    if (timerEl) timerEl.classList.remove('hidden');
+    if (timerEl) {
+        if (['sym', 'nonsym'].includes(state.timerSection)) {
+            timerEl.classList.remove('hidden');
+        } else {
+            timerEl.classList.add('hidden');
+        }
+    }
 }
 
 function hideTimer() {
