@@ -4,12 +4,12 @@
   "questions": [
     {
       "id": "ERV_Cover",
-      "type": "text",
+      "type": "instruction",
       "label": "English Vocab 確認進入測試請按右下方箭頭（➜）"
     },
     {
       "id": "ERV_ins1",
-      "type": "text",
+      "type": "instruction",
       "label": {
         "zh": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」\n<span class=\"text-orange\">Here are 4 pictures, can you listen and point to the picture you hear? Let's try.</span>",
         "blue_text": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」"
@@ -18,7 +18,7 @@
     {
       "id": "ERV_P1",
       "type": "image-choice",
-      "label": "請為幼兒戴上<span class=\"highlight-blue\">耳機</span>，確保音量適中)\n只可<span class=\"highlight-blue\">播放一次</span>)\n答對便稱讚；答錯則用手指指出正確的圖片)",
+      "label": "請為幼兒戴上<span class=\"highlight-blue\">耳機</span>，確保音量適中\n只可<span class=\"highlight-blue\">播放一次</span>\n答對便稱讚；答錯則用手指指出正確的圖片",
       "media": {
         "audio": "audio/ERV/ERV_P1.mp3"
       },
