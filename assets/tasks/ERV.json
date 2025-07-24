@@ -100,25 +100,25 @@
         {
           "value": "opt1",
           "media": {
-            "image": "images/ERV_P3.1.jpeg"
+            "image": "images/ERV/ERV_P3.1.jpeg"
           }
         },
         {
           "value": "opt2",
           "media": {
-            "image": "images/ERV_P3.2.jpeg"
+            "image": "images/ERV/ERV_P3.2.jpeg"
           }
         },
         {
           "value": "opt3",
           "media": {
-            "image": "images/ERV_P3.3.jpeg"
+            "image": "images/ERV/ERV_P3.3.jpeg"
           }
         },
         {
           "value": "opt4",
           "media": {
-            "image": "images/ERV_P3.4.jpeg"
+            "image": "images/ERV/ERV_P3.4.jpeg"
           }
         }
       ],
@@ -128,7 +128,7 @@
     },
     {
       "id": "注意事項",
-      "type": "text",
+      "type": "instruction",
       "label": {
         "zh": "「正式開始，我唔會再比提示同埋答案你。\n正式開始後，請勿給予答案 或 給出正/負面反饋。\n確保小朋友能聽清的狀態下，<b>每道題目只聽一次</b>。",
         "en": "Let's begin, but I cannot give you any more clues.",
