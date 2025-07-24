@@ -6,7 +6,7 @@
       "id": "CCM_Cover",
       "type": "instruction",
       "label": {
-        "zh": "搵字遊戲 確認進入測試請按右下方箭頭（➜）。",
+        "zh": "搵字遊戲\n\n確認進入測試請按右下方箭頭（➜）",
         "attention": "右下方箭頭（➜）"
       }
     },

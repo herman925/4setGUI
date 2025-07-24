@@ -4,8 +4,9 @@
   "questions": [
     {
       "id": "FM_Cover",
-      "type": "text",
-      "label": "剪紙 確認進入測試請按右下方箭頭（➜）。"
+      "type": "instruction",
+      "label": "剪紙\n\n確認進入測試請按右下方箭頭（➜）",
+        "attention": "右下方箭頭（➜）"
     },
     {
       "id": "FMsquare_ins1",

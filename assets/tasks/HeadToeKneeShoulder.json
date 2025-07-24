@@ -5,7 +5,8 @@
     {
       "id": "HTKS_Cover",
       "type": "text",
-      "label": "Head-toe-knee-shoulder\n\n確認進入測試請按右下方箭頭（➜）。"
+      "label": "Head-toe-knee-shoulder\n\n確認進入測試請按右下方箭頭（➜）",
+        "attention": "右下方箭頭（➜）"
     },
     {
       "id": "HTKS_P1_ins1",

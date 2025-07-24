@@ -5,7 +5,8 @@
     {
       "id": "MPTr_Cover",
       "type": "text",
-      "label": "Math Pattern 確認進入測試請按右下方箭頭（➜）。"
+      "label": "Math Pattern\n\n確認進入測試請按右下方箭頭（➜）",
+        "attention": "右下方箭頭（➜）"
     },
     {
       "id": "MPTr1",
