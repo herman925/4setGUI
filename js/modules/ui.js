@@ -115,17 +115,6 @@ export function renderToc() {
         title.textContent = section.title || section.id;
         info.appendChild(title);
 
-        const times = document.createElement('div');
-        times.className = 'toc-item-times';
-        const startedLabel = labelTranslations.started;
-        const lastLabel = labelTranslations.lastUsed;
-        const startSpan = document.createElement('span');
-        startSpan.textContent = `${startedLabel}: ${timestamps.start || '-'}`;
-        const lastSpan = document.createElement('span');
-        lastSpan.textContent = `${lastLabel}: ${timestamps.lastUsed || '-'}`;
-        times.appendChild(startSpan);
-        times.appendChild(lastSpan);
-        info.appendChild(times);
 
         const progress = document.createElement('div');
         progress.className = 'toc-item-progress';

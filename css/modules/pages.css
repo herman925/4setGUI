@@ -119,14 +119,6 @@
     align-items: flex-start;
 }
 
-.toc-item-times {
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
-    color: #666;
-}
-
-
 .toc-set-header {
     margin: 20px 0 10px 0;
     padding: 10px 0;
