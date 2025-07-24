@@ -5,13 +5,14 @@ const debugInfoEl = document.getElementById('debug-info');
 
 function updateDebugInfo(questionId) {
     if (!debugInfoEl) return;
-    if (!state.debugMode || state.currentSectionId !== 'erv') {
+    const sectionId = state.currentSectionId;
+    if (!state.debugMode || (sectionId !== 'erv' && sectionId !== 'cm')) {
         debugInfoEl.textContent = '';
         return;
     }
 
-    const rules = terminationRules['erv'];
-    const section = state.surveySections['erv'];
+    const rules = terminationRules[sectionId];
+    const section = state.surveySections[sectionId];
     if (!rules || !section) {
         debugInfoEl.textContent = '';
         return;
@@ -39,10 +40,16 @@ function updateDebugInfo(questionId) {
         return;
     }
 
-    const score = calculateScore('erv', currentRule.startId, currentRule.endId);
+    const score = calculateScore(sectionId, currentRule.startId, currentRule.endId);
     const needed = currentRule.minScore - score;
     const message = needed > 0 ? `還需要 ${needed} 分` : '已達標';
-    debugInfoEl.textContent = `ERV 分數：${score} / ${currentRule.minScore}，${message}`;
+    if (sectionId === 'erv') {
+        debugInfoEl.textContent = `ERV 分數：${score} / ${currentRule.minScore}，${message}`;
+    } else {
+        const partMatch = /CM_(?:Ter|S)(\d+)/i.exec(currentRule.terminationId);
+        const part = partMatch ? partMatch[1] : '';
+        debugInfoEl.textContent = `CM 第 ${part} 部分分數：${score} / ${currentRule.minScore}，${message}`;
+    }
 }
 
 function formatLabel(label) {
