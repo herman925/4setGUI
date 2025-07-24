@@ -48,3 +48,13 @@
     display: block;
     margin-bottom: 8px;
 }
+
+/* Specific style for Chinese Word Reading characters */
+.cwr-word {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+    color: #000;
+}
+
