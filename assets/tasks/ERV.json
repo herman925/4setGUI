@@ -10,12 +10,15 @@
     {
       "id": "ERV_ins1",
       "type": "text",
-      "label": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」\nHere are 4 pictures, can you listen and point to the picture you hear? Let's try."
+      "label": {
+        "zh": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」\n<span class=\"text-orange\">Here are 4 pictures, can you listen and point to the picture you hear? Let's try.</span>",
+        "blue_text": "「呢度有4幅圖片，姐姐/哥哥會讀一個英文字，你指俾我睇佢講緊嘅係邊幅圖片，我哋試吓好唔好？」"
+      }
     },
     {
       "id": "ERV_P1",
       "type": "image-choice",
-      "label": "請為幼兒戴上耳機，確保音量適中)\n只可播放一次)\n答對便稱讚；答錯則用手指指出正確的圖片)",
+      "label": "請為幼兒戴上<span class=\"highlight-blue\">耳機</span>，確保音量適中)\n只可<span class=\"highlight-blue\">播放一次</span>)\n答對便稱讚；答錯則用手指指出正確的圖片)",
       "media": {
         "audio": "audio/erv_p1.mp3"
       },
@@ -52,7 +55,7 @@
     {
       "id": "ERV_P2",
       "type": "image-choice",
-      "label": "請為幼兒戴上耳機，確保音量適中)\n只可播放一次)\n答對便稱讚；答錯則用手指指出正確的圖片)",
+      "label": "請為幼兒戴上<span class=\"highlight-blue\">耳機</span>，確保音量適中)\n只可<span class=\"highlight-blue\">播放一次</span>)\n答對便稱讚；答錯則用手指指出正確的圖片)",
       "media": {
         "audio": "audio/erv_p2.mp3"
       },
@@ -89,7 +92,7 @@
     {
       "id": "ERV_P3",
       "type": "image-choice",
-      "label": "請為幼兒戴上耳機，確保音量適中)\n只可播放一次)\n答對便稱讚；答錯則用手指指出正確的圖片)",
+      "label": "請為幼兒戴上<span class=\"highlight-blue\">耳機</span>，確保音量適中)\n只可<span class=\"highlight-blue\">播放一次</span>)\n答對便稱讚；答錯則用手指指出正確的圖片)",
       "media": {
         "audio": "audio/erv_p3.mp3"
       },
@@ -126,7 +129,12 @@
     {
       "id": "注意事項",
       "type": "text",
-      "label": "「正式開始，我唔會再比提示同埋答案你。\nLet's begin, but I cannot give you any more clues.\n正式開始後，請勿給予答案 或 給出正/負面反饋。\n確保小朋友能聽清的狀態下，每道題目只聽一次。"
+      "label": {
+        "zh": "「正式開始，我唔會再比提示同埋答案你。\n正式開始後，請勿給予答案 或 給出正/負面反饋。\n確保小朋友能聽清的狀態下，<b>每道題目只聽一次</b>。",
+        "en": "Let's begin, but I cannot give you any more clues.",
+        "target": "唔會",
+        "orange_text": "Let's begin, but I cannot give you any more clues."
+      }
     },
     {
       "id": "ERV_1",
