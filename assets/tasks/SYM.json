@@ -1,12 +1,18 @@
 {
   "id": "sym",
-  "title": "符號關係",
+  "title": "符號數字比較",
+  "timer": 120,
   "questions": [
-    {
-      "id": "sym_q1",
-      "type": "text",
-      "label": "這是一個符號關係的佔位問題。",
-      "required": true
-    }
+    {"id": "SYM_Cover", "type": "instruction", "label": "Symbolic \n\n確認進入測試請按右下方箭頭（➜）"},
+    {"id": "SYM_ins1", "type": "instruction", "label": "此測驗採用計時方式，小朋友需在兩分鐘內盡量答完。\n\n\u300c你睇吓啲數字，話俾我聽邊一個數字比較大?\u300d"},
+    {"id": "SYM_S1", "type": "image-choice", "label": "邊個大啲？1定係7？", "options": [{"value":"1","label":"1"},{"value":"7","label":"7"}], "scoring":{"correctAnswer":"7"}},
+    {"id": "SYM_S2", "type": "image-choice", "label": "邊個大啲？8定係2？", "options": [{"value":"8","label":"8"},{"value":"2","label":"2"}], "scoring":{"correctAnswer":"8"}},
+    {"id": "SYM_ins2", "type": "instruction", "label": "做得好，跟住會計時兩分鐘，你試下好似啱啱咁，好快咁指俾我睇邊個數字大啲，準備好就開始啦。"},
+    {"id": "SYM_1", "type": "image-choice", "label": "數字大小比較測試", "options": [{"value":"5","label":"5"},{"value":"1","label":"1"}], "scoring":{"correctAnswer":"5"}},
+    {"id": "SYM_2", "type": "image-choice", "label": "數字大小比較測試", "options": [{"value":"3","label":"3"},{"value":"9","label":"9"}], "scoring":{"correctAnswer":"9"}},
+    {"id": "SYM_3", "type": "image-choice", "label": "數字大小比較測試", "options": [{"value":"4","label":"4"},{"value":"6","label":"6"}], "scoring":{"correctAnswer":"6"}},
+    {"id": "SYM_timeout", "type": "instruction", "label": "時間到／已完成，請進行下一部分。"},
+    {"id": "SYM_Date", "type": "text", "label": "完成日期："},
+    {"id": "SYM_Com", "type": "radio", "label": "已完成", "options": [{"value":"done","label":"已完成"}]}
   ]
 }

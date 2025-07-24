@@ -18,7 +18,9 @@ export const state = {
     completed: false,
     infoDisplayInterval: null,
     debugMode: false,
-    pendingTermination: null
+    pendingTermination: null,
+    timerSection: null,
+    autoNext: false
 };
 
 export function formatTimestamp(date) {
