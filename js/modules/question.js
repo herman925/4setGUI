@@ -56,6 +56,7 @@ function formatLabel(label) {
             attention: 'highlight-attention',
             instruction: 'highlight-instruction',
             target: 'highlight-target',
+            emphasize: 'emphasize',
             word_compound: 'highlight-word-compound',
             blue: 'highlight-blue',
             orange: 'highlight-orange',

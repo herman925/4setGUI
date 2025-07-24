@@ -4,7 +4,7 @@
   "questions": [
     {
       "id": "CCM_Cover",
-      "type": "text",
+      "type": "instruction",
       "label": {
         "zh": "搵字遊戲 確認進入測試請按右下方箭頭（➜）。",
         "attention": "右下方箭頭（➜）"
@@ -12,7 +12,7 @@
     },
     {
       "id": "CCM_ins1",
-      "type": "text",
+      "type": "instruction",
       "label": {
         "zh": "「一陣有啲字，請你跟住我讀一次，然後你用手指指出我想要嘅係邊一個字。」 I will show you some words, please read after me, and point out the character I need.\n記錄規則： 正確答案=1，錯誤或不知道=0，兒童自我改正算其對。\n注意：請勿提供回饋。測試員不可用手逐隻逐隻字指著讀詞語，只可以示意係邊個 trial，例如以手指圍繞詞組打圈示意。",
         "instruction": "記錄規則：",

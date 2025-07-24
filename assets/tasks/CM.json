@@ -4,34 +4,35 @@
   "questions": [
     {
       "id": "CM_Cover",
-      "type": "text",
+      "type": "instruction",
       "label": {
         "zh": "改名遊戲 確認進入測試請按右下方箭頭（➜）。",
-        "attention": "右下方箭頭（➜）",
-        "emphasize": "確認進入"
+        "attention": "右下方箭頭（➜）"
       }
     },
     {
       "id": "CM_ins1",
-      "type": "text",
+      "type": "instruction",
       "label": {
-        "zh": "「小朋友而家請你幫啲物件改個新名。」Please help me to give a new name of the following objects.  「例如，呢度有一支原子筆，佢寫出嚟嘅顏色係藍色嘅，我哋就會叫佢做藍原子筆。咁而家呢度有一支原子筆，佢寫出嚟嘅顏色係紅色嘅，我哋就會叫佢做紅原子筆。」「我哋而家試下好唔好？｣",
-        "instruction": "例如",
-        "attention": "試下好唔好"
+        "zh": "「小朋友而家請你幫啲物件改個新名。」\nPlease help me to give a new name of the following objects.\n「例如，呢度有一支原子筆，佢寫出嚟嘅顏色係藍色嘅，我哋就會叫佢做藍原子筆。咁而家呢度有一支原子筆，佢寫出嚟嘅顏色係紅色嘅，我哋就會叫佢做紅原子筆。」\n「我哋而家試下好唔好？｣",
+        "orange": "Please help me to give a new name of the following objects.",
+        "attention": "我哋而家試下好唔好？"
       }
     },
     {
       "id": "CM_P1a",
-      "type": "text",
+      "type": "instruction",
       "label": {
-        "zh": "第一題，「呢度有張紙，佢係白色嘅，我哋就會叫佢做白紙。\n咁而家又有張紙，佢係紅色嘅，我哋會點叫佢呀？」",
-        "word_compound": "紅紙"
+        "zh": "第一題，\n「呢度有張紙，佢係白色嘅，我哋就會叫佢做白紙。\n咁而家又有張紙，佢係紅色嘅，我哋會點叫佢呀？」"
       }
     },
     {
       "id": "CM_P1",
       "type": "radio",
-      "label": "（正確答案：紅紙）若小朋友回答錯誤，則可告訴正確答案。",
+      "label": {
+        "zh": "（正確答案：紅紙）\n若小朋友回答錯誤，則可告訴正確答案。",
+        "orange": "正確答案：紅紙"
+      },
       "options": [
         {
           "value": "Y",
@@ -45,13 +46,16 @@
     },
     {
       "id": "CM_P2a",
-      "type": "text",
+      "type": "instruction",
       "label": "第二題，\n「平時行街會見到交通燈，佢上面有紅色同綠色嘅燈，我哋就會叫佢做紅綠燈。\n咁而家又有一盞交通燈，佢上面有藍色同綠色嘅燈，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_P2",
       "type": "radio",
-      "label": "（正確答案：藍綠燈）若小朋友回答錯誤，則可告訴正確答案",
+      "label": {
+        "zh": "（正確答案：紅綠燈）\n若小朋友回答錯誤，則可告訴正確答案。",
+        "orange": "正確答案：紅綠燈"
+      },
       "options": [
         {
           "value": "Y",
@@ -65,18 +69,26 @@
     },
     {
       "id": "CM_ins3",
-      "type": "text",
-      "label": "記錄規則：必須標準答案才能比分。\n請勿在現場教導他們相關知識。\n提示語：\n「我哋而家正式開始，我唔會再比提示同埋答案你。」\nLet's start."
+      "type": "instruction",
+      "label":{
+        "zh": "記錄規則：\n必須標準答案才能比分。\n請勿在現場教導他們相關知識。\n\n提示語：\n「我哋而家正式開始，我唔會再比提示同埋答案你。」\nLet's start.",
+        "orange_text": "Let's start.",
+        "emphasize": "請勿在現場教導他們相關知識。",
+        "attention": "「我哋而家正式開始，我唔會再比提示同埋答案你。」"
+      }
     },
     {
       "id": "CM_1a",
-      "type": "text",
+      "type": "instruction",
       "label": "「戴喺手上面嘅鏈，我哋會叫佢做手鏈。\n咁戴喺腳上面嘅鏈，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_1",
       "type": "radio",
-      "label": "（正確答案：腳鏈）",
+      "label": {
+        "zh": "（正確答案：腳鏈）",
+        "orange": "正確答案：腳鏈"
+      },
       "options": [
         {
           "value": "Y",
@@ -90,13 +102,16 @@
     },
     {
       "id": "CM_2a",
-      "type": "text",
+      "type": "instruction",
       "label": "「用手開嘅槍叫手槍。 咁如果用腳開嘅槍，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_2",
       "type": "radio",
-      "label": "（正確答案：腳槍）",
+      "label": {
+        "zh": "（正確答案：腳槍）",
+        "orange": "正確答案：腳槍"
+      },
       "options": [
         {
           "value": "Y",
@@ -110,13 +125,16 @@
     },
     {
       "id": "CM_3a",
-      "type": "text",
+      "type": "instruction",
       "label": "「用花生嚟做嘅油，我哋會叫佢做花生油。\n咁用冬菇嚟做嘅油，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_3",
       "type": "radio",
-      "label": "（正確答案：冬菇油）",
+      "label": {
+        "zh": "（正確答案：冬菇油）",
+        "orange": "正確答案：冬菇油"
+      },
       "options": [
         {
           "value": "Y",
@@ -130,13 +148,16 @@
     },
     {
       "id": "CM_4a",
-      "type": "text",
+      "type": "instruction",
       "label": "「由一隻蜘蛛織成嘅網，我哋會叫佢做蜘蛛網。\n咁由一隻螞蟻織成嘅網，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_4",
       "type": "radio",
-      "label": "（正確答案：螞蟻網）",
+      "label": {
+        "zh": "（正確答案：螞蟻網）",
+        "orange": "正確答案：螞蟻網"
+      },
       "options": [
         {
           "value": "Y",
@@ -150,13 +171,16 @@
     },
     {
       "id": "CM_5a",
-      "type": "text",
+      "type": "instruction",
       "label": "「一隻好香嘅蕉，我哋會叫佢做香蕉。\n咁一隻好臭嘅蕉，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_5",
       "type": "radio",
-      "label": "（正確答案：臭蕉）",
+      "label": {
+        "zh": "（正確答案：臭蕉）",
+        "orange": "正確答案：臭蕉"
+      },
       "options": [
         {
           "value": "Y",
@@ -170,13 +194,16 @@
     },
     {
       "id": "CM_6a",
-      "type": "text",
+      "type": "instruction",
       "label": "「有一種家庭電器係會將水變熱嘅，我哋會叫佢做熱水爐。\n有一種家庭電器係會將水變凍嘅，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_6",
       "type": "radio",
-      "label": "（正確答案：凍水爐）",
+      "label": {
+        "zh": "（正確答案：凍水爐）",
+        "orange": "正確答案：凍水爐"
+      },
       "options": [
         {
           "value": "Y",
@@ -190,13 +217,16 @@
     },
     {
       "id": "CM_7a",
-      "type": "text",
+      "type": "instruction",
       "label": "「有啲油係用牛奶嚟做嘅，我哋會叫佢做牛油。\n咁如果啲油系用羊奶嚟做嘅，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_7",
       "type": "radio",
-      "label": "（正確答案：羊油）",
+      "label": {
+        "zh": "（正確答案：羊油）",
+        "orange": "正確答案：羊油"
+      },
       "options": [
         {
           "value": "Y",
@@ -210,18 +240,21 @@
     },
     {
       "id": "CM_Ter1",
-      "type": "text",
+      "type": "instruction",
       "label": "part 1 得分：\n再按右下方箭頭（➜）進入下一環節。"
     },
     {
       "id": "CM_8a",
-      "type": "text",
+      "type": "instruction",
       "label": "「聖誕節嘅時候見到嗰啲又大又紅嘅花，我哋會叫佢做大紅花。\n咁如果啲花係又大又紫嘅，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_8",
       "type": "radio",
-      "label": "（正確答案：大紫花）",
+      "label": {
+        "zh": "（正確答案：大紫花）",
+        "orange": "正確答案：大紫花"
+      },
       "options": [
         {
           "value": "Y",
@@ -235,13 +268,16 @@
     },
     {
       "id": "CM_9a",
-      "type": "text",
+      "type": "instruction",
       "label": "「落雨嘅時候，我哋用嚟擋雨嘅遮叫做雨遮，\n咁落雪嘅時候，我哋用嚟擋雪嘅遮，我哋會點叫佢呀？」"
     },
     {
       "id": "CM_9",
       "type": "radio",
-      "label": "（正確答案：雪遮）",
+      "label": {
+        "zh": "（正確答案：雪遮）",
+        "orange": "正確答案：雪遮"
+      },
       "options": [
         {
           "value": "Y",
@@ -261,7 +297,10 @@
     {
       "id": "CM_10",
       "type": "radio",
-      "label": "（正確答案：短頸鹿）",
+      "label": {
+        "zh": "（正確答案：短頸鹿）",
+        "orange": "正確答案：短頸鹿"
+      },
       "options": [
         {
           "value": "Y",
@@ -281,7 +320,10 @@
     {
       "id": "CM_11",
       "type": "radio",
-      "label": "（正確答案：鐵袋）",
+      "label": {
+        "zh": "（正確答案：鐵袋）",
+        "orange": "正確答案：鐵袋"
+      },
       "options": [
         {
           "value": "Y",
@@ -301,7 +343,10 @@
     {
       "id": "CM_12",
       "type": "radio",
-      "label": "（正確答案：門簾）",
+      "label": {
+        "zh": "（正確答案：門簾）",
+        "orange": "正確答案：門簾"
+      },
       "options": [
         {
           "value": "Y",
@@ -315,7 +360,7 @@
     },
     {
       "id": "CM_Ter2",
-      "type": "text",
+      "type": "instruction",
       "label": "part 2 得分：\n再按右下方箭頭（➜）進入下一環節。"
     },
     {
@@ -326,7 +371,10 @@
     {
       "id": "CM_13",
       "type": "radio",
-      "label": "（正確答案：洗鞋機）",
+      "label": {
+        "zh": "（正確答案：洗鞋機）",
+        "orange": "正確答案：洗鞋機"
+      },
       "options": [
         {
           "value": "Y",
@@ -346,7 +394,10 @@
     {
       "id": "CM_14",
       "type": "radio",
-      "label": "（正確答案：水龍捲）",
+      "label": {
+        "zh": "（正確答案：水龍捲）",
+        "orange": "正確答案：水龍捲"
+      },
       "options": [
         {
           "value": "Y",
@@ -366,7 +417,10 @@
     {
       "id": "CM_15",
       "type": "radio",
-      "label": "（正確答案：地上鐵）",
+      "label": {
+        "zh": "（正確答案：地上鐵）",
+        "orange": "正確答案：地上鐵"
+      },
       "options": [
         {
           "value": "Y",
@@ -386,7 +440,10 @@
     {
       "id": "CM_16",
       "type": "radio",
-      "label": "（正確答案：鼻水肩）",
+      "label": {
+        "zh": "（正確答案：鼻水肩）",
+        "orange": "正確答案：鼻水肩"
+      },
       "options": [
         {
           "value": "Y",
@@ -406,7 +463,10 @@
     {
       "id": "CM_17",
       "type": "radio",
-      "label": "（正確答案：奶包）",
+      "label": {
+        "zh": "（正確答案：奶包）",
+        "orange": "正確答案：奶包"
+      },
       "options": [
         {
           "value": "Y",
@@ -431,7 +491,10 @@
     {
       "id": "CM_18",
       "type": "radio",
-      "label": "（正確答案：蕃茄糊）",
+      "label": {
+        "zh": "（正確答案：蕃茄糊）",
+        "orange": "正確答案：蕃茄糊"
+      },
       "options": [
         {
           "value": "Y",
@@ -451,7 +514,10 @@
     {
       "id": "CM_19",
       "type": "radio",
-      "label": "（正確答案：月出）",
+      "label": {
+        "zh": "（正確答案：月出）",
+        "orange": "正確答案：月出"
+      },
       "options": [
         {
           "value": "Y",
@@ -471,7 +537,10 @@
     {
       "id": "CM_20",
       "type": "radio",
-      "label": "（正確答案：矮樓大廈）",
+      "label": {
+        "zh": "（正確答案：矮樓大廈）",
+        "orange": "正確答案：矮樓大廈"
+      },
       "options": [
         {
           "value": "Y",
@@ -491,7 +560,10 @@
     {
       "id": "CM_21",
       "type": "radio",
-      "label": "（正確答案：跨江大橋）",
+      "label": {
+        "zh": "（正確答案：跨江大橋）",
+        "orange": "正確答案：跨江大橋"
+      },
       "options": [
         {
           "value": "Y",
@@ -511,7 +583,10 @@
     {
       "id": "CM_22",
       "type": "radio",
-      "label": "（正確答案：市慶）",
+      "label": {
+        "zh": "（正確答案：市慶）",
+        "orange": "正確答案：市慶"
+      },
       "options": [
         {
           "value": "Y",
@@ -536,7 +611,10 @@
     {
       "id": "CM_23",
       "type": "radio",
-      "label": "（正確答案：日景）",
+      "label": {
+        "zh": "（正確答案：日景）",
+        "orange": "正確答案：日景"
+      },
       "options": [
         {
           "value": "Y",
@@ -556,7 +634,10 @@
     {
       "id": "CM_24",
       "type": "radio",
-      "label": "（正確答案：上鄰下里）",
+      "label": {
+        "zh": "（正確答案：上鄰下里）",
+        "orange": "正確答案：上鄰下里"
+      },
       "options": [
         {
           "value": "Y",
@@ -576,7 +657,10 @@
     {
       "id": "CM_25",
       "type": "radio",
-      "label": "（正確答案：車來車往）",
+      "label": {
+        "zh": "（正確答案：車來車往）",
+        "orange": "正確答案：車來車往"
+      },
       "options": [
         {
           "value": "Y",
@@ -596,7 +680,10 @@
     {
       "id": "CM_26",
       "type": "radio",
-      "label": "（正確答案：上張下望）",
+      "label": {
+        "zh": "（正確答案：上張下望）",
+        "orange": "正確答案：上張下望"
+      },
       "options": [
         {
           "value": "Y",
@@ -616,7 +703,10 @@
     {
       "id": "CM_27",
       "type": "radio",
-      "label": "（正確答案：春秋相對）",
+      "label": {
+        "zh": "（正確答案：春秋相對）",
+        "orange": "正確答案：春秋相對"
+      },
       "options": [
         {
           "value": "Y",
