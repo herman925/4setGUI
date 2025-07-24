@@ -3,35 +3,347 @@
   "title": "心理理論",
   "questions": [
     {
-      "id": "tom_q1",
-      "type": "video-choice",
-      "prompt": "觀看影片並選擇正確答案。",
-      "video": "assets/videos/tom_scenario1.mp4",
+      "id": "ToM_1a",
+      "type": "image-choice",
+      "label": {
+        "zh": "「呢個係小明，而家係茶點時間，小明想食嘢。\n呢度有兩款零食：紅蘿蔔 同 曲奇餅。\n你鍾意食咩嘢多啲？\n係 紅蘿蔔 定 曲奇餅 吖？",
+        "emphasize": "紅蘿蔔 定 曲奇餅"
+      },
       "options": [
-        {
-          "id": "tom_q1_a",
-          "text": "角色認為物品在盒子裡"
-        },
-        {
-          "id": "tom_q1_b",
-          "text": "角色認為物品在籃子裡"
-        }
+        { "value": "紅蘿蔔", "label": "紅蘿蔔" },
+        { "value": "曲奇餅", "label": "曲奇餅" }
       ]
     },
     {
-      "id": "tom_q2",
-      "type": "video-choice",
-      "prompt": "角色相信什麼？",
-      "video": "assets/videos/tom_scenario2.mp4",
+      "id": "ToM_1a_ins1",
+      "type": "instruction",
+      "label": { "zh": "好好喎，但係小明想食 曲奇餅 多啲。\n佢唔鍾意食 紅蘿蔔 。\n佢最鍾意食 曲奇餅 。" },
+      "showIf": { "ToM_1a": "紅蘿蔔" }
+    },
+    {
+      "id": "ToM_1a_ins2",
+      "type": "instruction",
+      "label": { "zh": "好好喎，但係小明想食 紅蘿蔔 多啲。\n佢唔鍾意食 曲奇餅。\n佢最鍾意食 紅蘿蔔。" },
+      "showIf": { "ToM_1a": "曲奇餅" }
+    },
+    {
+      "id": "ToM_1b",
+      "type": "image-choice",
+      "label": {
+        "zh": "而家係茶點時間，小明可以揀一樣零食，小明會揀邊樣呢？\n揀 紅蘿蔔 定 曲奇餅 吖？",
+        "emphasize": "紅蘿蔔 定 曲奇餅"
+      },
       "options": [
-        {
-          "id": "tom_q2_a",
-          "text": "角色知道真相"
-        },
-        {
-          "id": "tom_q2_b",
-          "text": "角色有錯誤信念"
-        }
+        { "value": "紅蘿蔔", "label": "紅蘿蔔" },
+        { "value": "曲奇餅", "label": "曲奇餅" }
+      ]
+    },
+    {
+      "id": "ToM_2a_ins1",
+      "type": "instruction",
+      "label": { "zh": "呢個係小琳，小琳搵緊佢隻貓。" }
+    },
+    {
+      "id": "ToM_2a_ins2",
+      "type": "instruction",
+      "label": { "zh": "小貓可能匿埋咗喺 車房 ，又或者匿埋咗喺 草叢 。" }
+    },
+    {
+      "id": "ToM_2a",
+      "type": "image-choice",
+      "label": { "zh": "你覺得小貓喺邊度？\n喺 車房 定 草叢 吖？", "emphasize": "車房 定 草叢" },
+      "options": [
+        { "value": "車房", "label": "車房" },
+        { "value": "草叢", "label": "草叢" }
+      ]
+    },
+    {
+      "id": "ToM_2a_ins3",
+      "type": "instruction",
+      "label": { "zh": "好好喎，但係小琳覺得小貓喺 草叢。\n佢覺得佢隻貓喺 草叢。" },
+      "showIf": { "ToM_2a": "車房" }
+    },
+    {
+      "id": "ToM_2a_ins4",
+      "type": "instruction",
+      "label": { "zh": "好好喎，但係小琳覺得小貓喺 車房。\n佢覺得佢隻貓喺 車房。" },
+      "showIf": { "ToM_2a": "草叢" }
+    },
+    {
+      "id": "ToM_2b",
+      "type": "image-choice",
+      "label": { "zh": "而家小琳會去邊度揾小貓呢？\n去 車房 定 草叢 吖？", "emphasize": "車房 定 草叢" },
+      "options": [
+        { "value": "車房", "label": "車房" },
+        { "value": "草叢", "label": "草叢" }
+      ]
+    },
+    {
+      "id": "ToM_3a_intro",
+      "type": "instruction",
+      "label": { "zh": "呢度有個 櫃桶。\n你覺得 櫃桶 入面裝咗啲咩呢？" }
+    },
+    {
+      "id": "ToM_3a_guess",
+      "type": "text",
+      "label": "可以答任何佢鍾意嘅野或者唔知",
+      "inputType": "text"
+    },
+    {
+      "id": "ToM_3a_ins1",
+      "type": "instruction",
+      "label": { "zh": "睇吓，原來入面有隻 狗仔！" }
+    },
+    {
+      "id": "ToM_3a_confirm",
+      "type": "radio",
+      "label": "好喇，櫃桶 入面有啲咩吖？",
+      "options": [
+        { "value": "狗仔", "label": "狗仔" },
+        { "value": "其他", "label": "其他" }
+      ]
+    },
+    {
+      "id": "ToM_3a_ins2",
+      "type": "instruction",
+      "label": { "zh": "答啱喇，櫃桶 入面有 狗仔 。" },
+      "showIf": { "ToM_3a_confirm": "狗仔" }
+    },
+    {
+      "id": "ToM_3b",
+      "type": "radio",
+      "label": "呢個係小莉。小莉從來都冇睇過 櫃桶 入面。 咁小莉知唔知道 櫃桶 入面有咩吖？",
+      "options": [
+        { "value": "知道", "label": "知道" },
+        { "value": "不知道", "label": "不知道" }
+      ]
+    },
+    {
+      "id": "ToM_3c",
+      "type": "radio",
+      "label": "小莉有冇睇過櫃桶入面有啲咩？",
+      "options": [
+        { "value": "有", "label": "有" },
+        { "value": "沒有", "label": "沒有" }
+      ]
+    },
+    {
+      "id": "ToM_4a_ins1",
+      "type": "instruction",
+      "label": { "zh": "呢度有一個 膠布盒。\n你覺得 膠布盒 入面有啲咩？" }
+    },
+    {
+      "id": "ToM_4a_guess",
+      "type": "text",
+      "label": "", "inputType": "text"
+    },
+    {
+      "id": "ToM_4a_ins2",
+      "type": "instruction",
+      "label": { "zh": "打開睇吓先，原來入面有隻 豬仔 !" }
+    },
+    {
+      "id": "ToM_4a",
+      "type": "radio",
+      "label": "好喇，膠布盒 入面有啲咩吖？",
+      "options": [
+        { "value": "豬仔", "label": "豬仔" },
+        { "value": "其他", "label": "其他" }
+      ]
+    },
+    {
+      "id": "ToM_4a_ins3",
+      "type": "instruction",
+      "label": { "zh": "答啱喇， 膠布盒 入面有隻 豬仔 。" },
+      "showIf": { "ToM_4a": "豬仔" }
+    },
+    {
+      "id": "ToM_4b",
+      "type": "radio",
+      "label": "呢個係彼得，彼得從來冇睇過個盒入面。\n咁彼得會認爲 膠布盒 入面裝住啲咩呢？\n係 膠布 定 豬仔？",
+      "options": [
+        { "value": "膠布", "label": "膠布" },
+        { "value": "豬仔", "label": "豬仔" }
+      ]
+    },
+    {
+      "id": "ToM_4c",
+      "type": "radio",
+      "label": "彼得有冇睇過個盒入面？",
+      "options": [
+        { "value": "有", "label": "有" },
+        { "value": "沒有", "label": "沒有" }
+      ]
+    },
+    {
+      "id": "ToM_5a_ins",
+      "type": "instruction",
+      "label": { "zh": "呢個係小強，小強揾緊佢對 手套。\n佢對 手套 可能喺 書包 入面，又或者喺 衣櫃 入面。\n事實上，小強嘅 手套 喺 書包 入面。\n但係小強覺得佢對 手套 喺 衣櫃 入面。" }
+    },
+    {
+      "id": "ToM_5a",
+      "type": "radio",
+      "label": "咁小強會喺邊揾佢對 手套 吖？\n喺 書包 定 衣櫃？",
+      "options": [
+        { "value": "書包", "label": "書包" },
+        { "value": "衣櫃", "label": "衣櫃" }
+      ]
+    },
+    {
+      "id": "ToM_5b",
+      "type": "radio",
+      "label": "小強對 手套 事實上喺邊呢？\n喺 書包 定 衣櫃？",
+      "options": [
+        { "value": "書包", "label": "書包" },
+        { "value": "衣櫃", "label": "衣櫃" }
+      ]
+    },
+    {
+      "id": "ToM_P1",
+      "type": "image-choice",
+      "label": "「小朋友，呢度有三張唔同表情嘅圖片。\n我想你指比我睇邊幅圖片表示 開心 呢？",
+      "options": [
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_P2",
+      "type": "image-choice",
+      "label": "邊幅圖片表示 唔開心 呢？",
+      "options": [
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_P3",
+      "type": "image-choice",
+      "label": "邊幅圖片表示 無表情 呢？",
+      "options": [
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_6a_ins1",
+      "type": "instruction",
+      "label": { "zh": "呢個係泰迪，呢個係 粟米片盒。你覺得個 粟米片盒 入面有啲咩？\n泰迪好鍾意 粟米片。粟米片係佢最鍾意嘅零食。\n泰迪而家去玩喇。" }
+    },
+    {
+      "id": "ToM_6a_ins2",
+      "type": "instruction",
+      "label": { "zh": "我哋睇下 粟米片盒 入面有啲咩？\n入面係 石頭，冇 粟米片！而家冚返個 粟米片盒 先。" }
+    },
+    {
+      "id": "ToM_6a",
+      "type": "radio",
+      "label": "泰迪最鍾意嘅零食係咩吖？",
+      "options": [
+        { "value": "粟米片", "label": "粟米片" },
+        { "value": "其他", "label": "其他" }
+      ]
+    },
+    {
+      "id": "ToM_6a_ins3",
+      "type": "instruction",
+      "label": { "zh": "答啱喇，係 粟米片。" },
+      "showIf": { "ToM_6a": "粟米片" }
+    },
+    {
+      "id": "ToM_6b",
+      "type": "image-choice",
+      "label": "泰迪從來都冇睇過個盒入面。而家泰迪玩完返嚟，到咗茶點時間。\n我哋俾返個 粟米片盒 泰迪。\n泰迪收到個盒會覺得點吖？\n開心、 無表情、定 唔開心？",
+      "options": [
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_6c",
+      "type": "image-choice",
+      "label": "泰迪打開盒睇完之後會覺得點吖？\n 開心、 無表情、定 唔開心？",
+      "options": [
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_7a_ins1",
+      "type": "instruction",
+      "label": { "zh": "注意：保持與幼兒的眼神接觸，確認幼兒專心聆聽。\n呢個故事係關於一個男仔嘅，我想你話俾我聽呢個男仔心入面嘅感受係咩，面上嘅表情係咩，佢心入面嘅感受同面上嘅表情係可以唔一樣㗎。\n呢個故事係關於 小光 。小光 同佢嘅朋友一齊玩緊，講緊笑。\n其中一個小朋友 小露 講咗個笑話，取笑 小光，所有小朋友都覺得好搞笑，但係小光唔覺得好笑。\n小光 唔想俾其他人知佢對呢個笑話嘅感受，因為佢覺得其他人會話佢成個 bb 咁。\n所以，佢收埋咗自己嘅感受。" }
+    },
+    {
+      "id": "ToM_7a",
+      "type": "radio",
+      "label": "當 小露 講咗個笑話，取笑 小光 嘅時候，其他小朋友 做咗啲咩？",
+      "options": [
+        { "value": "好搞笑", "label": "喺到笑/好搞笑" },
+        { "value": "其他", "label": "其他" }
+      ]
+    },
+    {
+      "id": "ToM_7a_ins2",
+      "type": "instruction",
+      "label": { "zh": "答啱喇，其他小朋友覺得好搞笑，喺到大笑。" },
+      "showIf": { "ToM_7a": "好搞笑" }
+    },
+    {
+      "id": "ToM_7b",
+      "type": "radio",
+      "label": "喺故事入面，如果 其他小朋友 知道咗 小光 嘅感受，佢地會點做吖？",
+      "options": [
+        { "value": "話小光成個bb咁", "label": "話小光成個bb咁" },
+        { "value": "其他", "label": "其他" }
+      ]
+    },
+    {
+      "id": "ToM_7a_ins4",
+      "type": "instruction",
+      "label": { "zh": "答啱喇，佢地會話 小光 成個 bb 咁。" },
+      "showIf": { "ToM_7b": "話小光成個bb咁" }
+    },
+    {
+      "id": "ToM_7c",
+      "type": "image-choice",
+      "label": "當大家一齊笑 小光，小光 嘅感受係咩？\n係 開心、 無表情、定 唔開心？",
+      "options": [
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_7d",
+      "type": "image-choice",
+      "label": "小光嘗試露出嘅表情係點㗎？\n係 開心、 無表情、定 唔開心 ?",
+      "options": [
+        { "value": "開心", "label": "開心" },
+        { "value": "無表情", "label": "無表情" },
+        { "value": "唔開心", "label": "唔開心" }
+      ]
+    },
+    {
+      "id": "ToM_Date",
+      "type": "text",
+      "label": "完成日期："
+    },
+    {
+      "id": "ToM_Score",
+      "type": "text",
+      "label": "ToM_Score"
+    },
+    {
+      "id": "ToM_Com",
+      "type": "radio",
+      "label": "Theory of Mind 測試已完成。\n請按右下方箭頭（➜），並填寫checklist。",
+      "options": [
+        { "value": "已完成", "label": "已完成" }
       ]
     }
   ]
