@@ -57,3 +57,9 @@ body.debug-mode::before {
 #debug-controls.hidden {
     display: none;
 }
+
+#debug-info {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+}

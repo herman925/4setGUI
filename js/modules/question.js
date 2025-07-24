@@ -1,5 +1,49 @@
 import { state } from './state.js';
-import { evaluateTermination } from './terminations.js';
+import { evaluateTermination, terminationRules, calculateScore } from './terminations.js';
+
+const debugInfoEl = document.getElementById('debug-info');
+
+function updateDebugInfo(questionId) {
+    if (!debugInfoEl) return;
+    if (!state.debugMode || state.currentSectionId !== 'erv') {
+        debugInfoEl.textContent = '';
+        return;
+    }
+
+    const rules = terminationRules['erv'];
+    const section = state.surveySections['erv'];
+    if (!rules || !section) {
+        debugInfoEl.textContent = '';
+        return;
+    }
+
+    const idx = section.questions.findIndex(q => q.id === questionId);
+    if (idx === -1) {
+        debugInfoEl.textContent = '';
+        return;
+    }
+
+    let currentRule = null;
+    for (const rule of rules) {
+        const startIdx = section.questions.findIndex(q => q.id === rule.startId);
+        const endIdx = section.questions.findIndex(q => q.id === rule.endId);
+        const termIdx = section.questions.findIndex(q => q.id === rule.terminationId);
+        if ((idx >= startIdx && idx <= endIdx) || idx === termIdx) {
+            currentRule = rule;
+            break;
+        }
+    }
+
+    if (!currentRule) {
+        debugInfoEl.textContent = '';
+        return;
+    }
+
+    const score = calculateScore('erv', currentRule.startId, currentRule.endId);
+    const needed = currentRule.minScore - score;
+    const message = needed > 0 ? `還需要 ${needed} 分` : '已達標';
+    debugInfoEl.textContent = `ERV 分數：${score} / ${currentRule.minScore}，${message}`;
+}
 
 function formatLabel(label) {
     if (typeof label === 'string') {
@@ -168,4 +212,5 @@ export function renderCurrentQuestion() {
     }
 
     questionContainer.appendChild(questionWrapper);
+    updateDebugInfo(question.id);
 }
