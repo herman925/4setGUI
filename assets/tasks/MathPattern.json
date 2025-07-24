@@ -279,12 +279,18 @@
     {
       "id": "MPTm_ins1",
       "type": "text",
-      "label": "而家玩第三關，我會俾你睇一個神奇嘅糖果機。唔同嘅圖形放入去糖果機，就會變成新嘅圖形。Here is a magical candy machine. When you put a shape into the machine, a new shape will be produced. Look carefully, and tell me which shape should we put in the question mark?"
+      "label": "而家玩第三關，我會俾你睇一個神奇嘅糖果機。唔同嘅圖形放入去糖果機，就會變成新嘅圖形。Here is a magical candy machine. When you put a shape into the machine, a new shape will be produced. Look carefully, and tell me which shape should we put in the question mark?",
+      "media": {
+        "image": "images/MP/MPTm_ins1.jpg"
+      }
     },
     {
       "id": "MPTmP",
       "type": "radio",
       "label": "呢個圖形擺入去會變邊個圖形？",
+      "media": {
+        "image": "images/MP/MPTmP.jpg"
+      },
       "options": [
         {
           "value": "A",
@@ -311,6 +317,9 @@
       "id": "MPTm1",
       "type": "radio",
       "label": "呢個圖形擺入去會變邊個圖形？",
+      "media": {
+        "image": "images/MP/MPTm1.jpg"
+      },
       "options": [
         {
           "value": "A",
@@ -337,6 +346,9 @@
       "id": "MPTm2",
       "type": "radio",
       "label": "呢個圖形擺入去會變邊個圖形？",
+      "media": {
+        "image": "images/MP/MPTm2.jpg"
+      },
       "options": [
         {
           "value": "A",
@@ -363,6 +375,9 @@
       "id": "MPTm3",
       "type": "radio",
       "label": "呢個圖形擺入去會變邊個圖形？",
+      "media": {
+        "image": "images/MP/MPTm3.jpg"
+      },
       "options": [
         {
           "value": "A",
@@ -389,6 +404,9 @@
       "id": "MPTm4",
       "type": "radio",
       "label": "呢個圖形擺入去會變邊個圖形？",
+      "media": {
+        "image": "images/MP/MPTm4.jpg"
+      },
       "options": [
         {
           "value": "A",
@@ -415,6 +433,9 @@
       "id": "MPTm5",
       "type": "radio",
       "label": "呢個圖形擺入去會變邊個圖形？",
+      "media": {
+        "image": "images/MP/MPTm5.jpg"
+      },
       "options": [
         {
           "value": "A",
@@ -441,6 +462,9 @@
       "id": "MPTm6",
       "type": "radio",
       "label": "呢個圖形擺入去會變邊個圖形？",
+      "media": {
+        "image": "images/MP/MPTm6.jpg"
+      },
       "options": [
         {
           "value": "A",
