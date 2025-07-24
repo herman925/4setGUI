@@ -439,33 +439,33 @@
       "id": "TEC_12",
       "type": "image-choice",
       "label": {
+        "image": "images/TEC_M/TEC_Q12.1.jpg",
         "zh": "小強睇到可樂嘅時候，佢嘅心情係點？佢係 開心、難過、無表情 定 害怕 ?",
-        "emphasize": ["開心", "難過", "無表情", "害怕"],
-        "image": ["images/TEC_M/TEC_Q12.1.jpg", "images/TEC_M/TEC_Q12.2.jpg"]
+        "emphasize": ["開心", "難過", "無表情", "害怕"]
       },
       "options": [
         {
           "value": "opt1",
           "media": {
-            "image": "images/TEC_M/TEC_Q12.3.jpg"
+            "image": "images/TEC_M/TEC_Q12.2.jpg"
           }
         },
         {
           "value": "opt2",
           "media": {
-            "image": "images/TEC_M/TEC_Q12.4.jpg"
+            "image": "images/TEC_M/TEC_Q12.3.jpg"
           }
         },
         {
           "value": "opt3",
           "media": {
-            "image": "images/TEC_M/TEC_Q12.5.jpg"
+            "image": "images/TEC_M/TEC_Q12.4.jpg"
           }
         },
         {
           "value": "opt4",
           "media": {
-            "image": "images/TEC_M/TEC_Q12.6.jpg"
+            "image": "images/TEC_M/TEC_Q12.5.jpg"
           }
         }
       ],

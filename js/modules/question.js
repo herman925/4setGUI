@@ -72,12 +72,13 @@ function updateDebugInfo(questionId) {
  * - orange_text: text-orange styling
  * 
  * Image property:
- * - image: single image path (string) or multiple images (array)
+ * - image: single image path (string) or multiple images (array of strings)
+ * - Multiple images will be stacked vertically to preserve larger picture sizes
  * 
  * Examples:
  * - Single: { "emphasize": "開心" }
  * - Array: { "emphasize": ["開心", "難過", "害怕"] }
- * - Multiple arrays: { "attention": ["右下方箭頭", "（➜）"], "emphasize": ["開心", "難過"] }
+ * - Multiple images: { "image": ["img1.jpg", "img2.jpg"] }
  */
 function formatLabel(label) {
     if (typeof label === 'string') {
@@ -119,7 +120,7 @@ function formatLabel(label) {
         // Add image(s) if specified in label
         if (label.image) {
             if (Array.isArray(label.image)) {
-                // Handle multiple images
+                // Handle multiple images - stack vertically
                 label.image.forEach(imagePath => {
                     text += `<br><img src="assets/${imagePath}" class="label-image" alt="Label image">`;
                 });
