@@ -69,11 +69,7 @@ export function renderCurrentQuestion() {
     // Render based on question type
     switch (question.type) {
         case 'instruction':
-            // Read-only instruction type - no input needed
-            const instructionNote = document.createElement('div');
-            instructionNote.className = 'instruction-note';
-            instructionNote.innerHTML = '<em>請閱讀以上內容後按右下方箭頭（➜）繼續</em>';
-            questionWrapper.appendChild(instructionNote);
+            // Read-only instruction type - no input needed, no additional text
             break;
         case 'text':
             const input = document.createElement('input');
