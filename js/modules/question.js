@@ -5,14 +5,13 @@ const debugInfoEl = document.getElementById('debug-info');
 
 function updateDebugInfo(questionId) {
     if (!debugInfoEl) return;
-    if (!state.debugMode) {
+
     const sectionId = state.currentSectionId;
-    if (!state.debugMode || (sectionId !== 'erv' && sectionId !== 'cm')) {
+    if (!state.debugMode || (sectionId !== 'erv' && sectionId !== 'cm' && sectionId !== 'finemotor')) {
         debugInfoEl.textContent = '';
         return;
     }
 
-    const sectionId = state.currentSectionId;
     const rules = terminationRules[sectionId];
     const section = state.surveySections[sectionId];
     if (!rules || !section) {
@@ -42,7 +41,6 @@ function updateDebugInfo(questionId) {
         return;
     }
 
-    const score = calculateScore(sectionId, currentRule.startId, currentRule.endId);
     const score = calculateScore(sectionId, currentRule.startId, currentRule.endId);
     const needed = currentRule.minScore - score;
     const message = needed > 0 ? `還需要 ${needed} 分` : '已達標';
