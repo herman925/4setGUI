@@ -141,6 +141,13 @@ export function renderCurrentQuestion() {
         questionWrapper.appendChild(audio);
     }
 
+    if (question.media && question.media.image) {
+        const img = document.createElement('img');
+        img.src = `assets/${question.media.image}`;
+        img.classList.add('question-image');
+        questionWrapper.appendChild(img);
+    }
+
     // Render based on question type
     switch (question.type) {
         case 'instruction':
@@ -160,6 +167,7 @@ export function renderCurrentQuestion() {
             break;
         case 'radio':
             const radioGroup = document.createElement('div');
+            radioGroup.classList.add('radio-group');
             question.options.forEach(opt => {
                 const labelEl = document.createElement('label');
                 labelEl.classList.add('option-label', 'answer');
