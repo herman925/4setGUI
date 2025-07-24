@@ -91,6 +91,7 @@ export function evaluateTermination(sectionId, questionId) {
         } else {
             message = `Part ${part} 得分：${total}\n該測試已完成，按此結束該測試。`;
         }
+>>>>>>> master
     } else {
         message = allowNext
             ? '該部分得分多於 4 分，請按此繼續測試。'
