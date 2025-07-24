@@ -23,7 +23,7 @@ export const terminationRules = {
 
 import { state } from './state.js';
 
-function calculateScore(sectionId, startId, endId) {
+export function calculateScore(sectionId, startId, endId) {
     const section = state.surveySections[sectionId];
     if (!section || !section.questions) return 0;
     const startIndex = section.questions.findIndex(q => q.id === startId);
