@@ -31,14 +31,31 @@ A web-based, offline-first survey application for the KS 4-Set Task, supporting 
 └── README.md           # This file
 ```
 
-## Key Modules
+## Key JavaScript Modules
 
-- **state.js** - Global application state management
-- **ui.js** - DOM manipulation and rendering
-- **navigation.js** - Page flow and survey navigation
-- **data.js** - JSON data loading and processing
-- **events.js** - Event listener management
-- **question.js** - Individual question rendering
+- **script.js** - Application entry point that initializes modules
+- **service-worker.js** - Caches assets to enable offline use
+- **sync-manager.js** - Queues data for syncing when back online
+- **modules/state.js** - Global state store and debug helpers
+- **modules/ui.js** - Rendering of entry form, TOC and survey pages
+- **modules/navigation.js** - Section flow and page navigation logic
+- **modules/data.js** - Loads survey structure and section JSON files
+- **modules/events.js** - Sets up listeners for UI controls
+- **modules/question.js** - Creates DOM for each question type
+- **modules/autosave.js** - Periodically saves progress locally
+- **modules/export.js** - Builds a CSV file of all responses
+- **modules/id-mapping.js** - Looks up student and school IDs
+- **modules/debug.js** - Optional developer tools for editing questions
+
+## CSS Files
+
+- **style.css** - Central stylesheet that imports the module files
+- **modules/base.css** - Base layout and global resets
+- **modules/navigation.css** - Styling for the fixed top navigation bar
+- **modules/pages.css** - Layout for entry, TOC and survey pages
+- **modules/forms.css** - Entry form fields and button styles
+- **modules/components.css** - Question display and debug UI elements
+- **modules/survey-items.css** - Helpers and highlights used inside questions
 
 ## Getting Started
 
