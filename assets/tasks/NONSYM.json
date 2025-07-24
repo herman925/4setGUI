@@ -1,12 +1,15 @@
 {
   "id": "nonsym",
-  "title": "非符號關係",
+  "title": "非符號數量比較",
+  "timer": 120,
   "questions": [
-    {
-      "id": "nonsym_q1",
-      "type": "text",
-      "label": "這是一個非符號關係的佔位問題。",
-      "required": true
-    }
+    {"id": "NONSYM_ins1", "type": "instruction", "label": "此測驗採用計時方式，小朋友需在兩分鐘內盡量答完。\n\u300c你睇吓啲點點，話俾我聽邊一格有多啲點點。\u300d"},
+    {"id": "NONSYM_S1", "type": "image-choice", "label": "邊格有多啲點點？", "options": [{"value":"A","label":"左邊"},{"value":"B","label":"右邊"}], "scoring":{"correctAnswer":"A"}},
+    {"id": "NONSYM_ins2", "type": "instruction", "label": "做得好好，跟住會計時兩分鐘，你試下好似啱啱咁，好快咁指俾我睇邊個多啲點點，準備好未?"},
+    {"id": "NONSYM_1", "type": "image-choice", "label": "非符號數量比較", "options": [{"value":"left","label":"左邊"},{"value":"right","label":"右邊"}], "scoring":{"correctAnswer":"right"}},
+    {"id": "NONSYM_2", "type": "image-choice", "label": "非符號數量比較", "options": [{"value":"left","label":"左邊"},{"value":"right","label":"右邊"}], "scoring":{"correctAnswer":"left"}},
+    {"id": "NONSYM_timeout", "type": "instruction", "label": "時間到／已完成，請進行下一部分。"},
+    {"id": "NONSYM_Date", "type": "text", "label": "完成日期："},
+    {"id": "NONSYM_Com", "type": "radio", "label": "已完成", "options": [{"value":"done","label":"已完成"}]}
   ]
 }

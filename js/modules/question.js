@@ -1,5 +1,7 @@
 import { state } from './state.js';
 import { evaluateTermination, terminationRules, calculateScore } from './terminations.js';
+import { navigatePage } from './navigation.js';
+import { isTimerRunning } from './timer.js';
 
 const debugInfoEl = document.getElementById('debug-info');
 
@@ -199,6 +201,9 @@ export function renderCurrentQuestion() {
                 radioGroup.appendChild(labelEl);
             });
             questionWrapper.appendChild(radioGroup);
+            if (isTimerRunning() && state.autoNext) {
+                radioGroup.addEventListener('change', () => navigatePage(1));
+            }
             break;
         case 'image-choice':
             const imgGroup = document.createElement('div');
@@ -226,6 +231,9 @@ export function renderCurrentQuestion() {
                 imgGroup.appendChild(labelImg);
             });
             questionWrapper.appendChild(imgGroup);
+            if (isTimerRunning() && state.autoNext) {
+                imgGroup.addEventListener('change', () => navigatePage(1));
+            }
             break;
         // Add more cases for 'select', 'radio', 'checkbox', etc. here
         default:
