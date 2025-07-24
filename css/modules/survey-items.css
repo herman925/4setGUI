@@ -144,6 +144,14 @@
     margin-bottom: 12px;
 }
 
+/* Image shown within question text */
+.question-image {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 12px auto;
+}
+
 /* Generic radio group layout */
 .radio-group {
     display: flex;

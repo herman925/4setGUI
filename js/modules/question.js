@@ -140,6 +140,13 @@ export function renderCurrentQuestion() {
         questionWrapper.appendChild(audio);
     }
 
+    if (question.media && question.media.image) {
+        const img = document.createElement('img');
+        img.src = `assets/${question.media.image}`;
+        img.classList.add('question-image');
+        questionWrapper.appendChild(img);
+    }
+
     // Render based on question type
     switch (question.type) {
         case 'instruction':
