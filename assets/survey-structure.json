@@ -27,6 +27,10 @@
         {
           "file": "TheoryofMind.json",
           "order": 3
+        },
+        {
+          "file": "ChineseWordReading.json",
+          "order": 4
         }
       ]
     },
@@ -86,10 +90,6 @@
         {
           "file": "TGMD.json",
           "order": 2
-        },
-        {
-          "file": "ChineseWordReading.json",
-          "order": 3
         }
       ]
     }

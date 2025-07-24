@@ -4,12 +4,12 @@
   "questions": [
     {
       "id": "TEC_Cover",
-      "type": "text",
+      "type": "instruction",
       "label": "情緒遊戲 (Boy)\n\n確認進入測試請按右下方箭頭（➜）。"
     },
     {
       "id": "TEC_ins1",
-      "type": "text",
+      "type": "instruction",
       "label": "小朋友，我而家會俾啲圖片你睇，然後問你啲問題，我想你用手指指出答案，好冇？"
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "id": "TEC_ins2",
-      "type": "text",
+      "type": "instruction",
       "label": "跟住我會講故事俾你聽，然後問你一啲問題，你用手指指出答案俾我。"
     },
     {
@@ -364,12 +364,12 @@
     },
     {
       "id": "TEC_P4",
-      "type": "text",
+      "type": "instruction",
       "label": "情境：\n「小明非常難過，因為野狼食咗佢隻兔仔。」"
     },
     {
       "id": "TEC_P5",
-      "type": "text",
+      "type": "instruction",
       "label": "嗰一日嘅夜晚，小明上床瞓覺，第二日……"
     },
     {
@@ -466,7 +466,7 @@
     },
     {
       "id": "TEC_B_Date",
-      "type": "text",
+      "type": "instruction",
       "label": "完成日期："
     },
     {
